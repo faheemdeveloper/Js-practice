@@ -1,16 +1,9 @@
 
-let score = prompt("Enter you Numbers:");
+// Logical Statments
+let a = 6;
+let b = 2;
 
-if (score >= 90 && score <= 100) {
-    Grade = "A"
-} else if (score >= 79 && score <= 89) {
-    Grade = "B"
-} else if (score >= 69 && score <= 70) {
-    Grade = "C"
-} else if (score >= 50 && score <= 59) {
-    Grade = "D"
-} else if (score >= 0 && score <= 49) {
-    Grade = "E"
-}
+let condi1 = a > 2;
+let condi2 = a === 6;
 
-console.log(Grade);
+console.log(condi1 && condi2);
