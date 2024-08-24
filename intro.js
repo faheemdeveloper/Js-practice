@@ -1,8 +1,18 @@
-let obj = {
-    myName : "Faheem",
-    myAge : 20
-}
+let studentNames = [
+  "Faheem",
+  "wasid",
+  "shehzad",
+  "younes",
+  "adil",
+  "basit",
+  "shahzaib",
+];
 
-let output = `the Student is  ${obj.myName} the student age is ${obj.myAge}`
+let studentNames2 = [
+    "Azhar",
+    "imran"
+]
 
-console.log(output);
+let res = studentNames.concat(studentNames2);
+
+console.log(res);
