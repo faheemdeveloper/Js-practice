@@ -1,9 +1,8 @@
+let obj = {
+    myName : "Faheem",
+    myAge : 20
+}
 
-// Logical Statments
-let a = 6;
-let b = 2;
+let output = `the Student is  ${obj.myName} the student age is ${obj.myAge}`
 
-let condi1 = a > 2;
-let condi2 = a === 6;
-
-console.log(condi1 && condi2);
+console.log(output);
