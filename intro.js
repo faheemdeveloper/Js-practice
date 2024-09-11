@@ -1,11 +1,9 @@
-// The Square of Even numbers in map mathod
+// The sum of Total Price in Reduce Method
 
-let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+let produtPrice = [100, 200, 300, 400, 500, 600];
 
+let totalPrice = produtPrice.reduce((occun, currElem) => {
+    return occun + currElem;
+}, 0);
 
-let result = numbers.map((currElem) => {
-    if(currElem % 2 === 0) {
-        return currElem * currElem;
-    }
-}).filter((currElem) => currElem !== undefined);
-
+console.log(totalPrice)
