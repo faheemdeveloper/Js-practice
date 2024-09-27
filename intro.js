@@ -1,28 +1,23 @@
-// Local Storage
+// Date and Time
 
-let studentProfile = {
-  fullName: "Faheem",
-  age: 22,
-  marks: 502,
-  Grade: "D",
-  learning: "JavaScript",
-};
+// let date = new Date().getTime();
+// console.log(date)
 
+// let milisec = 1727413384987;
 
-// let addList = () => {
-//     localStorage.setItem("StudentProfile", JSON.stringify(studentProfile));
-// }
+// let newDAte = new Date(milisec);
 
+// console.log(newDAte);
 
-// document.querySelector(".btn").addEventListener("click", () => {
-//     addList()
-// });
+// let newDate = new Date();
+// console.log(newDate);
+// let year = newDate.getFullYear();
 
-let getlist = () => {
-    let getObj = JSON.parse(localStorage.getItem("StudentProfile"));
-    console.log(getObj)
-};
+// console.log(year)
 
-document.querySelector(".btn").addEventListener("click", () => {
-    getlist()
-})
+let date = new Date();
+console.log(date)
+let month = date.getMonth();
+let day = date.getDate();
+console.log(month)
+console.log(day)
