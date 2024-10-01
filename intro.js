@@ -1,66 +1,75 @@
-// Date and Time
-/*
-let date = new Date().getTime();
-console.log(date)
-let milisec = 1727413384987;
-let newDAte = new Date(milisec);
-console.log(newDAte);
-*/
-// Get Date Methods
-/*
-let newDate = new Date();
-console.log(newDate);
-let year = newDate.getFullYear();
-console.log(year)
-let date = new Date();
-console.log(date)
-let month = date.getMonth();
-let day = date.getDate();
-console.log(month)
-console.log(day)
-*/
+const name = "Faheem";
+const age = 22;
 
-// Get Time Methods
-/*
-let date = new Date();
-console.log(date)
-let hours = date.getHours();
-let minuts = date.getMinutes();
-let seconds = date.getSeconds();
-console.log(hours);
-console.log(minuts);
-console.log(seconds);
-*/
+const person = {name : name, age : age};
+console.log(person)
 
-// Set date Methods
-/*
-let date = new Date();
-console.log(date)
-let updatedYear = date.setFullYear(2028);
-console.log(updatedYear);
-const newDate = new Date(updatedYear);
-console.log(newDate);
-let newMonth = date.setMonth(2);
-console.log(newMonth);
-let toMonth = new Date(newMonth);
-console.log(toMonth);
-let setDate = date.setDate(20);
-console.log(setDate);
-let toDate = new Date(setDate);
-console.log(toDate);
-*/
+const user = {
+  name: "Faheem",
+  age: 22,
+};
 
-// Set Time Methods
-/*
-let date = new Date();
-console.log(date);
-let setHour = date.setHours(4);
-console.log(setHour);
-let changeHour = new Date(setHour);
-console.log(changeHour)
-let setMinuts = date.setMinutes(20);
-console.log(setMinuts);
-let changeMinuts = new Date(setMinuts);
-console.log(changeMinuts)
-*/
+const myName = user;
+const  {name, age} = user;
 
+console.log(`my name is ${name} and my age is  ${age}`);
+
+const user = {
+  myName: "Faheem",
+  age: 22,
+};
+
+let numbers = [...number1, ...number2];
+console.log(numbers);
+
+let student = ["Faheem", "wasdi", "shehzad"];
+student.push(...["adil", "sohail"]);
+
+console.log(student);
+
+let country = "Pakistan";
+console.log(country.split(""));
+
+console.log([...country]);
+
+let myName = "Faheem";
+let withSpace = myName.padStart(18, "-");
+let endSpace = myName.padEnd(15);
+console.log(withSpace);
+console.log(endSpace.length);
+console.log(myName.length);
+
+const obj1 = {a : 10, b: 20, c: 50};
+const obj2 = {c : 30, d: 50};
+
+let newObj = {...obj1 ,...obj1,};
+console.log(newObj);
+
+let person = { naem: "Faheem", age: 22 };
+let enteries = Object.entries(person);
+console.log(enteries);
+
+let newPerosn = Object.fromEntries(enteries);
+console.log(newPerosn);
+
+const mxNumber = Number.MAX_SAFE_INTEGER;
+console.log(mxNumber);
+// console.log(mxNumber);
+
+let favNum = undefined;
+userFavNum = favNum ?? 10;
+console.log(userFavNum)
+const myName = user.myName;
+const age = user.age;
+
+console.log(myName, age)
+
+let students = ["Faheem", "wasid", "shehzad", "shahzaib", "adil"];
+
+let NewStudents = [...students];
+
+console.log(students)
+console.log(NewStudents)
+
+let number1 = [1, 2, 3];
+let number2 = [4, 5, 6];

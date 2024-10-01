@@ -13,29 +13,16 @@ body   {
   justify-content: center;
 }
 
-section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-.btn {
-  padding: 10px 30px;
-  margin-top: 1rem;
-  border-radius: 1rem;
-  border: none;
-  background-color: aqua;
-}
-
-
-
-.rectangle {
-  width: 100px;
+.watch {
+  width: 300px;
   height: 100px;
-  background-color: aqua;
-  border-top: 2px solid red;
-  border-bottom: 2px solid blue;
+  background-color: blue;
+  font-size: 3rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-content: center;
+  justify-content: center;
+  color: white;
+  border-radius: 1rem;
 }
-
-
