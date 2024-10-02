@@ -1,157 +1,181 @@
-// Ecma Script 2017
-/*
-let student = {
-  myName: "Faheem",
-  age: 22,
-};
+// let obj3 = {
+//   myName: "Faheem",
+//   age: 22,
+//   marks: 502,
+//   grade: "D",
+// };
 
-console.log(student);
+// console.log(obj3, typeof obj3)
 
-let myName = "Faheem";
-let age = 22;
+// let myName = "Faheem";
+// let age = 22;
+// let marks = 502;
+// let grade = "D";
 
-Excesing Traditinol Way
-// let profile = {myName : myName, age : age};
-New Way
-let profile = {myName, age};
-console.log(profile);
+// let obj = {myName : myName, age : age, marks : marks, grade : grade};
+// let obj2 = {myName, age, marks, grade};
 
-const myName = "Faheem";
-const age = 22;
+// console.log(obj, typeof obj);
+// console.log(obj2, typeof obj2);
 
-// let student = {myName : myName, age : age};
-let student = {myName, age}
+// let student = ["Faheem", "wasid", "shehzad", "sohail", "adil"];
 
-console.log(student);
+// // console.log(student[4])
+// [first, second, third, four, five] = student;
+// console.log(five);
 
-Accesing Array Element
+// let a = 10;
+// let b = 40;
 
-let arr = [10, 20, 30, 40, 50];
-// // Traditinol Way
-// // let first = arr[3];
-// // New Way
+// console.log("a =", a, "b =", b);
+// [a, b] = [b, a];
+// console.log("a =", a, "b =", b);
 
-// [first, second, third, four, five] = arr
-// console.log(five)
+// let obj = {
+//   myName: "Faheem",
+//   age: 22,
+//   marks: 502,
+// };
 
-[first, Second, third, four, five] = arr;
-console.log(five)
+// // const {myName, age, marks} = obj;
+// // console.log(marks)
 
-let arr = [10, 20, 30, 40, 50];
-// [a, b, c, d, f] = arr;
-// console.log(f)
-// ignoring Element
-[, , , , last] = arr;
+// const {myName : fullName, age : fullage, marks} = obj;
 
-console.log(last)
+// console.log(fullage);
 
-Swaping Properties
-let a = 20;
-let b = 50;
+// let student = ["faheem", "wasid", "shehzad", "shahzaib"];
+// let newStudent = ["adil", "saqib", "sohail"];
+// let fullArray = [...student, ...newStudent];
+// console.log(fullArray)
 
-con
-sole.log("a =", a,"b =",  b);
-[a, b] = [b, a];
+// let student = ["Faheem", "wasid", "shehzad", "shahzaib", "sohail"];
+// // student.push("adil");
+// student.push(...["adil", "saqib", "basit", "rizwan"]);
 
-console.log("a =",a, "b =", b);
+// console.log(student);
 
-let a = 30;
-let b = 70;
-console.log("a =",a, "b =", b);
-[a, b] = [b, a];
-console.log()
-console.log("a =",a, "b =", b);
+// let sum = (a, b, c, d, e, f) => {
+//   return a + b + c + d + e + f;
+// };
 
-Destruturing Properties with Object
-let obj = {
-    myName : "Faheem",
-    age : 22,
-    marks : 502,
-};
+// console.log(sum(1, 2, 3, 4, 5, 6));
 
-const {myName, age, marks} = obj;
-console.log(marks);
-const {myName, age, marks} = obj;
-console.log(age)
+// let sum = (...numbers) => {
+//     return numbers.reduce((occum, currElem) => {
+//         return occum + currElem;
+//     });
+// };
 
-let obj = {
-  myName: "Faheem",
-  age: 22,
-  marks: 502,
-  Grade: "A",
-};
+// console.log(sum(1, 2, 3, 4, 5));
 
-// let newOBj = obj.marks;
-let {myName, age, marks, Grade} = obj;
-console.log(Grade)
+// function sum(...numbers) {
+//   return numbers.reduce((occum, currElem) => occum + currElem);
+// }
 
-// Renaming Properties
-let obj = {
-    myName : "Faheem",
-    age : 22
-};
+// console.log(sum(2, 3, 8));
 
-// {myName : fullName, age : myAge} = obj;
-let {myName, age} = obj
+// let country = "pakistan";
+// let paddStart = country.padStart(15,"-");
+// let paddEnd = country.padEnd(15, "-");
 
-console.log(age)
+// console.log(paddStart, paddStart.length);
+// console.log(paddEnd, paddEnd.length);
 
-let arr = ["Faheem", "wasid", "adil", "sohail"];
-let newArr = [...arr];
+// let obj1 = {a : 10, b : 20, c : 30};
+// let obj2 = {c : 40, d : 50, e : 60};
 
-console.log(newArr);
+// let newObj = {...obj1, ...obj2};
+// console.log(newObj);
 
-let students = ["Faheem", "sohail", "shehzad", "wasid"];
-let newArr = [...students];
-console.log(newArr);
+// let StudentData = {
+//     myName : "Faheem",
+//     age : 22,
+//     marks : 502,
+//     grade : "D",
+// };
 
-let number1 = [1, 2, 3, 4];
-let number2 = [4, 5, 6, 7];
-let numbers = [...number2 ,...number1,];
-console.log(numbers);
+// let StudentAddress = {
+//     city : "Kohat",
+//     zipCode : 12345,
+//     village : {
+//         Home : true,
+//         dem : "yess",
+//     },
+// };
+
+// let personData = {...StudentData, ...StudentAddress};
+
+// console.log(personData);
+
+// let arr = [1, [2, [3, [4, 5, 6], 7], 8], 9];
+// let arr2 = [10, 11, 12, 13, 14];
+// let fullArr = [...arr, ...arr2];
+// console.log(fullArr.flat(4));
+
+// let obj = {
+//   myName: "Faheem",
+//   age: 22,
+//   marks: 502,
+// };
+
+// let objToArr = Object.entries(obj);
+// console.log(objToArr);
+// let toObject = Object.fromEntries(objToArr);
+// console.log(toObject);
+
+// let country = "       Pakistan";
+// let newCountry = "Pakistan          ";
+// let cuttStartSpace = country.trimStart();
+// console.log(country, country.length);
+// console.log(cuttStartSpace, cuttStartSpace.length);
+
+// console.log(newCountry, newCountry.length);
+// let cuttEndSpace = newCountry.trimEnd();
+// console.log(cuttEndSpace, cuttEndSpace.length);
+
+// let a = 50;
+// let b = 20;
+
+// console.log(a ?? b);
+
+// Opitonal Chaining Opertor
+
+// let obj = {
+//     myName : "Faheem",
+//     age : 22,
+//     address : {
+//         city : "Kohat",
+//         zipCode : 12345,
+//     },
+// };
+
+// // let newOBj = obj.address ? obj.address.newcode : "City is not Present";
+// let city = obj.address ?.zipCode ?? "City is not Present";
+
+// console.log(city)
+
+// let obj = {
+//   myName: "Faheem",
+//   age: 22,
+//   marks: 502,
+//   grade: "D",
+//   city : "Kohat",
+// };
+
+// console.log(obj.hasOwnProperty("myName"));
+// console.log(obj.hasOwnProperty("city"));
+
+// let arr = ["Faheem", "shehzad", "wasid", "shahaib", "sohail"];
+// console.log(arr);
+// // console.log(arr.toReversed())
+// console.log(arr.toSorted());
 
 
-adding Element in Array with spread Operator
-let student = ["Faheem", "wasid", "shehzad", "shahzaib"];
-student.push(...["sohail", "adil", "qashif"])
+// let numbers = [1,2 ,3 ,4, 5, 6, 7, 8, 5];
 
-console.log(student);
+// let newNumber = numbers.findLastIndex((currElem) => {
+//     return currElem;
+// });
 
-const country = "Pakistan";
-Traditional Way
-console.log(country.split(""))
-New Way
-console.log([...country]);
-*/
-// The sum of multiple number
-// Traditional Way
-/*
-let sum = (a, b, c, d, e) => {
-    return a + b + c + d + e;
-};
-
-console.log(sum(1, 2, 3, 4, 5));
-*/
-
-// New Way with Spread Operator
-/*
-let sum = (...hello) => {
-    return hello.reduce((occum, currElem) => (occum + currElem), 0);
-};
-
-console.log(sum(3, 4,));
-let sum = (...numbers) => {
-    return numbers.reduce((occum, currElem) => {
-        return occum + currElem;
-    });
-};
-console.log(sum(3,4 ));
-
-let sum = function (...number) {
-    return number.reduce((occum, currElem) => {
-        return occum + currElem;
-    });
-};
-console.log(sum(34, 3,))
-*/
-
+// console.log(newNumber);
