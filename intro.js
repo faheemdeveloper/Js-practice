@@ -1,181 +1,174 @@
-// let obj3 = {
-//   myName: "Faheem",
-//   age: 22,
-//   marks: 502,
-//   grade: "D",
+// // let promise1 = new Promise((resolve =>
+// //   setTimeout(() => resolve, 2000, "First")
+// // ));
+
+// // // let newProm = new Promise((resolve) => setTimeout(() => resolve ("First")), 2000);
+// // let promise2 = new Promise((resolve =>
+// //   setTimeout(() => resolve, 1000, "Second")
+// // ));
+// // // let promise2 = new Promise((resolve, reject) => setTimeout(() => reject, 1000, "some error accurd"));
+// // let promise3 = new Promise((resolve =>
+// //   setTimeout(() => resolve, 3000, "Third")
+// // ));
+
+// // Promise.all([promise1, promise2, promise3])
+// //   .then((res) => {
+// //     console.log(res);
+// //   })
+// //   .catch((error) => {
+// //     console.log(error);
+// //   });
+
+// // let promise1 = new Promise((resolve) => setTimeout(() => resolve, 1000, "first"));
+// // let promise2 = new Promise((resolve) => setTimeout(() => resolve, 1000, "first"));
+// // let promise3 = new Promise((resolve) => setTimeout(() => resolve, 1000, "first"));
+
+// // Promise.all([promise1, promise2, promise3])
+// //   .then((res) => {
+// //     console.log(res);
+// //   })
+// //   .catch((error) => {
+// //     console.log(error);
+// //   });
+
+// // let promise1 = new Promise((resolve) => {
+// //   setTimeout(() => {
+// //     resolve("First");
+// //   }, 2000);
+// // });
+
+// // let promise2 = new Promise((resolve) => {
+// //   setTimeout(() => {
+// //     resolve("Second");
+// //   }, 2000);
+// // });
+
+// // let promise3 = new Promise((resolve) => {
+// //   setTimeout(() => {
+// //     resolve("Third");
+// //   }, 2000);
+// // });
+
+// // Promise.all([promise1, promise2, promise3])
+// //   .then((res) => {
+// //     console.log(res);
+// //   })
+// //   .catch((error) => {
+// //     console.log(error);
+// //   });
+
+// // let promise1 = new Promise((resolve) => setTimeout(resolve, 2000, "First"));
+// // let promise2 = new Promise((resolve) => setTimeout(resolve, 2000, "Second"));
+// // let promise3 = new Promise((resolve) => setTimeout(resolve, 2000, "Third"));
+
+// // let promise1 = new Promise((resolve) => setTimeout(resolve("First")), 2000);
+// // let promise2 = new Promise((resolve) => setTimeout(resolve ("Second")), 2000);
+// // let promise3 = new Promise((resolve) => setTimeout(resolve ("Third")), 2000);
+
+// // Promise.all([promise1, promise2, promise3])
+// //   .then((res) => {
+// //     console.log(res);
+// //   })
+// //   .catch((error) => {
+// //     console.log(error);
+// // //   });
+
+// // let promise1 = new Promise((resolve) => setTimeout(resolve, 3000, "First"));
+// // let promise2 = new Promise((resolve) => setTimeout(resolve, 1000, "Second"));
+// // let promise3 = new Promise((resolve) => setTimeout(resolve, 5000, "Third"));
+
+// // Promise.race([promise1, promise2, promise3])
+// //   .then((res) => {
+// //     console.log(res);
+// //   })
+// //   .catch((error) => {
+// //     console.log(error);
+// //   });
+
+// // let firstPromise = new Promise((resolve, rejected) => {
+// //   let success = false;
+// //   if (success) {
+// //     setTimeout(() => {
+// //       resolve("Promise is fulfilled successfully");
+// //     }, 3000);
+// //   } else {
+// //     setTimeout(() => {
+// //       rejected("Promise faild while some error accurd");
+// //     }, 5000);
+// //   }
+// // });
+
+// // firstPromise
+// //   .then((res) => {
+// //     console.log(res);
+// //   })
+// //   .catch((error) => {
+// //     console.log(error);
+// //   });
+
+// let callOuter = (event) => {
+//   console.table([
+//     {
+//       Description: "I am the outer one",
+//       Target: event.target,
+//     },
+//   ]);
 // };
 
-// console.log(obj3, typeof obj3)
-
-// let myName = "Faheem";
-// let age = 22;
-// let marks = 502;
-// let grade = "D";
-
-// let obj = {myName : myName, age : age, marks : marks, grade : grade};
-// let obj2 = {myName, age, marks, grade};
-
-// console.log(obj, typeof obj);
-// console.log(obj2, typeof obj2);
-
-// let student = ["Faheem", "wasid", "shehzad", "sohail", "adil"];
-
-// // console.log(student[4])
-// [first, second, third, four, five] = student;
-// console.log(five);
-
-// let a = 10;
-// let b = 40;
-
-// console.log("a =", a, "b =", b);
-// [a, b] = [b, a];
-// console.log("a =", a, "b =", b);
-
-// let obj = {
-//   myName: "Faheem",
-//   age: 22,
-//   marks: 502,
+// let callMiddle = (event) => {
+//   console.table([
+//     {
+//       Description: "I am the Middle one",
+//       Target: event.target,
+//     },
+//   ]);
+//   // event.stopPropagation()
 // };
 
-// // const {myName, age, marks} = obj;
-// // console.log(marks)
-
-// const {myName : fullName, age : fullage, marks} = obj;
-
-// console.log(fullage);
-
-// let student = ["faheem", "wasid", "shehzad", "shahzaib"];
-// let newStudent = ["adil", "saqib", "sohail"];
-// let fullArray = [...student, ...newStudent];
-// console.log(fullArray)
-
-// let student = ["Faheem", "wasid", "shehzad", "shahzaib", "sohail"];
-// // student.push("adil");
-// student.push(...["adil", "saqib", "basit", "rizwan"]);
-
-// console.log(student);
-
-// let sum = (a, b, c, d, e, f) => {
-//   return a + b + c + d + e + f;
+// let callInner = (event) => {
+//   console.table([
+//     {
+//       Description: "I am the inner one",
+//       Target: event.target,
+//     },
+//   ]);
+//   // event.stopPropagation()
 // };
 
-// console.log(sum(1, 2, 3, 4, 5, 6));
+// document.getElementById("outer").addEventListener("click", callOuter, true);
+// document.getElementById("middle").addEventListener("click", callMiddle, true);
+// document.getElementById("inner").addEventListener("click", callInner, true);
 
-// let sum = (...numbers) => {
-//     return numbers.reduce((occum, currElem) => {
-//         return occum + currElem;
-//     });
-// };
-
-// console.log(sum(1, 2, 3, 4, 5));
-
-// function sum(...numbers) {
-//   return numbers.reduce((occum, currElem) => occum + currElem);
+// function myFunction() {
+//   return "hello";
 // }
 
-// console.log(sum(2, 3, 8));
+// let newFunction = myFunction;
 
-// let country = "pakistan";
-// let paddStart = country.padStart(15,"-");
-// let paddEnd = country.padEnd(15, "-");
+// console.log(newFunction());
 
-// console.log(paddStart, paddStart.length);
-// console.log(paddEnd, paddEnd.length);
+let promise1 = new Promise((resolve) => {
+  setTimeout(() => {
+    resolve("First");
+  });
+});
 
-// let obj1 = {a : 10, b : 20, c : 30};
-// let obj2 = {c : 40, d : 50, e : 60};
+let promise2 = new Promise((resolve) => {
+  setTimeout(() => {
+    resolve("Second");
+  }, 3000);
+});
 
-// let newObj = {...obj1, ...obj2};
-// console.log(newObj);
+let promise3 = new Promise((resolve) => {
+  setTimeout(() => {
+    resolve("Second");
+  }, 3000);
+});
 
-// let StudentData = {
-//     myName : "Faheem",
-//     age : 22,
-//     marks : 502,
-//     grade : "D",
-// };
-
-// let StudentAddress = {
-//     city : "Kohat",
-//     zipCode : 12345,
-//     village : {
-//         Home : true,
-//         dem : "yess",
-//     },
-// };
-
-// let personData = {...StudentData, ...StudentAddress};
-
-// console.log(personData);
-
-// let arr = [1, [2, [3, [4, 5, 6], 7], 8], 9];
-// let arr2 = [10, 11, 12, 13, 14];
-// let fullArr = [...arr, ...arr2];
-// console.log(fullArr.flat(4));
-
-// let obj = {
-//   myName: "Faheem",
-//   age: 22,
-//   marks: 502,
-// };
-
-// let objToArr = Object.entries(obj);
-// console.log(objToArr);
-// let toObject = Object.fromEntries(objToArr);
-// console.log(toObject);
-
-// let country = "       Pakistan";
-// let newCountry = "Pakistan          ";
-// let cuttStartSpace = country.trimStart();
-// console.log(country, country.length);
-// console.log(cuttStartSpace, cuttStartSpace.length);
-
-// console.log(newCountry, newCountry.length);
-// let cuttEndSpace = newCountry.trimEnd();
-// console.log(cuttEndSpace, cuttEndSpace.length);
-
-// let a = 50;
-// let b = 20;
-
-// console.log(a ?? b);
-
-// Opitonal Chaining Opertor
-
-// let obj = {
-//     myName : "Faheem",
-//     age : 22,
-//     address : {
-//         city : "Kohat",
-//         zipCode : 12345,
-//     },
-// };
-
-// // let newOBj = obj.address ? obj.address.newcode : "City is not Present";
-// let city = obj.address ?.zipCode ?? "City is not Present";
-
-// console.log(city)
-
-// let obj = {
-//   myName: "Faheem",
-//   age: 22,
-//   marks: 502,
-//   grade: "D",
-//   city : "Kohat",
-// };
-
-// console.log(obj.hasOwnProperty("myName"));
-// console.log(obj.hasOwnProperty("city"));
-
-// let arr = ["Faheem", "shehzad", "wasid", "shahaib", "sohail"];
-// console.log(arr);
-// // console.log(arr.toReversed())
-// console.log(arr.toSorted());
-
-
-// let numbers = [1,2 ,3 ,4, 5, 6, 7, 8, 5];
-
-// let newNumber = numbers.findLastIndex((currElem) => {
-//     return currElem;
-// });
-
-// console.log(newNumber);
+Promise.all([promise1, promise2, promise3])
+  .then((res) => {
+    console.log(res);
+  }, 3000)
+  .catch((erorr) => {
+    console.log(erorr);
+  });
