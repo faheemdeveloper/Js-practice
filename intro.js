@@ -1,279 +1,275 @@
-// // let promise1 = new Promise((resolve =>
-// //   setTimeout(() => resolve, 2000, "First")
-// // ));
+// Convert Number to in String
+/* let num = 28;
+ console.log(num, typeof String(num));
+ console.log(num, typeof (num + "")); */
 
-// // // let newProm = new Promise((resolve) => setTimeout(() => resolve ("First")), 2000);
-// // let promise2 = new Promise((resolve =>
-// //   setTimeout(() => resolve, 1000, "Second")
-// // ));
-// // // let promise2 = new Promise((resolve, reject) => setTimeout(() => reject, 1000, "some error accurd"));
-// // let promise3 = new Promise((resolve =>
-// //   setTimeout(() => resolve, 3000, "Third")
-// // ));
+// Convert String to a Number
+/* let country = "Pakistan";
+console.log(country, typeof Number(country));
+console.log(country, typeof +country);
+console.log(country, typeof parseInt(country));
+let num = 24.2;
+console.log(parseInt(num));
+console.log(parseFloat(num)); */
 
-// // Promise.all([promise1, promise2, promise3])
-// //   .then((res) => {
-// //     console.log(res);
-// //   })
-// //   .catch((error) => {
-// //     console.log(error);
-// //   });
+// let num = 0.1  + 0.2;
+// console.log(num.toFixed(1))
 
-// // let promise1 = new Promise((resolve) => setTimeout(() => resolve, 1000, "first"));
-// // let promise2 = new Promise((resolve) => setTimeout(() => resolve, 1000, "first"));
-// // let promise3 = new Promise((resolve) => setTimeout(() => resolve, 1000, "first"));
+// Logic Building using logical Operator
+// let age = 19;
+// let drivingLisence = false;
+// const logic = age >= 18 && drivingLisence ;
+// console.log(logic)
 
-// // Promise.all([promise1, promise2, promise3])
-// //   .then((res) => {
-// //     console.log(res);
-// //   })
-// //   .catch((error) => {
-// //     console.log(error);
-// //   });
-
-// // let promise1 = new Promise((resolve) => {
-// //   setTimeout(() => {
-// //     resolve("First");
-// //   }, 2000);
-// // });
-
-// // let promise2 = new Promise((resolve) => {
-// //   setTimeout(() => {
-// //     resolve("Second");
-// //   }, 2000);
-// // });
-
-// // let promise3 = new Promise((resolve) => {
-// //   setTimeout(() => {
-// //     resolve("Third");
-// //   }, 2000);
-// // });
-
-// // Promise.all([promise1, promise2, promise3])
-// //   .then((res) => {
-// //     console.log(res);
-// //   })
-// //   .catch((error) => {
-// //     console.log(error);
-// //   });
-
-// // let promise1 = new Promise((resolve) => setTimeout(resolve, 2000, "First"));
-// // let promise2 = new Promise((resolve) => setTimeout(resolve, 2000, "Second"));
-// // let promise3 = new Promise((resolve) => setTimeout(resolve, 2000, "Third"));
-
-// // let promise1 = new Promise((resolve) => setTimeout(resolve("First")), 2000);
-// // let promise2 = new Promise((resolve) => setTimeout(resolve ("Second")), 2000);
-// // let promise3 = new Promise((resolve) => setTimeout(resolve ("Third")), 2000);
-
-// // Promise.all([promise1, promise2, promise3])
-// //   .then((res) => {
-// //     console.log(res);
-// //   })
-// //   .catch((error) => {
-// //     console.log(error);
-// // //   });
-
-// // let promise1 = new Promise((resolve) => setTimeout(resolve, 3000, "First"));
-// // let promise2 = new Promise((resolve) => setTimeout(resolve, 1000, "Second"));
-// // let promise3 = new Promise((resolve) => setTimeout(resolve, 5000, "Third"));
-
-// // Promise.race([promise1, promise2, promise3])
-// //   .then((res) => {
-// //     console.log(res);
-// //   })
-// //   .catch((error) => {
-// //     console.log(error);
-// //   });
-
-// // let firstPromise = new Promise((resolve, rejected) => {
-// //   let success = false;
-// //   if (success) {
-// //     setTimeout(() => {
-// //       resolve("Promise is fulfilled successfully");
-// //     }, 3000);
-// //   } else {
-// //     setTimeout(() => {
-// //       rejected("Promise faild while some error accurd");
-// //     }, 5000);
-// //   }
-// // });
-
-// // firstPromise
-// //   .then((res) => {
-// //     console.log(res);
-// //   })
-// //   .catch((error) => {
-// //     console.log(error);
-// //   });
-
-// let callOuter = (event) => {
-//   console.table([
-//     {
-//       Description: "I am the outer one",
-//       Target: event.target,
-//     },
-//   ]);
-// };
-
-// let callMiddle = (event) => {
-//   console.table([
-//     {
-//       Description: "I am the Middle one",
-//       Target: event.target,
-//     },
-//   ]);
-//   // event.stopPropagation()
-// };
-
-// let callInner = (event) => {
-//   console.table([
-//     {
-//       Description: "I am the inner one",
-//       Target: event.target,
-//     },
-//   ]);
-//   // event.stopPropagation()
-// };
-
-// document.getElementById("outer").addEventListener("click", callOuter, true);
-// document.getElementById("middle").addEventListener("click", callMiddle, true);
-// document.getElementById("inner").addEventListener("click", callInner, true);
-
-// function myFunction() {
-//   return "hello";
+// let age = 13;
+// if (age >= 18) {
+//   console.log("Your Eligible for Vote");
+// } else {
+//     console.log("your not Eligible for Vote")
 // }
 
-// let newFunction = myFunction;
+// let age = 19;
+// let drivingLisence = false;
 
-// console.log(newFunction());
-
-// let promise1 = new Promise((resolve) => {
-//   setTimeout(() => {
-//     resolve("First");
-//   });
-// });
-
-// let promise2 = new Promise((resolve) => {
-//   setTimeout(() => {
-//     resolve("Second");
-//   }, 3000);
-// });
-
-// let promise3 = new Promise((resolve) => {
-//   setTimeout(() => {
-//     resolve("Second");
-//   }, 3000);
-// });
-
-// Promise.all([promise1, promise2, promise3])
-//   .then((res) => {
-//     console.log(res);
-//   }, 3000)
-//   .catch((erorr) => {
-//     console.log(erorr);
-//   });
-
-// CallBack function
-// function greet(name, callback) {
-//   console.log("Hello ", name);
-//   callback();
+// if (age >= 18) {
+//   if (drivingLisence) {
+//     console.log("Your Eligible for vote");
+//   } else {
+//     console.log("Your are abou 18 but driving lisence is not")
+//   }
+// } else {
+//   console.log("your not Eligible for Vote");
 // }
 
-// function saygood() {
-//   console.log("Goood bye");
+// let sum = 0;
+
+// for (let num = 1; num <= 10; num) {
+//   sum = sum + num;
 // }
 
-// greet("faheem", saygood());
+// console.log(sum);
 
-// Higher Order Function
+// Functions
+// Normail Function
 
-// function input(name, greetuser) {
-//   console.log(`Reservid Input: ${name}`);
-// }
-
-// function greetuser(name) {
-//   console.log(`Hello ${name}`);
-// }
-// input(`Faheem ${greetuser()}`);
-
-// function mathOperation(a, b, operation) {
-//   return operation(a, b);
-// }
-
-// function add(a, b) {
-//   return a + b;
-// }
-
-// console.log(mathOperation(4, 5, add))
-
-// function greet(name, callback) {
-//   console.log("hello ", name);
-//   callback();
-// }
-
-// function add() {
-//   console.log("goodbye");
-// }
-
-// greet("faheem", add);
-
-// function greet(name, hello) {
-//   console.log("hello ", name)
-//   hello()
-// }
-
-// function add() {
-//   console.log("hello gays")
-// }
-
-// greet("faheem", add)
-
-// async function myFunction() {
-//   console.log("hello Faheem");
-// }
-
-// myFunction().then((res) => {
-//   return res
-// })
-
-// function resolveAllAfter2Second() {
-//   return new Promise((resolve) => {
-//     setTimeout(() => {
-//       resolve("resolve success");
-//     }, 3000);
-//   });
-// }
-
-// async function asyncCall() {
-//   console.log("caling...");
-//   let result = await resolveAllAfter2Second();
-//   console.log(result)
-// }
-
-// asyncCall();
-
-// Using Promises
-// function fechData() {
-//   return new Promise((resolve) => {
-//     setTimeout(() => {
-//       resolve("Data Fetched");
-//     }, 3000);
-//   });
-// }
-
-// fechData().then((res) => {
-//   console.log(res)
-// }).catch((error) => {
-//   console.log(error)
-// })
-
-// Using Async await
-
-async function getData() {
-  
-try{
-  let result = await fetchData();
-}catch(error) {
-  console.log(error)
+/* function sum(a,  b) {
+    return a + b
 }
+
+console.log(sum(9, 3)) */
+
+// Function Expression
+/* let sum = function (a,  b) {
+    return a + b
 }
+ console.log(sum(3, 8))*/
+
+// Function Anonymos
+/* let sum = function (a, b) {
+  return a + b;
+};
+
+console.log(sum(3, 9)); */
+
+// Fat Arrow Function
+/* let sum = (a, b) => {
+  return a + b;
+};
+
+console.log(sum(5, 2)); */
+
+/* let result = (a, b) => {
+  let result = `the sum of ${a} and ${b} is ${a + b}`;
+  console.log(result);
+};
+
+result(3, 4); */
+
+// Anonymos Function
+/* (function(a, b) {
+    console.log( a + b);
+})(4, 5)
+
+let sum = (function(a, b) {
+    // console.log(a + b);
+    return a + b
+})
+
+console.log(sum(5, 9))
+
+let sum = function (a, b) {
+  // console.log(`The sum of ${a} and ${b} is ${a + b}`);
+  return `The sum of ${a} and ${b} is ${a + b}`;
+};
+
+console.log(sum(5, 9)); */
+
+// default Parameter
+/* let sum = (a, b = 3) => {
+    return a + b
+}
+
+console.log(sum(5)) */
+
+// Arrays
+
+/* let arr = ["Faheem", "shehzad", "wasid", "sohail", "rizwan", "adil"];
+
+let addValOnLast = arr.push("Shahzaib");
+let delFromLast = arr.pop("Shahzaib");
+const addValOnFirst = arr.unshift("Shahzeb");
+const delFromFirst = arr.shift();
+
+let slice = arr.slice(1, 4)
+let splice = arr.splice(0, 1, "Sohail")
+console.log(arr); 
+
+let arr = ["Faheem", "shehzad", "wasid", "sohail", "rizwan", "adil"];
+let cunstructor = new Array(
+  "Faheem",
+  "shehzad",
+  "wasid",
+  "sohail",
+  "rizwan",
+  "adil"
+);
+let newArr = arr.push(...["basit", "sajid"]);
+console.log(cunstructor); */
+
+//  Array Methods
+// ForEach Method and Map Method
+/*
+let arr = ["Faheem", "shehzad", "wasid", "sohail", "rizwan", "adil"];
+
+let result = arr.map((currElem, idx, arr) => {
+    // console.log(`${currElem} ${idx} ${arr}`);
+  return `${currElem} ${idx}`;
+});
+
+console.log(result, typeof result) */
+
+// find Method and Filter Method
+/*
+let number = [1, 2, 3, 4, 5, 6, 7, 8];
+
+let result = number.filter((currElem) => {
+  return currElem >= 2;
+});
+
+console.log(result); */
+
+// Reduce Method
+
+// let arr = [1, 3];
+
+// const result = arr.reduce((occum, currElem) => {
+//   return occum + currElem;
+// });
+
+// console.log(result);
+
+// Include Method
+/*
+let arr = [1, 2, 3, 4, 5];
+const result = arr.includes();
+console.log(result);
+
+let arr = [
+  "wasid",
+  "sohail",
+  "shehzad",
+  "shahzaib",
+  "adil",
+  "saqib",
+  "basit",
+  "rizwan",
+];
+
+console.log(arr.includes("nizam")); */
+/*
+let value = 4;
+let arr = [1,2, 3, 4, 5, 4, 6, 3, 4, 5, 6, 7, 2];
+
+let result = arr.filter((currElem) => {
+    return currElem != value;
+})
+
+console.log(result)
+
+let obj = [
+  { proName: "smartWatch", price: 900 },
+  { proName: "Tablet", price: 700 },
+  { proName: "Iphone 14", price: 300 },
+  { proName: "Sumsang Ultra", price: 100 },
+  { proName: "Laptop", price: 200 },
+];
+
+let result = obj.filter((currElem) => {
+  return currElem.price >= 400;
+});
+
+console.log(result); */
+
+// new Method and sort Method
+/*
+let arr = ["faheem", "wasid", "sohail", "shehzad","shahzaib","shahzain", "rizwan"];
+
+let num = [1, 2, 3, 4, 5, 6, 7];
+
+console.log(new Set(num))
+console.log(num)
+
+let abc = ["a", "c", "b", "e", "d", "g", "f", "h", "i"];
+
+let reverse = abc.reverse();
+console.log(reverse)
+let sortedValue = reverse.sort()
+console.log(sortedValue) */
+
+// let num = [1, 2, 3, 4, 5, 6, 7];
+
+// num.sort((a,b) => {
+//   if(a > b) return -1;
+//   if(b > a) return 1;
+// });
+// console.log(num)
+
+// let numbers = [1, 2, 3, 4, 5, 6, 7];
+// console.log(numbers.reverse())
+
+// Strings
+let str = "Hello JavaScript welcome to world best Javascript";
+
+// let checkIndexOfWord = str.indexOf("J");
+// let lastIndexOf = str.lastIndexOf("J");
+// let checknumber = str.includes("welcome");
+// let search = str.search(/j/i);  /*his also Return index*/
+// let match = str.match(/javascript/i);
+// const matchAll = str.matchAll("Java")
+// const split = str.split("")
+// const withspread = [...str]
+
+// console.log(checkIndexOfWord);
+// console.log(lastIndexOf);
+// console.log(checknumber);
+// console.log(search);
+// console.log(match)
+// console.log(...matchAll)
+// console.log(split)
+// console.log(withspread)
+
+// let country = "Pakistan";
+// let strArr = country.split(",").reverse().join
+// console.log(strArr)
+
+// for(let char = 97 ; char <= 122 ; char++) {
+//   console.log(String.fromCharCode(char))
+// }
+
+// console.log(Math.round(4.5)); 
+// console.log(Math.floor(4.9));
+// console.log(Math.ceil(4.1));
+// console.log(Math.abs(4.5));
+// console.log(Math.trunc(4.9));
+// console.log(Math.sqrt(7).toFixed(1));
+
