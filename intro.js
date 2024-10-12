@@ -136,3 +136,244 @@ console.log("a >= b", a >= b);
 console.log("a <= b", a <= b);
 */
 
+// let num = 45;
+// console.log(typeof String(num));
+// console.log(typeof (num + ""));
+// let str = "Faheem";
+// console.log(typeof Number(str));
+// console.log(typeof +(str));
+
+// let numbers = 45.3;
+// console.log(parseFloat(numbers));
+// console.log(parseInt(numbers));
+
+// let num = 0.1 + 0.2;
+// console.log(num.toFixed(1));
+
+// let str = "Faheem";
+// console.log(isNaN(str));
+
+// let isFollow = true;
+// let toStr = +(isFollow);
+// console.log(isFollow, typeof isFollow);
+// console.log(toStr, typeof toStr);
+
+// let num = 0;
+// let toBool = Boolean(num);
+// console.log(num, typeof num);
+// console.log(toBool, typeof toBool);
+
+// let score = 63;
+
+// let result = (score >= 60 && "Pass") || "Fail";
+// console.log(result);
+
+// let num = undefined;
+// let num2 = 40;
+
+// let result = num ?? num2;
+// console.log(result);
+
+// const { length } = "JavaScript";
+// console.log(length);
+
+// let arr = ["Faheem", "shehzad", "wasid"];
+// [, , third] = arr;
+// console.log(third);
+// console.log(arr);
+
+// let a = 29;
+// let b = 20;
+// [a, b] = [b, a];
+// console.log(a, b);
+
+// const obj = {
+//   myName: "Faheem",
+//   age: 22,
+//   marks: 502,
+//   grade: "D",
+// };
+// const {myName, age, marks, grade} = obj;
+// console.log(myName)
+
+// const obj = {
+//   myName: "Faheem",
+//   age: 22,
+//   marks: 502,
+//   grade: "D",
+// };
+// const { myName: fullName, age, marks, grade } = obj;
+// console.log(fullName);
+
+// let arr = ["Faheem", "shehzad", "wasid", "sohail"];
+// let newArr = [...arr];
+// console.log(newArr);
+
+// let arr = ["Faheem", "shehzad", "wasid", "sohail"];
+// let arr3 = ["adil", "saqib"];
+// let fullArr = [...arr, ...arr3];
+// console.log(fullArr);
+
+// let sum = (...number) => {
+//   return number.reduce((occum, currElem) => {
+//     return occum + currElem;
+//   });
+// };
+
+// console.log(sum(4, 3, 4, 3));
+
+// let arr = [1, [2, [3, [4, [5], 6], 7], 8], 9];
+// console.log(arr.flat(4));
+
+// let country = "Pakistan";
+// console.log(country);
+
+// let obj1 = { a: 10, b: 30 };
+// let obj2 = { c: 40, d: 50 };
+// let fullObj = { ...obj1, ...obj2 };
+// console.log(fullObj);
+
+// let num = 1;
+// let toBool = Boolean(num);
+// console.log(toBool);
+//
+// ************************** Comparison Operator **************************
+// console.log(null > 0);
+// console.log(null == 0);
+// console.log(null >= 0);
+
+// let myName = "Faheem";
+
+// let myfullName = myName;
+// myfullName = "M_Faheem";
+
+// console.log(myfullName);
+// console.log(myName);
+
+// let myName = new String("Faheem");
+// console.log(myName, typeof myName);
+
+// let num = new Number(400);
+// console.log(num)
+
+// let number = 123.8966;
+
+// console.log(number.toPrecision(3));
+
+// let number = 10000000;
+// console.log(number.toLocaleString("en-US"));
+
+// let myemail = "info@gmail.com";
+// let myEmail = myemail;
+
+// myEmail = "faheem@gmail.com";
+// console.log(myemail);
+// console.log(myEmail);
+
+// let obj = {
+//   myName: "Faheem",
+//   email: "info@gmail.com",
+// };
+
+// let myOBj = obj;
+// obj.email = "faheem@gmail.com";
+// console.log(obj);
+// console.log(myOBj);
+
+// let str = "hello javaScript welcome\nto javascript course";
+
+// console.log(str.toLowerCase())
+// console.log(str.replace("s", "S"));
+// console.log(str.slice(0, 6));
+// console.log(str.lastIndexOf("c"));
+// console.log(str.charAt(7));
+// console.log(str.includes("R")) //true or false value return
+// console.log(str.lastIndexOf("course"))
+// console.log(str.match(/Javascript/i));
+// console.log(str.matchAll()) ?????
+// console.log(Array.from(str));
+// console.log(str.split(","));
+
+// let str = "hello javaScript \"welcome\" to javascript\n course";
+// console.log(str);
+// let str = "Hello\t world";
+// console.log(str);
+
+// let str = "hello javaScript welcome to javascript course";
+
+// // console.log(str.matchAll("javascript"));
+// console.log(str.toreverse());
+
+// let dive = document.querySelector(".watch");
+
+// function dateTime() {
+//   let time = new Date().toLocaleTimeString();
+//   dive.innerHTML = time;
+// }
+// setInterval(dateTime);
+
+// let str = "Hello javaScript welcome to java script course";
+// console.log(Array.from(str));
+// console.log(str.split(","));
+
+// let num = 48.4;
+// console.log(parseInt(num));
+// console.log(parseFloat(num), typeof num);
+
+// let num = new Number(400);
+// console.log(num);
+
+// let num = Number.MAX_SAFE_INTEGER
+// let num = Number.MIN_SAFE_INTEGER
+// let num = Number.MIN_VALUE
+// let num = Number.NEGATIVE_INFINITY
+// let num = Number.POSITIVE_INFINITY
+// console.log(num);
+
+// *********************************** Math Objects ***********************************
+
+// console.log(Math.trunc(42.9))
+// let math = new Math;
+// console.log(math)
+
+//
+
+// let min = 10;
+// let max = 20;
+
+// console.log(Math.floor(Math.random() * (max - min + 1) + min));
+
+// console.log(Math.round(Math.random() * 10 + 1));
+
+// const str = "JavaScript";
+// console.log(str.slice(-5, -0));
+
+// let str = "Hello javaScript welcome to world best javaScript course";
+// console.log(str.match(/javascript/ig));
+// console.log(str.match(/javascript/i));
+// const country = "Pakistan";
+// console.log(country.padStart(40).length);
+// console.log(country.trim().length);
+// let country = "Pakistan";
+// console.log(Array.from(country));
+// const str = "Hello World";
+// console.log(str.repeat());
+
+// let min = 40;
+
+// let div = document.querySelector(".watch");
+
+// const dateTime = () => {
+//   let time = new Date().toLocaleTimeString();
+//   div.innerHTML = time;
+// };
+
+// setInterval(dateTime);
+
+// let num1 = -4.9;
+// let num2 = -4.9;
+
+// console.log(Math.floor(num1));
+// console.log(Math.trunc(num2)); ✔
+
+
