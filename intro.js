@@ -376,4 +376,134 @@ console.log("a <= b", a <= b);
 // console.log(Math.floor(num1));
 // console.log(Math.trunc(num2)); ✔
 
+// let arr = ["Faheem", "wasid", "shehzad", "adil"];
+// arr.push("sohail", "shahzaib");
+// let include = arr.includes("Adil");
+
+// *********************************** Date and Time ***********************************
+
+// let currDateTime = new Date();
+
+// ++++++++++++ Getting Method ++++++++++++
+/*
+console.log(currDateTime.getDate());
+console.log(currDateTime.getMonth());
+console.log(currDateTime.getFullYear());
+console.log(currDateTime.getDay());
+console.log(currDateTime.getDate());
+console.log(currDateTime.getHours());
+console.log(currDateTime.getMinutes());
+console.log(currDateTime.getSeconds());
+*/
+
+// ++++++++++++ Set Method ++++++++++++
+/*
+let setDate = new Date(1729243780372);
+console.log(currDateTime.setDate(18));
+console.log(setDate);
+let setMonth = new Date(1752831045122);
+console.log(currDateTime.setMonth(18));
+console.log(setMonth);
+console.log(currDateTime.setFullYear(2026));
+let setyear = new Date(1791883991921);
+console.log(setyear)
+console.log(currDateTime.setHours(4));
+let setHour = new Date(1728819284512);
+console.log(setHour);
+console.log(currDateTime.setMinutes(30));
+let setMinut = new Date(1728811801310);
+console.log(setMinut)
+console.log(currDateTime.setSeconds(30));
+let setsecond = new Date(1728812250393);
+console.log(setsecond);
+
+let dateTime = Date.now();
+console.log(dateTime);
+let newDate = new Date(1728812425349);
+console.log(newDate);
+
+let currDate = new Date();
+console.log(String(currDate));
+*/
+
+
+// *********************************** Arrays ***********************************
+
+// let arr = [1, 2, 3, 4, 5, 6, 7, 8];
+// let arr2 = new Array(1, 2, 3, 4, 5, 6, 7, 8);
+// console.log(arr);
+// console.log(arr2);
+
+// const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+// [a, b, c, d, e, f, g, h, i] = arr;
+// console.log(h);
+
+// ++++++++++++ Concate with concate method ++++++++++++
+
+// let student = ["Faheem", "wasid", "shehzad", "shahzaib", "adil"];
+// let student2 = ["sohail", "saqib"];
+// let students = student.concat(student2);
+// console.log(students);
+
+// ++++++++++++ Concate with spread method ++++++++++++
+
+// let student= ["Faheem", "wasid", "shehzad", "shahzaib", "adil"];
+// let student2 = ["sohail", "saqib"];
+// let students = [...student, ...student2];
+// console.log(students);
+
+// ++++++++++++ Adding values in Array ++++++++++++
+
+// let student = ["Faheem", "wasid", "shehzad", "shahzaib", "adil"];
+// student.push("Sohail");
+// student.unshift("Rizwan");
+// student.pop();
+// student.shift();
+// console.log(student);
+
+// let student = [
+//   "Faheem",
+//   "wasid",
+//   "shehzad",
+//   "shahzaib",
+//   "adil",
+//   "sohail",
+//   "rizwan",
+// ];
+
+// let student2 = ["muzamil", "nizam", "inam"];
+// console.log(student.includes("Wasid"));
+// console.log(student.at(-2));
+
+// console.log("A", student.slice(0, 4));
+// console.log("B", student.splice(0, 4));
+// console.log(student);
+
+// console.log(student.lastIndexOf("sohail"));
+// console.log(student[3]);
+// let newArr = [...student];
+// let newArr = student.toString();
+// let newArr = student.join();
+// let fullArr = student.push(student2);
+
+// console.log(newArr, typeof newArr);
+// console.log(fullArr)
+
+// let arr = [1, [2, [3], 4, 5, 6, 7]];
+// console.log(arr.flat(Infinity))
+// let score1 = 100;
+// let score2 = 200;
+// let score3 = 300;
+// let score4 = 400;
+
+// let fullArr = Array.of(score1, score2, score3, score4);
+// console.log(fullArr);
+
+// let arr = [1, 2, 3, 4, 5, 6, 7, 3];
+// // const result = arr.forEach((currElem, occum) => {
+// //   console.log(currElem);
+// // });
+// let str = "Pakistan"
+
+// console.log(Array.isArray(arr));
 
