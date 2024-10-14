@@ -520,6 +520,12 @@
 // console.log(student.toReversed());
 // */
 
+let arr = [1, 2, 3, 4, 5, 6, 7, 8];
+let result = arr.reduce((currElem, index) => {
+  return currElem + index;
+});
+
+console.log(result);
 // // *********************************** objects ***********************************
 /*
 let sym = Symbol("myKey1")
@@ -579,4 +585,24 @@ let obj2 = { c: "c", d: "d" };
 let fullArr = Object.assign({}, obj1, obj2);
 let fullArr = { ...obj1, ...obj2 };      
 console.log(fullArr);
+
+
+let obj = {
+  myName: "Faheem",
+  age: 22,
+  loc: "Kohat",
+  grade: "D",
+};
+
+console.log(Object.entries(obj));
+obj["job"] = "Web Developer"
+obj["myName"] = "M_Faheem"
+console.log(obj)
+console.log(obj);
+
+obj.greet = () => {
+  console.log(`myName is ${obj.myName}`);
+};
+
+console.log(obj.greet());
 */
