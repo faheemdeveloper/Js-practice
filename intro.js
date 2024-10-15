@@ -793,58 +793,119 @@ let result2 = addNum(10, 2);
 */
 
 // *********************************** Arrow Function ***********************************
+/*
+let chai = (num, num2) => {
+  return `the sum of ${num} and ${num2} is ${num + num2}`;
+};
+console.log(chai(3, 4));
 
-// let chai = (num, num2) => {
-//   return `the sum of ${num} and ${num2} is ${num + num2}`;
-// };
-// console.log(chai(3, 4));
+let sum = (num, num2) => num + num2;
 
-// let sum = (num, num2) => num + num2;
+console.log(sum(3, 9));
 
-// console.log(sum(3, 9));
+let arr = [1, 2];
+let sumOfArr = arr.reduce((ocum, currElem) => ocum + currElem);
+console.log(sumOfArr)
 
-// let arr = [1, 2];
-// let sumOfArr = arr.reduce((ocum, currElem) => ocum + currElem);
-// console.log(sumOfArr)
+let sum = (...num) => {
+  return num.reduce((ocum, currElem) => {
+    return (ocum = ocum + currElem);
+  }, 0);
+};
 
-// let sum = (...num) => {
-//   return num.reduce((ocum, currElem) => {
-//     return (ocum = ocum + currElem);
-//   }, 0);
-// };
+console.log(sum(3, 8, 9));
 
-// console.log(sum(3, 8, 9));
+let thisKeyWord = () => {
+  console.log(this);
+};
 
-// let thisKeyWord = () => {
-//   console.log(this);
-// };
+thisKeyWord()
 
-// thisKeyWord()
+let sum = (num, num2) => ({ username: "Faheem" }, num + num2);
+console.log(sum(4, 5));
 
-// let sum = (num, num2) => ({ username: "Faheem" }, num + num2);
-// console.log(sum(4, 5));
+let objectFunction = (newObject) => {
+  return newObject;
+};
 
-// let objectFunction = (newObject) => {
-//   return newObject;
-// };
+console.log(
+  objectFunction({
+    myName: "Faheem",
+    age: 22,
+    marks: 502,
+    job: "Web Developer",
+  })
+);
 
-// console.log(
-//   objectFunction({
-//     myName: "Faheem",
-//     age: 22,
-//     marks: 502,
-//     job: "Web Developer",
-//   })
-// );
+let obj = {
+  myname: "Faheem",
+  job: "Web developer",
+  obj2: {
+    loc: "kohat",
+    village: "Gandiayly",
+  },
+};
 
-// let obj = {
-//   myname: "Faheem",
-//   job: "Web developer",
-//   obj2: {
-//     loc: "kohat",
-//     village: "Gandiayly",
-//   },
-// };
+obj.obj2["age"] = 22;
+console.log(obj.obj2);
 
-// obj.obj2["age"] = 22;
-// console.log(obj.obj2);
+let sumof = (num) => {
+  return `Hello ${num} Welcome to my Website`;
+};
+console.log(sumof("wasid"));
+
+let sum = ((num) => {
+  console.log(`Hello ${num} Welcome to my webite`);
+})("faheem");
+
+let sum = (a, b) => {
+  return `the sum of ${a} and ${b} is ${a + b}`;
+};
+console.log(sum(4, 4))
+
+(function one() {
+  console.log (`function one is connected`);
+})();
+
+(function two(num) {
+  console.log( `Hello ${num} welcome to my website`)
+})("wasid");
+
+let theSum = (num) => {
+  let website = "You tube";
+  console.log(website);
+  return `Hello ${num}`;
+};
+
+console.log(theSum("Faheem"));
+*/
+
+// let score = prompt("Enter you number and see your Grade");
+// let Grade;
+// if (score >= 89 && score <= 100) {
+//   Grade = "A";
+// } else if (score >= 70 && score <= 88) {
+//   Grade = "B";
+// } else if (score >= 59 && score <= 69) {
+//   Grade = "C";
+// } else if (score >= 50 && score <= 58) {
+//   Grade = "D";
+// } else if (score >= 35 && score <= 49) {
+//   Grade = "E";
+// }
+
+// console.log(Grade);
+
+// let age = 19;
+// let drivingLicense = true;
+
+// if (age >= 18) {
+//   console.log("you are 18 above");
+//   if (drivingLicense) {
+//     console.log("You are eligible for Vote");
+//   }
+// } else {
+//   console.log("you are not eligible for Vote");
+// }
+
+
