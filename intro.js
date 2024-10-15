@@ -382,150 +382,149 @@
 
 // // *********************************** Date and Time ***********************************
 
-// // let currDateTime = new Date();
+// let currDateTime = new Date();
 
-// // ++++++++++++ Getting Method ++++++++++++
-// /*
-// console.log(currDateTime.getDate());
-// console.log(currDateTime.getMonth());
-// console.log(currDateTime.getFullYear());
-// console.log(currDateTime.getDay());
-// console.log(currDateTime.getDate());
-// console.log(currDateTime.getHours());
-// console.log(currDateTime.getMinutes());
-// console.log(currDateTime.getSeconds());
-// */
+// ++++++++++++ Getting Method ++++++++++++
+/*
+console.log(currDateTime.getDate());
+console.log(currDateTime.getMonth());
+console.log(currDateTime.getFullYear());
+console.log(currDateTime.getDay());
+console.log(currDateTime.getDate());
+console.log(currDateTime.getHours());
+console.log(currDateTime.getMinutes());
+console.log(currDateTime.getSeconds());
+*/
 
-// // ++++++++++++ Set Method ++++++++++++
-// /*
-// let setDate = new Date(1729243780372);
-// console.log(currDateTime.setDate(18));
-// console.log(setDate);
-// let setMonth = new Date(1752831045122);
-// console.log(currDateTime.setMonth(18));
-// console.log(setMonth);
-// console.log(currDateTime.setFullYear(2026));
-// let setyear = new Date(1791883991921);
-// console.log(setyear)
-// console.log(currDateTime.setHours(4));
-// let setHour = new Date(1728819284512);
-// console.log(setHour);
-// console.log(currDateTime.setMinutes(30));
-// let setMinut = new Date(1728811801310);
-// console.log(setMinut)
-// console.log(currDateTime.setSeconds(30));
-// let setsecond = new Date(1728812250393);
-// console.log(setsecond);
+// ++++++++++++ Set Method ++++++++++++
+/*
+let setDate = new Date(1729243780372);
+console.log(currDateTime.setDate(18));
+console.log(setDate);
+let setMonth = new Date(1752831045122);
+console.log(currDateTime.setMonth(18));
+console.log(setMonth);
+console.log(currDateTime.setFullYear(2026));
+let setyear = new Date(1791883991921);
+console.log(setyear)
+console.log(currDateTime.setHours(4));
+let setHour = new Date(1728819284512);
+console.log(setHour);
+console.log(currDateTime.setMinutes(30));
+let setMinut = new Date(1728811801310);
+console.log(setMinut)
+console.log(currDateTime.setSeconds(30));
+let setsecond = new Date(1728812250393);
+console.log(setsecond);
 
-// let dateTime = Date.now();
-// console.log(dateTime);
-// let newDate = new Date(1728812425349);
-// console.log(newDate);
+let dateTime = Date.now();
+console.log(dateTime);
+let newDate = new Date(1728812425349);
+console.log(newDate);
 
-// let currDate = new Date();
-// console.log(String(currDate));
-// */
+let currDate = new Date();
+console.log(String(currDate));
+*/
 
 // // *********************************** Arrays ***********************************
-// /*
-// let arr = [1, 2, 3, 4, 5, 6, 7, 8];
-// let arr2 = new Array(1, 2, 3, 4, 5, 6, 7, 8);
-// console.log(arr);
-// console.log(arr2);
+/*
+let arr = [1, 2, 3, 4, 5, 6, 7, 8];
+let arr2 = new Array(1, 2, 3, 4, 5, 6, 7, 8);
+console.log(arr);
+console.log(arr2);
 
-// const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
-// [a, b, c, d, e, f, g, h, i] = arr;
-// console.log(h);
-// */
-// // ++++++++++++ Concate with concate method ++++++++++++
-// /*
-// let student = ["Faheem", "wasid", "shehzad", "shahzaib", "adil"];
-// let student2 = ["sohail", "saqib"];
+const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+[a, b, c, d, e, f, g, h, i] = arr;
+console.log(h);
 
-// let students = student.concat(student2);
-// console.log(students);
+// ++++++++++++ Concate with concate method ++++++++++++
+/*
+let student = ["Faheem", "wasid", "shehzad", "shahzaib", "adil"];
+let student2 = ["sohail", "saqib"];
 
-// ++++++++++++ Concate with spread method ++++++++++++
+let students = student.concat(student2);
+console.log(students);
 
-// let student= ["Faheem", "wasid", "shehzad", "shahzaib", "adil"];
-// let student2 = ["sohail", "saqib"];
-// let students = [...student, ...student2];
-// console.log(students);
+++++++++++++ Concate with spread method ++++++++++++
 
-// ++++++++++++ Adding values in Array ++++++++++++
+let student= ["Faheem", "wasid", "shehzad", "shahzaib", "adil"];
+let student2 = ["sohail", "saqib"];
+let students = [...student, ...student2];
+console.log(students);
 
-// let student = ["Faheem", "wasid", "shehzad", "shahzaib", "adil"];
-// student.push("Sohail");
-// student.unshift("Rizwan");
-// student.pop();
-// student.shift();
-// console.log(student);
+++++++++++++ Adding values in Array ++++++++++++
 
-// let student = [
-//   "Faheem",
-//   "wasid",
-//   "shehzad",
-//   "shahzaib",
-//   "adil",
-//   "sohail",
-//   "rizwan",
-// ];
+let student = ["Faheem", "wasid", "shehzad", "shahzaib", "adil"];
+student.push("Sohail");
+student.unshift("Rizwan");
+student.pop();
+student.shift();
+console.log(student);
 
-// let student2 = ["muzamil", "nizam", "inam"];
-// console.log(student.includes("Wasid"));
-// console.log(student.at(-2));
+let student = [
+  "Faheem",
+  "wasid",
+  "shehzad",
+  "shahzaib",
+  "adil",
+  "sohail",
+  "rizwan",
+];
 
-// console.log("A", student.slice(0, 4));
-// console.log("B", student.splice(0, 4));
-// console.log(student);
+let student2 = ["muzamil", "nizam", "inam"];
+console.log(student.includes("Wasid"));
+console.log(student.at(-2));
 
-// console.log(student.lastIndexOf("sohail"));
-// console.log(student[3]);
-// let newArr = [...student];
-// let newArr = student.toString();
-// let newArr = student.join();
-// let fullArr = student.push(student2);
+console.log("A", student.slice(0, 4));
+console.log("B", student.splice(0, 4));
+console.log(student);
 
-// console.log(newArr, typeof newArr);
-// console.log(fullArr)
+console.log(student.lastIndexOf("sohail"));
+console.log(student[3]);
+let newArr = [...student];
+let newArr = student.toString();
+let newArr = student.join();
+let fullArr = student.push(student2);
 
-// let arr = [1, [2, [3], 4, 5, 6, 7]];
-// console.log(arr.flat(Infinity))
-// let score1 = 100;
-// let score2 = 200;
-// let score3 = 300;
-// let score4 = 400;
+console.log(newArr, typeof newArr);
+console.log(fullArr)
 
-// let fullArr = Array.of(score1, score2, score3, score4);
-// console.log(fullArr);
+let arr = [1, [2, [3], 4, 5, 6, 7]];
+console.log(arr.flat(Infinity))
+let score1 = 100;
+let score2 = 200;
+let score3 = 300;
+let score4 = 400;
 
-// let arr = [1, 2, 3, 4, 5, 6, 7, 3];
-// const result = arr.forEach((currElem, occum) => {
-//   console.log(currElem);
-// });
-// let str = "Pakistan"
+let fullArr = Array.of(score1, score2, score3, score4);
+console.log(fullArr);
 
-// console.log(Array.isArray(arr));
+let arr = [1, 2, 3, 4, 5, 6, 7, 3];
+const result = arr.forEach((currElem, occum) => {
+  console.log(currElem);
+});
+let str = "Pakistan"
 
-// let student = [
-//   "Faheem",
-//   "wasid",
-//   "shehzad",
-//   "shahzaib",
-//   "adil",
-//   "sohail",
-//   "rizwan",
-// ];
+console.log(Array.isArray(arr));
 
-// console.log(student.toReversed());
-// */
+let student = [
+  "Faheem",
+  "wasid",
+  "shehzad",
+  "shahzaib",
+  "adil",
+  "sohail",
+  "rizwan",
+];
+
+console.log(student.toReversed());
 
 let arr = [1, 2, 3, 4, 5, 6, 7, 8];
 let result = arr.reduce((currElem, index) => {
   return currElem + index;
 });
-
-console.log(result);
+*/
+// console.log(result);
 // // *********************************** objects ***********************************
 /*
 let sym = Symbol("myKey1")
@@ -605,4 +604,247 @@ obj.greet = () => {
 };
 
 console.log(obj.greet());
+
+let score1 = 200;
+let score2 = 300;
+let score3 = 400;
+let score4 = 500;
+let score5 = 600;
+let score6 = 700;
+
+let fullarr = Array.of(score1, score2, score3, score4, score5, score6);
+console.log(fullarr);
 */
+
+// // *********************************** Functions ***********************************
+/*
+function addsum(num1, num2) {
+  return `the sum of ${num1} and ${num2} is ${num1 + num2}`;
+}
+
+console.log(addsum(3, 4));
+
+function one() {
+  const username = "Faheem";
+  function Two() {
+    const course = "JavaScipt";
+    console.log(course);
+    console.log(username);
+  }
+  // console.log(course);
+  Two();
+}
+one();
+
+let userName = "Faheem";
+function userLoggedIN() {
+  return `The userName is ${userName}`;
+}
+
+console.log(userLoggedIN());
+
+function userJustLoggedIn(username) {
+  if (username === undefined) {
+    console.log("please enter the username");
+    return;
+  }
+  return `${username} is just logged in`;
+}
+
+console.log(userJustLoggedIn("wasid"));
+
+function theSumOfMultiNumbers(...num) {
+  return num;
+}
+console.log(theSumOfMultiNumbers(40, 22, 400, 200, 500, 600));
+
+let user = {
+  myName: "Faheem",
+  price: 200,
+};
+
+function theSum(anyObject) {
+  return `user name is ${anyObject.myName} and pirce is ${anyObject.price}`;
+}
+
+console.log(theSum(user));
+
+function objectFunction(Obj) {
+  return `the user name is ${Obj.myName} and price is ${Obj.price}`;
+}
+
+console.log(
+  objectFunction({
+    myName: "Faheem",
+    price: 200,
+  })
+);
+
+let arr = [100, 200, 300, 400, 500, 600];
+
+function arrFunction(ArrHere) {
+  return ArrHere[2];
+}
+console.log(arrFunction(arr));
+
+function arrFunction(arrF) {
+  return arrF;
+}
+console.log(arrFunction([100, 200, 300, 400, 500, 600]));
+
+function checkName(name) {
+  return `Hello ${name} Welcome to my Website`;
+}
+
+console.log(checkName("Faheem"));
+
+let checkFunc = (name1) => {
+  console.log(`Hello ${name1} Welcome to my Website`);
+};
+
+checkFunc("wasid");
+
+(function (a, b) {
+  console.log(a + b);
+})(5, 5);
+
+const theSumOfTwoNumbers = (function (a, b) {
+  return a + b;
+})
+
+console.log(theSumOfTwoNumbers(5, 3));
+
+const TheSumOf = (a, b) => {
+  return a + b;
+};
+
+console.log(TheSumOf(3, 4));
+
+function checkUsername(username) {
+  if (!username) {
+    console.log("please Enter the username");
+    return;
+  }
+  return `${username} is just logged in`;
+}
+
+console.log(checkUsername("Wasid"));
+*/
+// *********************************** Scops ***********************************
+/*
+let a = 100;
+const b = 200;
+var c = 300;
+
+if(true) {
+  let a = 10;
+  const b = 20;
+  var c = 30;
+  console.log("let inner:", a)
+  console.log("const inner:", b)
+  console.log("var inner:", c)
+}
+console.log("let outer: ", a);
+console.log("const outer: ", b);
+console.log("var outer: ", c);
+
+function one() {
+  let username = "Faheem";
+  function Two() {
+    let website = "Youtube.com";
+    console.log(username)
+    // console.log(website)
+  }
+  // console.log(website);
+  Two();
+}
+
+one();
+
+if (true) {
+  const usernmae = "faheem";
+  if (usernmae === "faheem") {
+    const website = "youtube";
+    console.log(`${usernmae} ${website}`);
+  }
+  // console.log(website)
+}
+// console.log(usernmae)
+
+const obj = {
+  myName: "Faheem",
+  age: 22,
+  greet: function () {
+    console.log(this);
+  },
+};
+
+console.log(obj.greet());
+
+let val1 = 10;
+let val2 = 5;
+function addNum(num1, num2) {
+  let total = num1 + num2;
+  return total;
+}
+
+let result1 = addNum(val1, val2);
+let result2 = addNum(10, 2);
+*/
+
+// *********************************** Arrow Function ***********************************
+
+// let chai = (num, num2) => {
+//   return `the sum of ${num} and ${num2} is ${num + num2}`;
+// };
+// console.log(chai(3, 4));
+
+// let sum = (num, num2) => num + num2;
+
+// console.log(sum(3, 9));
+
+// let arr = [1, 2];
+// let sumOfArr = arr.reduce((ocum, currElem) => ocum + currElem);
+// console.log(sumOfArr)
+
+// let sum = (...num) => {
+//   return num.reduce((ocum, currElem) => {
+//     return (ocum = ocum + currElem);
+//   }, 0);
+// };
+
+// console.log(sum(3, 8, 9));
+
+// let thisKeyWord = () => {
+//   console.log(this);
+// };
+
+// thisKeyWord()
+
+// let sum = (num, num2) => ({ username: "Faheem" }, num + num2);
+// console.log(sum(4, 5));
+
+// let objectFunction = (newObject) => {
+//   return newObject;
+// };
+
+// console.log(
+//   objectFunction({
+//     myName: "Faheem",
+//     age: 22,
+//     marks: 502,
+//     job: "Web Developer",
+//   })
+// );
+
+// let obj = {
+//   myname: "Faheem",
+//   job: "Web developer",
+//   obj2: {
+//     loc: "kohat",
+//     village: "Gandiayly",
+//   },
+// };
+
+// obj.obj2["age"] = 22;
+// console.log(obj.obj2);
