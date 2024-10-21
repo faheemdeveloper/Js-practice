@@ -582,7 +582,7 @@ console.log(toObj);
 let obj1 = { a: "a", b: "b" };
 let obj2 = { c: "c", d: "d" };
 let fullArr = Object.assign({}, obj1, obj2);
-let fullArr = { ...obj1, ...obj2 };      
+let fullArr = { ...obj1, ...obj2 };
 console.log(fullArr);
 
 
@@ -944,7 +944,7 @@ if (age >= 18) {
 //   console.log("Number is Odd")
 // }
 
-// let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12  ];
+// let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
 
 // let result = arr.map((curr) => {
 //   if (curr % 2 === 0) {
@@ -1148,3 +1148,258 @@ if (age >= 18) {
 // for (let [item, value] of key) {
 //   console.log(`${item} :=> ${value}`);
 // }
+
+// for(let i = 0 ; i <= 100 ; i++) {
+//   if(i % 2 !== 0)
+//     console.log(i)
+// }
+
+// for (let index = 0; index <= 20; index++) {
+//   if (index == 10) {
+//     console.log("10 is detected");
+//     break;
+//   }
+//   console.log(index);
+// }
+
+// let map = new Map();
+// map.set("myName", "Faheem");
+// map.set("age", 22);
+// map.set("marks", 502);
+// map.set("Grade", "D");
+// map.set("location", "Kohat");
+
+// for(let [index, value] of map) {
+//   console.log(`${index} :=> ${value}`)
+// }
+
+// let obj = {
+//   myName: "Faheem",
+//   age: 22,
+//   marks: 502,
+//   Grade: "D",
+// };
+
+// for (let index in obj) {
+//   console.log(`${index} :=> ${obj[index]}`);
+// }
+
+// let month = 3;
+
+// switch (month) {
+//   case 1:
+//     console.log("January");
+//     break;
+//   case 2:
+//     console.log("Februry");
+//     break;
+
+//   case 3:
+//     console.log("March");
+//     break;
+
+//   case 4:
+//     console.log("April");
+//     break;
+
+//   case 5:
+//     console.log("May");
+//     break;
+
+//   case 6:
+//     console.log("Juon");
+//     break;
+
+//   default:
+//     console.log("no condition match");
+//     break;
+// }
+
+// let month = 4;
+
+// switch (month) {
+//   case 1:
+//     console.log("January");
+//     break;
+//   case 2:
+//     console.log("Februry");
+//     break;
+//   case 3:
+//     console.log("March");
+//     break;
+//   case 4:
+//     console.log("April");
+//     break;
+//   case 5:
+//     console.log("May");
+//     break;
+//   default:
+//     console.log("Now Condition Match");
+//     break;
+// }
+
+// if (0 ===  "0") {
+//   console.log("Yess its equal");
+// } else {
+//   console.log("thats not Equal")
+// }
+
+// let score = 5937595;
+
+// if (score % 5 === 0) {
+//   console.log("Number is multiple of 5");
+// } else {
+//   console.log("Number is not multiple of 5");
+// }
+
+// *********************************** DOM/ Document Object Model ***********************************
+
+
+// let list = document.querySelectorAll("li");
+// console.log(list);
+// let dive = document.querySelector("div")
+// console.log(dive)
+// let di = document.querySelector("div");
+// console.log(di)
+// let contain = document.getElementsByClassName("container")
+// console.log(contain)
+
+// const con = document.querySelector(".container");
+// console.log(con);
+
+// let container = document.querySelector(".container");
+// console.log(container)
+
+
+// let collec = document.getElementsByClassName("list");
+// // console.log(collec)
+
+// let convertedArray = Array.from(collec)
+// // console.log(convertedArray)
+
+// let byId = document.getElementById("id1")
+// console.log(byId)
+
+// let listing = document.querySelectorAll("li");
+// // console.log(listing)
+
+// listing.forEach(function (le) {
+//   console.log(le)
+// })
+
+
+// let classList = document.getElementsByClassName("list")
+//  console.log(classList)
+// const convertedList = Array.from(classList)
+
+// const result = convertedList.map(function (list) {
+//   list.style.backgroundColor = "green"
+// })
+
+// let container = document.querySelector(".parent");
+// console.log(parent)
+// console.log(container.firstElementChild)
+// let firElem = container.children
+// console.log(firElem)
+
+// for (let i = 0; i < container.children.length; i++) {
+//   console.log(container.children[i].innerHTML)
+// }
+
+// container.children[0].style.backgroundColor = 'orange'
+// console.log(container.childNodes)
+
+// for (let i = 0; i < container.children.length; i++) {
+//   console.log(container.children[i].innerHTML)
+// }
+
+// const firstChild = container.firstElementChild;
+// const nextSibling = firstChild.nextElementSibling;
+// const addingClass = firstChild.setAttribute("id", "new-id")
+// console.log(container)
+
+// let creatingFunction = () => {
+//   let dive = document.createElement("div")
+//   let texing = document.createTextNode("Hello World")
+//   dive.appendChild(texing)
+//   document.body.appendChild(dive)
+// }
+
+// creatingFunction()
+
+// let creatingButton = () => {
+//   let btn = document.createElement("button")
+//   let addingText = document.createTextNode("Click Button")
+//   btn.appendChild(addingText)
+//   document.body.appendChild(btn)
+// }
+
+// creatingButton()
+
+// let optiFunc = (langName) => {
+//   let li = document.createElement("li");
+//   let text = document.createTextNode(langName)
+//   document.body.appendChild(text)
+//   document.querySelector(".language")
+//   document.write("<br>")
+
+// }
+
+
+// optiFunc("javaScript")
+// optiFunc("phython")
+// optiFunc("typescript")
+// optiFunc("c++")
+// optiFunc("java")
+
+// let ulList = document.getElementById("images");
+// let image = document.getElementById("tracing-image");
+
+// ulList.addEventListener("click", function (event) {
+//   console.log("Ul list was Clicked inside")
+// }, false)
+
+// image.addEventListener("click", function (event) {
+//   console.log("image was clicked")
+//   event.stopPropagation()
+// }, false)
+
+
+// let goog = document.getElementById("google");
+
+// goog.addEventListener("click", function (even) {
+//   even.preventDefault()
+//   console.log("google was clicked")
+// })
+
+// let ulList = document.getElementById("images");
+// let image = document.getElementById("tracing-image");
+// const google = document.getElementById("google");
+
+// ulList.addEventListener("click", (event) => {
+//   console.log("Ul List was clicked")
+// }, false)
+
+// image.addEventListener("click", (even) => {
+//   console.log("image was clicked")
+//   even.stopPropagation()
+// }, false)
+
+// google.addEventListener("click", (event) => {
+//   console.log("google was clicked")
+//   event.preventDefault()
+
+//   event.stopPropagation()
+// })
+
+
+let menulist = document.getElementById("menuList")
+menulist.style.maxHeight = "0px";
+
+function toggleMenu() {
+  if( menulist.style.maxHeight == "0px") {  
+    menulist.style.maxHeight = "300px";
+  } else {
+    menulist.style.maxHeight = "0px"
+  }
+}
