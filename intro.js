@@ -1,4 +1,4 @@
-// // let myName = "Faheem";
+// '// // let myName = "Faheem";
 // // const age = 22;
 // // let marks = 502;
 // // let myNum;
@@ -1462,3 +1462,59 @@ function toggleMenu() {
 // btn2.addEventListener("click", () => {
 //   clearInterval(starbtn)
 // })
+
+let btn = document.querySelector('#animateBtn');
+
+// btn.addEventListener("mouseover", function() {
+//   btn.style.backgroundColor = "orange"
+//   btn.style.border = "none"
+//   btn.style.padding = "10px 30px"
+//   btn.style.borderRadius = "40px"
+//   btn.style.fontSize = "1rem"
+
+// })
+
+// btn.addEventListener("mouseleave", function () {
+//   // btn.style.padding = "0px"
+//   // btn.style.backgroundColor = "transprant"
+//   // btn.style.borderRadius = "none"
+//   btn.style = "none"
+
+// })
+
+// btn.addEventListener("mouseup", function () {
+//   console.log("key Down ")
+// })
+
+// let images = document.getElementById("images");
+// let list = document.getElementById("image-2")
+
+// images.addEventListener("click", function () {
+//   console.log("Image was cliked")
+// })
+
+// list.addEventListener("click", function () {
+//   console.log("list was clicked")
+// })
+
+
+// let list = document.querySelector("h1");
+// let bnt = document.querySelector("#start")
+
+// let changeText = () => {
+//   list.innerHTML = "Hello World"
+// }
+
+// let stop = setTimeout(changeText, 2000)
+
+// bnt.addEventListener("click", function() {
+//   clearTimeout(stop)
+// })
+
+// let container = document.querySelector(".parent");
+
+// let dive = document.createElement("div");
+// let textNode = document.createTextNode("Setureday");
+// dive.appendChild(textNode)
+// container.appendChild(dive)\
+
