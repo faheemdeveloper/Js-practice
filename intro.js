@@ -1378,28 +1378,34 @@ if (age >= 18) {
 
 // ulList.addEventListener("click", (event) => {
 //   console.log("Ul List was clicked")
+//   console.log(event.target)
 // }, false)
 
 // image.addEventListener("click", (even) => {
-//   console.log("image was clicked")
+//   console.log("image was clicked") 
 //   even.stopPropagation()
+//   console.log(even.target.tagName)
 // }, false)
 
 // google.addEventListener("click", (event) => {
 //   console.log("google was clicked")
 //   event.preventDefault()
+//   console.log(event.target.tagName)
 
 //   event.stopPropagation()
 // })
 
 
-let menulist = document.getElementById("menuList")
-menulist.style.maxHeight = "0px";
+// let menulist = document.getElementById("menuList")
+// menulist.style.maxHeight = "0px";
 
-function toggleMenu() {
-  if( menulist.style.maxHeight == "0px") {  
-    menulist.style.maxHeight = "300px";
-  } else {
-    menulist.style.maxHeight = "0px"
-  }
-}
+// function toggleMenu() {
+//   if( menulist.style.maxHeight == "0px") {  
+//     menulist.style.maxHeight = "300px";
+//   } else {
+//     menulist.style.maxHeight = "0px"
+//   }
+// }
+
+
+

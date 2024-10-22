@@ -114,7 +114,7 @@ form {
 
   /* Nav Bar */
 
-  * {
+  /* * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -188,4 +188,4 @@ form {
     #menuList {
       transition: all 0.5s;
     }
-  }
+  } */
