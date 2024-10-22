@@ -910,502 +910,555 @@ if (age >= 18) {
 */
 
 // *********************************** Conrole Flow ***********************************
-
-// let score = 7;
-// let arr = [1, 2, 3, 4, 5, 6, 6, 7, 6, 7, 7];
-
-// let result = arr.filter((currElem, idx) => {
-//   return currElem !== score;
-// });
-
-// console.log(result);
-
-// let score = 43;
-// // let Grade;
-
-// if (score >= 89 && score <= 100) {
-//   Grade = "A";
-// } else if (score >= 71 && score <= 88) {
-//   Grade = "B";
-// } else if (score >= 61 && score <= 70) {
-//   Grade = "C";
-// } else if (score >= 50 && score <= 60) {
-//   Grade = "D";
-// } else if (score >= 39 && score <= 49) {
-//   Grade = "E";
-// }
-// console.log(Grade);
-
-// let num = 4;
-
-// if (num % 2 === 0) {
-//   console.log("Number is Even");
-// } else {
-//   console.log("Number is Odd")
-// }
-
-// let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
-
-// let result = arr.map((curr) => {
-//   if (curr % 2 === 0) {
-//     console.log( curr);
-//   }
-// });
-
-// let Mode = "light";
-
-// if (Mode === "Light") {
-//   color = "white";
-// } else if (Mode === "Dark") {
-//   color = "black";
-// } else {
-//   color = "no Condition Mach";
-// }
-
-// console.log(color);
-
-// for (let i = 0; i <= 20; i++) {
-//   if (i == 5) {
-//     console.log("5 is Detected");
-//     break;
-//     // continue
-//   }
-//   console.log(i);
-// }
-
-// let arr = [1, 2, 3, 4, 5, 6, 7, 8];
-// let arr = ["Faheem", "wasid", "shehzad", "sohail", "adil", "saqib", "nizam", "rizwan"];
-
-// arr.forEach((currElem, idx) => {
-//   console.log(currElem + 10)
-// })
-
-// for (let newArr of arr) {
-//   console.log(newArr);
-// }
-
-// let obj = {
-//   myName: "Faheem",
-//   age: 22,
-//   marks: 502,
-//   Grade: "D",
-// };
-
-// for(let i in arr) {
-//   console.log(`${arr[i]}`)
-// }
-
-// const book = [
-//   { title: "Book One", genre: "Fiction", publish: 1980, edition: 2001 },
-//   { title: "Book Twp", genre: "Non-Fiction", publish: 1998, edition: 20010 },
-//   { title: "Book Three", genre: "History", publish: 1990, edition: 2004 },
-//   { title: "Book Four", genre: "Non-Fiction", publish: 2000, edition: 2014 },
-//   { title: "Book Five", genre: "Science", publish: 1970, edition: 1998 },
-//   { title: "Book Six", genre: "Fiction", publish: 1920, edition: 2008 },
-//   { title: "Book Siven", genre: "History", publish: 2004, edition: 2018 },
-//   { title: "Book Hight", genre: "Science", publish: 1996, edition: 2007 },
-//   { title: "Book Nine", genre: "Non-Fiction", publish: 1990, edition: 2004 },
-// ];
-
-// let result = book.filter((ocum, curr) => {
-//   // return ocum.genre === "History";
-//   return ocum.genre === "History" && ocum.publish >= 2000;
-// });
-
-// console.log(result);
-
-// let arr = [1, 2, 3, 4, 5, 6, 7];
-
-// let result = arr.map((currElem, ocum) => {
-//   return currElem + 10;
-// });
-// console.log(result);
-
-// arr.forEach((currElem) => {
-//   console.log(currElem + 10);
-// });
-
-// let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-
-// let reuslt = arr
-//   .map((num) => num * 10)
-//   .map((num) => num + 10)
-//   .filter((currElem) => currElem >= 50);
-
-// console.log(reuslt);
-
-// let drivingLicense = false;
-// let age = 18;
-// const loginFromGoogle = true;
-// const loginFromEmail = true;
-
-// if (drivingLicense && age >= 18) {
-//   console.log("yess eligble fo driving");
-// } else {
-//   console.log("not allow for driving");
-// }
-
-// if (loginFromEmail || loginFromEmail) {
-//   console.log("User Allow for Login");
-// } else {
-//   console.log("not allow for login");
-// }
-
-// for(let i = 0 ; i <= 10 ; i = i + 1) {
-//   let elem = i;
-//   console.log(elem)
-// }
-
-// for (let i = 1; i <= 10; i++) {
-//   // console.log(`Outer loop value: ${i}`);
-//   for(let j = 1 ; j <= 10 ; j++) {
-//     // console.log(`Inner loop Value: ${j}`)
-//     // console.log(i + " * " + j + " = " + i * j);
-//     console.log`${i} * ${j} = ${i * j}`
-//     console.log(``)
-//   }
-// }
-
-// const map = new Map();
-// map.set("PK", "Pakistan");
-// map.set("USA", "United State of America");
-// map.set("FR", "France");
-// map.set("SA", "South Africa");
-// map.set("PK", "Pakistan");
-
-// console.log(map)
-
-// const map = new Map();
-// map.set("myName", "Faheem");
-// map.set("myAge", 22);
-// map.set("marks", 502);
-// map.set("Grade", "D");
-// // console.log(map)
-
-// for(let [key, value] of map) {
-//   console.log(`${key} :- ${value}`)
-// }
-
-// const map = new Map();
-// map.set("Pk", "Pakistan");
-// map.set("Us", "United State");
-// map.set("Fr", "France");
-// map.set("SA", "South Africa");
-
-// for (let [key, value] of map) {
-//   console.log(`${key} :=> ${value}`);
-// }
-
-// let book = [
-//   { languageName: "JavaScript", languageFileName: "Js" },
-//   { languageName: "phython", languageFileName: "phy" },
-//   { languageName: "java", languageFileName: "java" },
-//   { languageName: "Cpp", languageFileName: "c++" },
-// ];
-
-// book.forEach((item) => {
-//   console.log(`${item.languageFileName} :=> ${item.languageName}`)
-// })
-
-// let arr = [1, 2, 3];
-
-// let result = arr.reduce((occum, curr) => {
-//   console.log`occum: ${occum} currElem: ${curr}`
-//   return occum + curr;
-// });
-
-// console.log(result)
-
-// const total = [
-//   { item: "javaScript course", price: 2000 },
-//   { item: "phython course", price: 200 },
-//   { item: "c++ course", price: 1999 },
-//   { item: "shopify course", price: 1000 },
-// ];
-
-// let result = total.reduce((ocum, currElem) => {
-//   return ocum + currElem.price;
-// }, 0
-// );
-
-// console.log(result);
-
-// let arr = [1, 2, 3, 4, 5, 6, 7];
-
-// let result = arr
-//   .map((num) => num * 10)
-//   .map((num) => num + 10)
-//   .filter((num) => num >= 40);
-
-// console.log(result);
-
-// const key = new Map();
-// key.set("pk", "Pakistan");
-// key.set("us", "united state");
-// key.set("usa", "united state of america");
-
-// // console.log(key)
-// for (let [item, value] of key) {
-//   console.log(`${item} :=> ${value}`);
-// }
-
-// for(let i = 0 ; i <= 100 ; i++) {
-//   if(i % 2 !== 0)
-//     console.log(i)
-// }
-
-// for (let index = 0; index <= 20; index++) {
-//   if (index == 10) {
-//     console.log("10 is detected");
-//     break;
-//   }
-//   console.log(index);
-// }
-
-// let map = new Map();
-// map.set("myName", "Faheem");
-// map.set("age", 22);
-// map.set("marks", 502);
-// map.set("Grade", "D");
-// map.set("location", "Kohat");
-
-// for(let [index, value] of map) {
-//   console.log(`${index} :=> ${value}`)
-// }
-
-// let obj = {
-//   myName: "Faheem",
-//   age: 22,
-//   marks: 502,
-//   Grade: "D",
-// };
-
-// for (let index in obj) {
-//   console.log(`${index} :=> ${obj[index]}`);
-// }
-
-// let month = 3;
-
-// switch (month) {
-//   case 1:
-//     console.log("January");
-//     break;
-//   case 2:
-//     console.log("Februry");
-//     break;
-
-//   case 3:
-//     console.log("March");
-//     break;
-
-//   case 4:
-//     console.log("April");
-//     break;
-
-//   case 5:
-//     console.log("May");
-//     break;
-
-//   case 6:
-//     console.log("Juon");
-//     break;
-
-//   default:
-//     console.log("no condition match");
-//     break;
-// }
-
-// let month = 4;
-
-// switch (month) {
-//   case 1:
-//     console.log("January");
-//     break;
-//   case 2:
-//     console.log("Februry");
-//     break;
-//   case 3:
-//     console.log("March");
-//     break;
-//   case 4:
-//     console.log("April");
-//     break;
-//   case 5:
-//     console.log("May");
-//     break;
-//   default:
-//     console.log("Now Condition Match");
-//     break;
-// }
-
-// if (0 ===  "0") {
-//   console.log("Yess its equal");
-// } else {
-//   console.log("thats not Equal")
-// }
-
-// let score = 5937595;
-
-// if (score % 5 === 0) {
-//   console.log("Number is multiple of 5");
-// } else {
-//   console.log("Number is not multiple of 5");
-// }
+/*
+let score = 7;
+let arr = [1, 2, 3, 4, 5, 6, 6, 7, 6, 7, 7];
+
+let result = arr.filter((currElem, idx) => {
+  return currElem !== score;
+});
+
+console.log(result);
+
+let score = 43;
+// let Grade;
+
+if (score >= 89 && score <= 100) {
+  Grade = "A";
+} else if (score >= 71 && score <= 88) {
+  Grade = "B";
+} else if (score >= 61 && score <= 70) {
+  Grade = "C";
+} else if (score >= 50 && score <= 60) {
+  Grade = "D";
+} else if (score >= 39 && score <= 49) {
+  Grade = "E";
+}
+console.log(Grade);
+
+let num = 4;
+
+if (num % 2 === 0) {
+  console.log("Number is Even");
+} else {
+  console.log("Number is Odd")
+}
+
+let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
+
+let result = arr.map((curr) => {
+  if (curr % 2 === 0) {
+    console.log( curr);
+  }
+});
+
+let Mode = "light";
+
+if (Mode === "Light") {
+  color = "white";
+} else if (Mode === "Dark") {
+  color = "black";
+} else {
+  color = "no Condition Mach";
+}
+
+console.log(color);
+
+for (let i = 0; i <= 20; i++) {
+  if (i == 5) {
+    console.log("5 is Detected");
+    break;
+    // continue
+  }
+  console.log(i);
+}
+
+let arr = [1, 2, 3, 4, 5, 6, 7, 8];
+let arr = ["Faheem", "wasid", "shehzad", "sohail", "adil", "saqib", "nizam", "rizwan"];
+
+arr.forEach((currElem, idx) => {
+  console.log(currElem + 10)
+})
+
+for (let newArr of arr) {
+  console.log(newArr);
+}
+
+let obj = {
+  myName: "Faheem",
+  age: 22,
+  marks: 502,
+  Grade: "D",
+};
+
+for(let i in arr) {
+  console.log(`${arr[i]}`)
+}
+
+const book = [
+  { title: "Book One", genre: "Fiction", publish: 1980, edition: 2001 },
+  { title: "Book Twp", genre: "Non-Fiction", publish: 1998, edition: 20010 },
+  { title: "Book Three", genre: "History", publish: 1990, edition: 2004 },
+  { title: "Book Four", genre: "Non-Fiction", publish: 2000, edition: 2014 },
+  { title: "Book Five", genre: "Science", publish: 1970, edition: 1998 },
+  { title: "Book Six", genre: "Fiction", publish: 1920, edition: 2008 },
+  { title: "Book Siven", genre: "History", publish: 2004, edition: 2018 },
+  { title: "Book Hight", genre: "Science", publish: 1996, edition: 2007 },
+  { title: "Book Nine", genre: "Non-Fiction", publish: 1990, edition: 2004 },
+];
+
+let result = book.filter((ocum, curr) => {
+  return ocum.genre === "History";
+  return ocum.genre === "History" && ocum.publish >= 2000;
+});
+
+console.log(result);
+
+let arr = [1, 2, 3, 4, 5, 6, 7];
+
+let result = arr.map((currElem, ocum) => {
+  return currElem + 10;
+});
+console.log(result);
+
+arr.forEach((currElem) => {
+  console.log(currElem + 10);
+});
+
+let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+let reuslt = arr
+  .map((num) => num * 10)
+  .map((num) => num + 10)
+  .filter((currElem) => currElem >= 50);
+
+console.log(reuslt);
+
+let drivingLicense = false;
+let age = 18;
+const loginFromGoogle = true;
+const loginFromEmail = true;
+
+if (drivingLicense && age >= 18) {
+  console.log("yess eligble fo driving");
+} else {
+  console.log("not allow for driving");
+}
+
+if (loginFromEmail || loginFromEmail) {
+  console.log("User Allow for Login");
+} else {
+  console.log("not allow for login");
+}
+
+for(let i = 0 ; i <= 10 ; i = i + 1) {
+  let elem = i;
+  console.log(elem)
+}
+
+for (let i = 1; i <= 10; i++) {
+  // console.log(`Outer loop value: ${i}`);
+  for(let j = 1 ; j <= 10 ; j++) {
+    // console.log(`Inner loop Value: ${j}`)
+    // console.log(i + " * " + j + " = " + i * j);
+    console.log`${i} * ${j} = ${i * j}`
+    console.log(``)
+  }
+}
+
+const map = new Map();
+map.set("PK", "Pakistan");
+map.set("USA", "United State of America");
+map.set("FR", "France");
+map.set("SA", "South Africa");
+map.set("PK", "Pakistan");
+
+console.log(map)
+
+const map = new Map();
+map.set("myName", "Faheem");
+map.set("myAge", 22);
+map.set("marks", 502);
+map.set("Grade", "D");
+console.log(map)
+
+for(let [key, value] of map) {
+  console.log(`${key} :- ${value}`)
+}
+
+const map = new Map();
+map.set("Pk", "Pakistan");
+map.set("Us", "United State");
+map.set("Fr", "France");
+map.set("SA", "South Africa");
+
+for (let [key, value] of map) {
+  console.log(`${key} :=> ${value}`);
+}
+
+let book = [
+  { languageName: "JavaScript", languageFileName: "Js" },
+  { languageName: "phython", languageFileName: "phy" },
+  { languageName: "java", languageFileName: "java" },
+  { languageName: "Cpp", languageFileName: "c++" },
+];
+
+book.forEach((item) => {
+  console.log(`${item.languageFileName} :=> ${item.languageName}`)
+})
+
+let arr = [1, 2, 3];
+
+let result = arr.reduce((occum, curr) => {
+  console.log`occum: ${occum} currElem: ${curr}`
+  return occum + curr;
+});
+
+console.log(result)
+
+const total = [
+  { item: "javaScript course", price: 2000 },
+  { item: "phython course", price: 200 },
+  { item: "c++ course", price: 1999 },
+  { item: "shopify course", price: 1000 },
+];
+
+let result = total.reduce((ocum, currElem) => {
+  return ocum + currElem.price;
+}, 0
+);
+
+console.log(result);
+
+let arr = [1, 2, 3, 4, 5, 6, 7];
+
+let result = arr
+  .map((num) => num * 10)
+  .map((num) => num + 10)
+  .filter((num) => num >= 40);
+
+console.log(result);
+
+const key = new Map();
+key.set("pk", "Pakistan");
+key.set("us", "united state");
+key.set("usa", "united state of america");
+
+// console.log(key)
+for (let [item, value] of key) {
+  console.log(`${item} :=> ${value}`);
+}
+
+for(let i = 0 ; i <= 100 ; i++) {
+  if(i % 2 !== 0)
+    console.log(i)
+}
+
+for (let index = 0; index <= 20; index++) {
+  if (index == 10) {
+    console.log("10 is detected");
+    break;
+  }
+  console.log(index);
+}
+
+let map = new Map();
+map.set("myName", "Faheem");
+map.set("age", 22);
+map.set("marks", 502);
+map.set("Grade", "D");
+map.set("location", "Kohat");
+
+for(let [index, value] of map) {
+  console.log(`${index} :=> ${value}`)
+}
+
+let obj = {
+  myName: "Faheem",
+  age: 22,
+  marks: 502,
+  Grade: "D",
+};
+
+for (let index in obj) {
+  console.log(`${index} :=> ${obj[index]}`);
+}
+
+let month = 3;
+
+switch (month) {
+  case 1:
+    console.log("January");
+    break;
+  case 2:
+    console.log("Februry");
+    break;
+
+  case 3:
+    console.log("March");
+    break;
+
+  case 4:
+    console.log("April");
+    break;
+
+  case 5:
+    console.log("May");
+    break;
+
+  case 6:
+    console.log("Juon");
+    break;
+
+  default:
+    console.log("no condition match");
+    break;
+}
+
+let month = 4;
+
+switch (month) {
+  case 1:
+    console.log("January");
+    break;
+  case 2:
+    console.log("Februry");
+    break;
+  case 3:
+    console.log("March");
+    break;
+  case 4:
+    console.log("April");
+    break;
+  case 5:
+    console.log("May");
+    break;
+  default:
+    console.log("Now Condition Match");
+    break;
+}
+
+if (0 ===  "0") {
+  console.log("Yess its equal");
+} else {
+  console.log("thats not Equal")
+}
+
+let score = 5937595;
+
+if (score % 5 === 0) {
+  console.log("Number is multiple of 5");
+} else {
+  console.log("Number is not multiple of 5");
+}
+*/
 
 // *********************************** DOM/ Document Object Model ***********************************
+/*
+let list = document.querySelectorAll("li");
+console.log(list);
+let dive = document.querySelector("div")
+console.log(dive)
+let di = document.querySelector("div");
+console.log(di)
+let contain = document.getElementsByClassName("container")
+console.log(contain)
+
+const con = document.querySelector(".container");
+console.log(con);
+
+let container = document.querySelector(".container");
+console.log(container)
 
 
-// let list = document.querySelectorAll("li");
-// console.log(list);
-// let dive = document.querySelector("div")
-// console.log(dive)
-// let di = document.querySelector("div");
-// console.log(di)
-// let contain = document.getElementsByClassName("container")
-// console.log(contain)
+let collec = document.getElementsByClassName("list");
+// console.log(collec)
 
-// const con = document.querySelector(".container");
-// console.log(con);
+let convertedArray = Array.from(collec)
+// console.log(convertedArray)
 
-// let container = document.querySelector(".container");
-// console.log(container)
+let byId = document.getElementById("id1")
+console.log(byId)
+
+let listing = document.querySelectorAll("li");
+// console.log(listing)
+
+listing.forEach(function (le) {
+  console.log(le)
+})
 
 
-// let collec = document.getElementsByClassName("list");
-// // console.log(collec)
+let classList = document.getElementsByClassName("list")
+ console.log(classList)
+const convertedList = Array.from(classList)
 
-// let convertedArray = Array.from(collec)
-// // console.log(convertedArray)
+const result = convertedList.map(function (list) {
+  list.style.backgroundColor = "green"
+})
 
-// let byId = document.getElementById("id1")
-// console.log(byId)
+let container = document.querySelector(".parent");
+console.log(parent)
+console.log(container.firstElementChild)
+let firElem = container.children
+console.log(firElem)
 
-// let listing = document.querySelectorAll("li");
-// // console.log(listing)
+for (let i = 0; i < container.children.length; i++) {
+  console.log(container.children[i].innerHTML)
+}
 
-// listing.forEach(function (le) {
-//   console.log(le)
+container.children[0].style.backgroundColor = 'orange'
+console.log(container.childNodes)
+
+for (let i = 0; i < container.children.length; i++) {
+  console.log(container.children[i].innerHTML)
+}
+
+const firstChild = container.firstElementChild;
+const nextSibling = firstChild.nextElementSibling;
+const addingClass = firstChild.setAttribute("id", "new-id")
+console.log(container)
+
+let creatingFunction = () => {
+  let dive = document.createElement("div")
+  let texing = document.createTextNode("Hello World")
+  dive.appendChild(texing)
+  document.body.appendChild(dive)
+}
+
+creatingFunction()
+
+let creatingButton = () => {
+  let btn = document.createElement("button")
+  let addingText = document.createTextNode("Click Button")
+  btn.appendChild(addingText)
+  document.body.appendChild(btn)
+}
+
+creatingButton()
+
+let optiFunc = (langName) => {
+  let li = document.createElement("li");
+  let text = document.createTextNode(langName)
+  document.body.appendChild(text)
+  document.querySelector(".language")
+  document.write("<br>")
+
+}
+
+
+optiFunc("javaScript")
+optiFunc("phython")
+optiFunc("typescript")
+optiFunc("c++")
+optiFunc("java")
+
+let ulList = document.getElementById("images");
+let image = document.getElementById("tracing-image");
+
+ulList.addEventListener("click", function (event) {
+  console.log("Ul list was Clicked inside")
+}, false)
+
+image.addEventListener("click", function (event) {
+  console.log("image was clicked")
+  event.stopPropagation()
+}, false)
+
+
+let goog = document.getElementById("google");
+
+goog.addEventListener("click", function (even) {
+  even.preventDefault()
+  console.log("google was clicked")
+})
+
+let ulList = document.getElementById("images");
+let image = document.getElementById("tracing-image");
+const google = document.getElementById("google");
+
+ulList.addEventListener("click", (event) => {
+  console.log("Ul List was clicked")
+  console.log(event.target)
+}, false)
+
+image.addEventListener("click", (even) => {
+  console.log("image was clicked")
+  even.stopPropagation()
+  console.log(even.target.tagName)
+}, false)
+
+google.addEventListener("click", (event) => {
+  console.log("google was clicked")
+  event.preventDefault()
+  console.log(event.target.tagName)
+
+  event.stopPropagation()
+})
+
+
+let menulist = document.getElementById("menuList")
+menulist.style.maxHeight = "0px";
+
+function toggleMenu() {
+  if( menulist.style.maxHeight == "0px") {
+    menulist.style.maxHeight = "300px";
+  } else {
+    menulist.style.maxHeight = "0px"
+  }
+}
+*/
+
+// *********************************** TimeOut Functions ***********************************
+
+// setTimeout(() => {
+//   console.log("Hello World!")
+// }, 2000)
+
+// let sayHello = () => {
+//   console.log("Hello World!");
+// };
+// setTimeout(sayHello, 2000);
+
+// Changing Text After Seconds
+// let changeHello = () => {
+//   document.querySelector("h1").innerHTML = "Hello World"
+// }
+
+// setTimeout(changeHello, 2000)
+
+// let sayHelloText = () => {
+//   document.querySelector("h1").innerHTML = "Hello World"
+// }
+
+// let changeTime = setTimeout(sayHelloText, 2000);
+
+// CLEAR TIMEOUT
+
+// let newHello = () => {
+//   let btn = document.getElementById("stop");
+//   btn.addEventListener("click", () => {
+//     clearTimeout(changeTime)
+//     console.log("STOPPED")
+//   })
+// }
+
+// newHello()
+
+
+// let btn = document.getElementById("start");
+// let btn2 = document.getElementById("stop");
+
+// let newFun = () => {
+//   let dive = document.querySelector(".new-div");
+//   dive.innerHTML = Math.floor(Math.random() * 10 + 1);
+// }
+
+// let starbtn
+
+// btn.addEventListener("click", () => {
+//   starbtn = setInterval(newFun, 1000)
 // })
 
-
-// let classList = document.getElementsByClassName("list")
-//  console.log(classList)
-// const convertedList = Array.from(classList)
-
-// const result = convertedList.map(function (list) {
-//   list.style.backgroundColor = "green"
+// btn2.addEventListener("click", () => {
+//   clearInterval(starbtn)
 // })
-
-// let container = document.querySelector(".parent");
-// console.log(parent)
-// console.log(container.firstElementChild)
-// let firElem = container.children
-// console.log(firElem)
-
-// for (let i = 0; i < container.children.length; i++) {
-//   console.log(container.children[i].innerHTML)
-// }
-
-// container.children[0].style.backgroundColor = 'orange'
-// console.log(container.childNodes)
-
-// for (let i = 0; i < container.children.length; i++) {
-//   console.log(container.children[i].innerHTML)
-// }
-
-// const firstChild = container.firstElementChild;
-// const nextSibling = firstChild.nextElementSibling;
-// const addingClass = firstChild.setAttribute("id", "new-id")
-// console.log(container)
-
-// let creatingFunction = () => {
-//   let dive = document.createElement("div")
-//   let texing = document.createTextNode("Hello World")
-//   dive.appendChild(texing)
-//   document.body.appendChild(dive)
-// }
-
-// creatingFunction()
-
-// let creatingButton = () => {
-//   let btn = document.createElement("button")
-//   let addingText = document.createTextNode("Click Button")
-//   btn.appendChild(addingText)
-//   document.body.appendChild(btn)
-// }
-
-// creatingButton()
-
-// let optiFunc = (langName) => {
-//   let li = document.createElement("li");
-//   let text = document.createTextNode(langName)
-//   document.body.appendChild(text)
-//   document.querySelector(".language")
-//   document.write("<br>")
-
-// }
-
-
-// optiFunc("javaScript")
-// optiFunc("phython")
-// optiFunc("typescript")
-// optiFunc("c++")
-// optiFunc("java")
-
-// let ulList = document.getElementById("images");
-// let image = document.getElementById("tracing-image");
-
-// ulList.addEventListener("click", function (event) {
-//   console.log("Ul list was Clicked inside")
-// }, false)
-
-// image.addEventListener("click", function (event) {
-//   console.log("image was clicked")
-//   event.stopPropagation()
-// }, false)
-
-
-// let goog = document.getElementById("google");
-
-// goog.addEventListener("click", function (even) {
-//   even.preventDefault()
-//   console.log("google was clicked")
-// })
-
-// let ulList = document.getElementById("images");
-// let image = document.getElementById("tracing-image");
-// const google = document.getElementById("google");
-
-// ulList.addEventListener("click", (event) => {
-//   console.log("Ul List was clicked")
-//   console.log(event.target)
-// }, false)
-
-// image.addEventListener("click", (even) => {
-//   console.log("image was clicked") 
-//   even.stopPropagation()
-//   console.log(even.target.tagName)
-// }, false)
-
-// google.addEventListener("click", (event) => {
-//   console.log("google was clicked")
-//   event.preventDefault()
-//   console.log(event.target.tagName)
-
-//   event.stopPropagation()
-// })
-
-
-// let menulist = document.getElementById("menuList")
-// menulist.style.maxHeight = "0px";
-
-// function toggleMenu() {
-//   if( menulist.style.maxHeight == "0px") {  
-//     menulist.style.maxHeight = "300px";
-//   } else {
-//     menulist.style.maxHeight = "0px"
-//   }
-// }
-
-
-
