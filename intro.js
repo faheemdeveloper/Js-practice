@@ -1,391 +1,392 @@
-// '// // let myName = "Faheem";
-// // const age = 22;
-// // let marks = 502;
-// // let myNum;
-// // let num = null;
-// // console.table([myName, age, marks, myNum]);
-
-// // console.log(typeof num)
-
-// // function exampleLet() {
-// //   let x = 10;
-
-// //   if (true) {
-// //     let x = 20; // Block scope, new variable inside the block
-// //     console.log(x); // 20
-// //   }
-
-// //   console.log(x); // 10 (original value outside the block)
-// // }
-
-// // exampleLet();
-
-// // function exampleVar() {
-// //   var x = 10;
-
-// //   if (true) {
-// //     var x = 20; // Same variable, re-declared within the same function
-// //     console.log(x); // 20
-// //   }
-
-// //   console.log(x); // 20 (still 20 because of function scope)
-// // }
-
-// // exampleVar();
-
-// // let score = "faheem";
-// // let toStr = Number(score);
-
-// // console.log(score, typeof score);
-// // console.log(toStr, typeof toStr);
-
-// // let num = 4;
-// // let toBol = Boolean(num);
-// // console.log(num, typeof num);
-// // console.log(toBol, typeof toBol);
-
-// // ********************* Operations  *********************
-// /*
-// let value = 3;
-// let negVal = -value;
-// // console.log(negVal);
-
-// // console.log(+"Faheem")
-
-// let num1, num2, num3;
-// num1, num2, (num3 = 2 + 2);
-// console.log(num2);
-
-// let myName = "Faheem";
-// let myAge = 22;
-// let marks = 502;
-// let Grade = "D";
-
-// console.table([myName, myAge, marks, Grade]);
-
-// console.log(3 + 5 + "8");
-// console.log("3" + 5 + 8);
-// console.log(true + "4" + 3);
-// console.log("4" + 3 + false);
-// console.log(true - "3");
-// console.log(false - "4" + 4);
-// let value = 4;
-// let negValue = +value;
-// console.log(negValue)
-
-// var age = 22;
-// var age = 22 + 2;
-// console.log(age);
-
-// let age = 22;
-// age + 3;
-// console.log(age)
-
-// const age = 22;
-// age = 22 + 3;
-// console.log(age);
-
-// let a = 5;
-// let b = 3;
-// a += 4;
-// console.log(a + b);
-
-// let myName = "M_";
-// myName += "Faheem";
-// console.log(myName);
-// */
-// // *********************** Arithematic Operators ***********************
-// /*
-// let a = 3;
-// let b = 8;
-// [a, b] = [b, a]
-// let devide = a / b;
-// console.log("a =", a, "b =", b);
-// console.log("a + b =", a + b);
-// console.log("a - b =", a - b);
-// console.log("a * b =", a * b);
-// console.log("a / b =", a / b);
-// console.log("a % b =", a % b);
-// console.log(devide.toFixed(1))
-// console.log("a ** b =", a ** b);
-// */
-// // *********************** Ternery Operators ***********************
-// /*
-// let a = 8;
-// let b = 3;
-// console.log("a =", a, "b =", b);
-
-// let age = 19;
-// let license = true;
-// let result = age >= 18 && license;
-// console.log(result);
-// */
-// // *********************** Comparision Operators ***********************
-// /*
-// let a = 8;
-// let b = 9;
-// console.log("a =", a, "b =", b);
-
-// console.log("a == b", a == b);
-// console.log("a === b", a === b);
-// console.log("a != b", a != b);
-// console.log("a !== b", a !== b);
-// console.log("a > b", a > b);
-// console.log("a < b", a < b);
-// console.log("a >= b", a >= b);
-// console.log("a <= b", a <= b);
-// */
-
-// // let num = 45;
-// // console.log(typeof String(num));
-// // console.log(typeof (num + ""));
-// // let str = "Faheem";
-// // console.log(typeof Number(str));
-// // console.log(typeof +(str));
-
-// // let numbers = 45.3;
-// // console.log(parseFloat(numbers));
-// // console.log(parseInt(numbers));
-
-// // let num = 0.1 + 0.2;
-// // console.log(num.toFixed(1));
-
-// // let str = "Faheem";
-// // console.log(isNaN(str));
-
-// // let isFollow = true;
-// // let toStr = +(isFollow);
-// // console.log(isFollow, typeof isFollow);
-// // console.log(toStr, typeof toStr);
-
-// // let num = 0;
-// // let toBool = Boolean(num);
-// // console.log(num, typeof num);
-// // console.log(toBool, typeof toBool);
-
-// // let score = 63;
-
-// // let result = (score >= 60 && "Pass") || "Fail";
-// // console.log(result);
-
-// // let num = undefined;
-// // let num2 = 40;
-
-// // let result = num ?? num2;
-// // console.log(result);
-
-// // const { length } = "JavaScript";
-// // console.log(length);
-
-// // let arr = ["Faheem", "shehzad", "wasid"];
-// // [, , third] = arr;
-// // console.log(third);
-// // console.log(arr);
-
-// // let a = 29;
-// // let b = 20;
-// // [a, b] = [b, a];
-// // console.log(a, b);
-
-// // const obj = {
-// //   myName: "Faheem",
-// //   age: 22,
-// //   marks: 502,
-// //   grade: "D",
-// // };
-// // const {myName, age, marks, grade} = obj;
-// // console.log(myName)
-
-// // const obj = {
-// //   myName: "Faheem",
-// //   age: 22,
-// //   marks: 502,
-// //   grade: "D",
-// // };
-// // const { myName: fullName, age, marks, grade } = obj;
-// // console.log(fullName);
-
-// // let arr = ["Faheem", "shehzad", "wasid", "sohail"];
-// // let newArr = [...arr];
-// // console.log(newArr);
-
-// // let arr = ["Faheem", "shehzad", "wasid", "sohail"];
-// // let arr3 = ["adil", "saqib"];
-// // let fullArr = [...arr, ...arr3];
-// // console.log(fullArr);
-
-// // let sum = (...number) => {
-// //   return number.reduce((occum, currElem) => {
-// //     return occum + currElem;
-// //   });
-// // };
-
-// // console.log(sum(4, 3, 4, 3));
-
-// // let arr = [1, [2, [3, [4, [5], 6], 7], 8], 9];
-// // console.log(arr.flat(4));
-
-// // let country = "Pakistan";
-// // console.log(country);
-
-// // let obj1 = { a: 10, b: 30 };
-// // let obj2 = { c: 40, d: 50 };
-// // let fullObj = { ...obj1, ...obj2 };
-// // console.log(fullObj);
-
-// // let num = 1;
-// // let toBool = Boolean(num);
-// // console.log(toBool);
-// //
-// // ************************** Comparison Operator **************************
-// // console.log(null > 0);
-// // console.log(null == 0);
-// // console.log(null >= 0);
-
-// // let myName = "Faheem";
-
-// // let myfullName = myName;
-// // myfullName = "M_Faheem";
-
-// // console.log(myfullName);
-// // console.log(myName);
-
-// // let myName = new String("Faheem");
-// // console.log(myName, typeof myName);
-
-// // let num = new Number(400);
-// // console.log(num)
-
-// // let number = 123.8966;
-
-// // console.log(number.toPrecision(3));
-
-// // let number = 10000000;
-// // console.log(number.toLocaleString("en-US"));
-
-// // let myemail = "info@gmail.com";
-// // let myEmail = myemail;
-
-// // myEmail = "faheem@gmail.com";
-// // console.log(myemail);
-// // console.log(myEmail);
-
-// // let obj = {
-// //   myName: "Faheem",
-// //   email: "info@gmail.com",
-// // };
-
-// // let myOBj = obj;
-// // obj.email = "faheem@gmail.com";
-// // console.log(obj);
-// // console.log(myOBj);
-
-// // let str = "hello javaScript welcome\nto javascript course";
-
-// // console.log(str.toLowerCase())
-// // console.log(str.replace("s", "S"));
-// // console.log(str.slice(0, 6));
-// // console.log(str.lastIndexOf("c"));
-// // console.log(str.charAt(7));
-// // console.log(str.includes("R")) //true or false value return
-// // console.log(str.lastIndexOf("course"))
-// // console.log(str.match(/Javascript/i));
-// // console.log(str.matchAll()) ?????
-// // console.log(Array.from(str));
-// // console.log(str.split(","));
-
-// // let str = "hello javaScript \"welcome\" to javascript\n course";
-// // console.log(str);
-// // let str = "Hello\t world";
-// // console.log(str);
-
-// // let str = "hello javaScript welcome to javascript course";
-
-// // // console.log(str.matchAll("javascript"));
-// // console.log(str.toreverse());
-
-// // let dive = document.querySelector(".watch");
-
-// // function dateTime() {
-// //   let time = new Date().toLocaleTimeString();
-// //   dive.innerHTML = time;
-// // }
-// // setInterval(dateTime);
-
-// // let str = "Hello javaScript welcome to java script course";
-// // console.log(Array.from(str));
-// // console.log(str.split(","));
-
-// // let num = 48.4;
-// // console.log(parseInt(num));
-// // console.log(parseFloat(num), typeof num);
-
-// // let num = new Number(400);
-// // console.log(num);
-
-// // let num = Number.MAX_SAFE_INTEGER
-// // let num = Number.MIN_SAFE_INTEGER
-// // let num = Number.MIN_VALUE
-// // let num = Number.NEGATIVE_INFINITY
-// // let num = Number.POSITIVE_INFINITY
-// // console.log(num);
-
-// // *********************************** Math Objects ***********************************
-
-// // console.log(Math.trunc(42.9))
-// // let math = new Math;
-// // console.log(math)
-
-// //
-
-// // let min = 10;
-// // let max = 20;
-
-// // console.log(Math.floor(Math.random() * (max - min + 1) + min));
-
-// // console.log(Math.round(Math.random() * 10 + 1));
-
-// // const str = "JavaScript";
-// // console.log(str.slice(-5, -0));
-
-// // let str = "Hello javaScript welcome to world best javaScript course";
-// // console.log(str.match(/javascript/ig));
-// // console.log(str.match(/javascript/i));
-// // const country = "Pakistan";
-// // console.log(country.padStart(40).length);
-// // console.log(country.trim().length);
-// // let country = "Pakistan";
-// // console.log(Array.from(country));
-// // const str = "Hello World";
-// // console.log(str.repeat());
-
-// // let min = 40;
-
-// // let div = document.querySelector(".watch");
-
-// // const dateTime = () => {
-// //   let time = new Date().toLocaleTimeString();
-// //   div.innerHTML = time;
-// // };
-
-// // setInterval(dateTime);
-
-// // let num1 = -4.9;
-// // let num2 = -4.9;
-
-// // console.log(Math.floor(num1));
-// // console.log(Math.trunc(num2)); ✔
-
-// // let arr = ["Faheem", "wasid", "shehzad", "adil"];
-// // arr.push("sohail", "shahzaib");
-// // let include = arr.includes("Adil");
+/*
+let myName = "Faheem";
+const age = 22;
+let marks = 502;
+let myNum;
+let num = null;
+console.table([myName, age, marks, myNum]);
+
+console.log(typeof num)
+
+function exampleLet() {
+  let x = 10;
+
+  if (true) {
+    let x = 20; // Block scope, new variable inside the block
+    console.log(x); // 20
+  }
+
+  console.log(x); // 10 (original value outside the block)
+}
+
+exampleLet();
+
+function exampleVar() {
+  var x = 10;
+
+  if (true) {
+    var x = 20; // Same variable, re-declared within the same function
+    console.log(x); // 20
+  }
+
+  console.log(x); // 20 (still 20 because of function scope)
+}
+
+exampleVar();
+
+let score = "faheem";
+let toStr = Number(score);
+
+console.log(score, typeof score);
+console.log(toStr, typeof toStr);
+
+let num = 4;
+let toBol = Boolean(num);
+console.log(num, typeof num);
+console.log(toBol, typeof toBol);
+
+// ********************* Operations  *********************
+
+let value = 3;
+let negVal = -value;
+console.log(negVal);
+
+console.log(+"Faheem")
+
+let num1, num2, num3;
+num1, num2, (num3 = 2 + 2);
+console.log(num2);
+
+let myName = "Faheem";
+let myAge = 22;
+let marks = 502;
+let Grade = "D";
+
+console.table([myName, myAge, marks, Grade]);
+
+console.log(3 + 5 + "8");
+console.log("3" + 5 + 8);
+console.log(true + "4" + 3);
+console.log("4" + 3 + false);
+console.log(true - "3");
+console.log(false - "4" + 4);
+let value = 4;
+let negValue = +value;
+console.log(negValue)
+
+var age = 22;
+var age = 22 + 2;
+console.log(age);
+
+let age = 22;
+age + 3;
+console.log(age)
+
+const age = 22;
+age = 22 + 3;
+console.log(age);
+
+let a = 5;
+let b = 3;
+a += 4;
+console.log(a + b);
+
+let myName = "M_";
+myName += "Faheem";
+console.log(myName);
+
+// *********************** Arithematic Operators ***********************
+
+let a = 3;
+let b = 8;
+[a, b] = [b, a]
+let devide = a / b;
+console.log("a =", a, "b =", b);
+console.log("a + b =", a + b);
+console.log("a - b =", a - b);
+console.log("a * b =", a * b);
+console.log("a / b =", a / b);
+console.log("a % b =", a % b);
+console.log(devide.toFixed(1))
+console.log("a ** b =", a ** b);
+
+// *********************** Ternery Operators ***********************
+
+let a = 8;
+let b = 3;
+console.log("a =", a, "b =", b);
+
+let age = 19;
+let license = true;
+let result = age >= 18 && license;
+console.log(result);
+
+// *********************** Comparision Operators ***********************
+
+let a = 8;
+let b = 9;
+console.log("a =", a, "b =", b);
+
+console.log("a == b", a == b);
+console.log("a === b", a === b);
+console.log("a != b", a != b);
+console.log("a !== b", a !== b);
+console.log("a > b", a > b);
+console.log("a < b", a < b);
+console.log("a >= b", a >= b);
+console.log("a <= b", a <= b);
+
+
+let num = 45;
+console.log(typeof String(num));
+console.log(typeof (num + ""));
+let str = "Faheem";
+console.log(typeof Number(str));
+console.log(typeof +(str));
+
+let numbers = 45.3;
+console.log(parseFloat(numbers));
+console.log(parseInt(numbers));
+
+let num = 0.1 + 0.2;
+console.log(num.toFixed(1));
+
+let str = "Faheem";
+console.log(isNaN(str));
+
+let isFollow = true;
+let toStr = +(isFollow);
+console.log(isFollow, typeof isFollow);
+console.log(toStr, typeof toStr);
+
+let num = 0;
+let toBool = Boolean(num);
+console.log(num, typeof num);
+console.log(toBool, typeof toBool);
+
+let score = 63;
+
+let result = (score >= 60 && "Pass") || "Fail";
+console.log(result);
+
+let num = undefined;
+let num2 = 40;
+
+let result = num ?? num2;
+console.log(result);
+
+const { length } = "JavaScript";
+console.log(length);
+
+let arr = ["Faheem", "shehzad", "wasid"];
+[, , third] = arr;
+console.log(third);
+console.log(arr);
+
+let a = 29;
+let b = 20;
+[a, b] = [b, a];
+console.log(a, b);
+
+const obj = {
+  myName: "Faheem",
+  age: 22,
+  marks: 502,
+  grade: "D",
+};
+const {myName, age, marks, grade} = obj;
+console.log(myName)
+
+const obj = {
+  myName: "Faheem",
+  age: 22,
+  marks: 502,
+  grade: "D",
+};
+const { myName: fullName, age, marks, grade } = obj;
+console.log(fullName);
+
+let arr = ["Faheem", "shehzad", "wasid", "sohail"];
+let newArr = [...arr];
+console.log(newArr);
+
+let arr = ["Faheem", "shehzad", "wasid", "sohail"];
+let arr3 = ["adil", "saqib"];
+let fullArr = [...arr, ...arr3];
+console.log(fullArr);
+
+let sum = (...number) => {
+  return number.reduce((occum, currElem) => {
+    return occum + currElem;
+  });
+};
+
+console.log(sum(4, 3, 4, 3));
+
+let arr = [1, [2, [3, [4, [5], 6], 7], 8], 9];
+console.log(arr.flat(4));
+
+let country = "Pakistan";
+console.log(country);
+
+let obj1 = { a: 10, b: 30 };
+let obj2 = { c: 40, d: 50 };
+let fullObj = { ...obj1, ...obj2 };
+console.log(fullObj);
+
+let num = 1;
+let toBool = Boolean(num);
+console.log(toBool);
+
+************************** Comparison Operator **************************
+console.log(null > 0);
+console.log(null == 0);
+console.log(null >= 0);
+
+let myName = "Faheem";
+
+let myfullName = myName;
+myfullName = "M_Faheem";
+
+console.log(myfullName);
+console.log(myName);
+
+let myName = new String("Faheem");
+console.log(myName, typeof myName);
+
+let num = new Number(400);
+console.log(num)
+
+let number = 123.8966;
+
+console.log(number.toPrecision(3));
+
+let number = 10000000;
+console.log(number.toLocaleString("en-US"));
+
+let myemail = "info@gmail.com";
+let myEmail = myemail;
+
+myEmail = "faheem@gmail.com";
+console.log(myemail);
+console.log(myEmail);
+
+let obj = {
+  myName: "Faheem",
+  email: "info@gmail.com",
+};
+
+let myOBj = obj;
+obj.email = "faheem@gmail.com";
+console.log(obj);
+console.log(myOBj);
+
+let str = "hello javaScript welcome\nto javascript course";
+
+console.log(str.toLowerCase())
+console.log(str.replace("s", "S"));
+console.log(str.slice(0, 6));
+console.log(str.lastIndexOf("c"));
+console.log(str.charAt(7));
+console.log(str.includes("R")) //true or false value return
+console.log(str.lastIndexOf("course"))
+console.log(str.match(/Javascript/i));
+console.log(str.matchAll()) ?????
+console.log(Array.from(str));
+console.log(str.split(","));
+
+let str = "hello javaScript \"welcome\" to javascript\n course";
+console.log(str);
+let str = "Hello\t world";
+console.log(str);
+
+let str = "hello javaScript welcome to javascript course";
+
+// console.log(str.matchAll("javascript"));
+console.log(str.toreverse());
+
+let dive = document.querySelector(".watch");
+
+function dateTime() {
+  let time = new Date().toLocaleTimeString();
+  dive.innerHTML = time;
+}
+setInterval(dateTime);
+
+let str = "Hello javaScript welcome to java script course";
+console.log(Array.from(str));
+console.log(str.split(","));
+
+let num = 48.4;
+console.log(parseInt(num));
+console.log(parseFloat(num), typeof num);
+
+let num = new Number(400);
+console.log(num);
+
+let num = Number.MAX_SAFE_INTEGER
+let num = Number.MIN_SAFE_INTEGER
+let num = Number.MIN_VALUE
+let num = Number.NEGATIVE_INFINITY
+let num = Number.POSITIVE_INFINITY
+console.log(num);
+
+*********************************** Math Objects ***********************************
+
+console.log(Math.trunc(42.9))
+let math = new Math;
+console.log(math)
+
+
+
+let min = 10;
+let max = 20;
+
+console.log(Math.floor(Math.random() * (max - min + 1) + min));
+
+console.log(Math.round(Math.random() * 10 + 1));
+
+const str = "JavaScript";
+console.log(str.slice(-5, -0));
+
+let str = "Hello javaScript welcome to world best javaScript course";
+console.log(str.match(/javascript/ig));
+console.log(str.match(/javascript/i));
+const country = "Pakistan";
+console.log(country.padStart(40).length);
+console.log(country.trim().length);
+let country = "Pakistan";
+console.log(Array.from(country));
+const str = "Hello World";
+console.log(str.repeat());
+
+let min = 40;
+
+let div = document.querySelector(".watch");
+
+const dateTime = () => {
+  let time = new Date().toLocaleTimeString();
+  div.innerHTML = time;
+};
+
+setInterval(dateTime);
+
+let num1 = -4.9;
+let num2 = -4.9;
+
+console.log(Math.floor(num1));
+console.log(Math.trunc(num2)); ✔
+
+let arr = ["Faheem", "wasid", "shehzad", "adil"];
+arr.push("sohail", "shahzaib");
+let include = arr.includes("Adil");
 
 // // *********************************** Date and Time ***********************************
 
-// let currDateTime = new Date();
+let currDateTime = new Date();
 
 // ++++++++++++ Getting Method ++++++++++++
-/*
+
 console.log(currDateTime.getDate());
 console.log(currDateTime.getMonth());
 console.log(currDateTime.getFullYear());
@@ -438,7 +439,7 @@ const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 console.log(h);
 
 // ++++++++++++ Concate with concate method ++++++++++++
-/*
+
 let student = ["Faheem", "wasid", "shehzad", "shahzaib", "adil"];
 let student2 = ["sohail", "saqib"];
 
@@ -1409,392 +1410,392 @@ function toggleMenu() {
 */
 
 // *********************************** TimeOut Functions ***********************************
+/*
+setTimeout(() => {
+  console.log("Hello World!")
+}, 2000)
 
-// setTimeout(() => {
-//   console.log("Hello World!")
-// }, 2000)
+let sayHello = () => {
+  console.log("Hello World!");
+};
+setTimeout(sayHello, 2000);
 
-// let sayHello = () => {
-//   console.log("Hello World!");
-// };
-// setTimeout(sayHello, 2000);
+Changing Text After Seconds
+let changeHello = () => {
+  document.querySelector("h1").innerHTML = "Hello World"
+}
 
-// Changing Text After Seconds
-// let changeHello = () => {
-//   document.querySelector("h1").innerHTML = "Hello World"
-// }
+setTimeout(changeHello, 2000)
 
-// setTimeout(changeHello, 2000)
+let sayHelloText = () => {
+  document.querySelector("h1").innerHTML = "Hello World"
+}
 
-// let sayHelloText = () => {
-//   document.querySelector("h1").innerHTML = "Hello World"
-// }
+let changeTime = setTimeout(sayHelloText, 2000);
 
-// let changeTime = setTimeout(sayHelloText, 2000);
+CLEAR TIMEOUT
 
-// CLEAR TIMEOUT
+let newHello = () => {
+  let btn = document.getElementById("stop");
+  btn.addEventListener("click", () => {
+    clearTimeout(changeTime)
+    console.log("STOPPED")
+  })
+}
 
-// let newHello = () => {
-//   let btn = document.getElementById("stop");
-//   btn.addEventListener("click", () => {
-//     clearTimeout(changeTime)
-//     console.log("STOPPED")
-//   })
-// }
-
-// newHello()
-
-
-// let btn = document.getElementById("start");
-// let btn2 = document.getElementById("stop");
-
-// let newFun = () => {
-//   let dive = document.querySelector(".new-div");
-//   dive.innerHTML = Math.floor(Math.random() * 10 + 1);
-// }
-
-// let starbtn
-
-// btn.addEventListener("click", () => {
-//   starbtn = setInterval(newFun, 1000)
-// })
-
-// btn2.addEventListener("click", () => {
-//   clearInterval(starbtn)
-// })
-
-// let btn = document.querySelector('#animateBtn');
-
-// btn.addEventListener("mouseover", function() {
-//   btn.style.backgroundColor = "orange"
-//   btn.style.border = "none"
-//   btn.style.padding = "10px 30px"
-//   btn.style.borderRadius = "40px"
-//   btn.style.fontSize = "1rem"
-
-// })
-
-// btn.addEventListener("mouseleave", function () {
-//   // btn.style.padding = "0px"
-//   // btn.style.backgroundColor = "transprant"
-//   // btn.style.borderRadius = "none"
-//   btn.style = "none"
-
-// })
-
-// btn.addEventListener("mouseup", function () {
-//   console.log("key Down ")
-// })
-
-// let images = document.getElementById("images");
-// let list = document.getElementById("image-2")
-
-// images.addEventListener("click", function () {
-//   console.log("Image was cliked")
-// })
-
-// list.addEventListener("click", function () {
-//   console.log("list was clicked")
-// })
+newHello()
 
 
-// let list = document.querySelector("h1");
-// let bnt = document.querySelector("#start")
+let btn = document.getElementById("start");
+let btn2 = document.getElementById("stop");
 
-// let changeText = () => {
-//   list.innerHTML = "Hello World"
-// }
+let newFun = () => {
+  let dive = document.querySelector(".new-div");
+  dive.innerHTML = Math.floor(Math.random() * 10 + 1);
+}
 
-// let stop = setTimeout(changeText, 2000)
+let starbtn
 
-// bnt.addEventListener("click", function() {
-//   clearTimeout(stop)
-// })
+btn.addEventListener("click", () => {
+  starbtn = setInterval(newFun, 1000)
+})
 
-// let container = document.querySelector(".parent");
+btn2.addEventListener("click", () => {
+  clearInterval(starbtn)
+})
 
-// let dive = document.createElement("div");
-// let textNode = document.createTextNode("Setureday");
-// dive.appendChild(textNode)
-// container.appendChild(dive)\
+let btn = document.querySelector('#animateBtn');
 
-// let start = document.querySelector("#start")
-// let stop = document.querySelector("#stop")
-// let dive = document.querySelector(".new-div")
+btn.addEventListener("mouseover", function() {
+  btn.style.backgroundColor = "orange"
+  btn.style.border = "none"
+  btn.style.padding = "10px 30px"
+  btn.style.borderRadius = "40px"
+  btn.style.fontSize = "1rem"
 
-// let startFunc = () => {
-//   dive.innerHTML = Math.floor(Math.random() * 10 + 1)
-// }
+})
 
-// let changing;
+btn.addEventListener("mouseleave", function () {
+  // btn.style.padding = "0px"
+  // btn.style.backgroundColor = "transprant"
+  // btn.style.borderRadius = "none"
+  btn.style = "none"
 
-// start.addEventListener("click", () => {
-//   changing = setInterval(startFunc, 1000)
-// })
+})
 
-// stop.addEventListener("click", () => {
-//   clearInterval(changing)
-// })
+btn.addEventListener("mouseup", function () {
+  console.log("key Down ")
+})
 
+let images = document.getElementById("images");
+let list = document.getElementById("image-2")
+
+images.addEventListener("click", function () {
+  console.log("Image was cliked")
+})
+
+list.addEventListener("click", function () {
+  console.log("list was clicked")
+})
+
+
+let list = document.querySelector("h1");
+let bnt = document.querySelector("#start")
+
+let changeText = () => {
+  list.innerHTML = "Hello World"
+}
+
+let stop = setTimeout(changeText, 2000)
+
+bnt.addEventListener("click", function() {
+  clearTimeout(stop)
+})
+
+let container = document.querySelector(".parent");
+
+let dive = document.createElement("div");
+let textNode = document.createTextNode("Setureday");
+dive.appendChild(textNode)
+container.appendChild(dive)\
+
+let start = document.querySelector("#start")
+let stop = document.querySelector("#stop")
+let dive = document.querySelector(".new-div")
+
+let startFunc = () => {
+  dive.innerHTML = Math.floor(Math.random() * 10 + 1)
+}
+
+let changing;
+
+start.addEventListener("click", () => {
+  changing = setInterval(startFunc, 1000)
+})
+
+stop.addEventListener("click", () => {
+  clearInterval(changing)
+})
+*/
 // *********************************** Promises and async await ***********************************
+/*
+const promiseOne = new Promise((resolve, reject) => {
+  setTimeout(() => {
+    console.log("Async tast is complated");
+    resolve()
+  }, 3000)
+})
 
-// const promiseOne = new Promise((resolve, reject) => {
-//   setTimeout(() => {
-//     console.log("Async tast is complated");
-//     resolve()
-//   }, 3000)
-// })
+promiseOne.then(() => {
+  console.log("Promise is consumed")
+})
 
-// promiseOne.then(() => {
-//   console.log("Promise is consumed")
-// })
+new Promise(function (resolve, reject) {
+  setTimeout(() => {
+    console.log("Async task 2 is complated")
+    resolve()
+  })
+}).then(function () {
+  console.log("Async 2 is consumed")
+})
 
-// new Promise(function (resolve, reject) {
-//   setTimeout(() => {
-//     console.log("Async task 2 is complated")
-//     resolve()
-//   })
-// }).then(function () {
-//   console.log("Async 2 is consumed")
-// })
+const promiseThree = new Promise(function (resolve, reject) {
+  setTimeout(() => {
+    resolve({ username: "Faheem", email: "faheem@gmail.com" })
+  }, 3000)
+})
 
-// const promiseThree = new Promise(function (resolve, reject) {
-//   setTimeout(() => {
-//     resolve({ username: "Faheem", email: "faheem@gmail.com" })
-//   }, 3000)
-// })
+promiseThree.then((user) => {
+  console.log(user)
+})
 
-// promiseThree.then((user) => {
-//   console.log(user)
-// })
-
-// const promiseFour = new Promise(function(resolve, reject) {
-//   setTimeout(() => {
-//     let error = false;
-//     if(error) {
-//       resolve(["Faheem", "wasid", "shehzad", "sohail"])
-//     } else {
-//       reject ("ERROR: sum error accurd")
-//     }
-//   }, 2000);
-// })
-
-
-// promiseFour.then((user) => {
-//   console.log(user);
-//   return user[2]
-// }).then((username) => {
-//   console.log(username)
-// }).catch((error) => {
-//   console.log(error)
-// }).finally(() => {
-//   console.log("finnaly all done")
-// })
-
-// const promiseFive = new Promise((resolve, reject) => {
-//   setTimeout(() => {
-//     let error = true;
-//     if (error) {
-//       resolve({ username: "Faheem", password: "1234" });
-//     } else {
-//       reject("ERROR: Js went wrong")
-//     }
-//   }, 1000)
-// })
-
-// async function promiseFiveConsum() {
-//   try {
-//     const response = await promiseFive;
-//     console.log(response)
-//   } catch (error) {
-//     console.log(error)
-//   }
-// }
-
-// promiseFiveConsum()
-
-// async function getAllUsers() {
-//   try {
-//     const response = await fetch("https://jsonplaceholder.typicode.com/users");
-//     const data = await response.json();
-//     console.log(data)
-
-//   } catch (error) {
-//     console.log( error)
-//   }
-// }
-
-// getAllUsers()
+const promiseFour = new Promise(function(resolve, reject) {
+  setTimeout(() => {
+    let error = false;
+    if(error) {
+      resolve(["Faheem", "wasid", "shehzad", "sohail"])
+    } else {
+      reject ("ERROR: sum error accurd")
+    }
+  }, 2000);
+})
 
 
-// let promiseOne = new Promise((resolve, reject) => {
-//   setTimeout(() => {
-//     let succ = true;
-//     if (succ) {
-//       resolve(["Faheem", "wasid", "shehzad", "said mehmood", "sohail", "shehzad", "shahzeb"])
-//     } else {
-//       reject("ERROR: promise is rejected")
-//     }
-//   }, 2000)
-// })
+promiseFour.then((user) => {
+  console.log(user);
+  return user[2]
+}).then((username) => {
+  console.log(username)
+}).catch((error) => {
+  console.log(error)
+}).finally(() => {
+  console.log("finnaly all done")
+})
 
-// let consumPromise = async () => {
-//   try {
-//     let response = await promiseOne;
-//     console.log(response)
-//   } catch (error) {
-//     console.log(error)
-//   }
-// }
+const promiseFive = new Promise((resolve, reject) => {
+  setTimeout(() => {
+    let error = true;
+    if (error) {
+      resolve({ username: "Faheem", password: "1234" });
+    } else {
+      reject("ERROR: Js went wrong")
+    }
+  }, 1000)
+})
 
-// consumPromise()
+async function promiseFiveConsum() {
+  try {
+    const response = await promiseFive;
+    console.log(response)
+  } catch (error) {
+    console.log(error)
+  }
+}
 
-// fetch('https://jsonplaceholder.typicode.com/users')
-//   // .then(response => response.json())  // Parsing the response data into JSON
-//   .then((response) => {
-//     return response.json()
-//   })
-//   .then(data => {
-//     console.log(data);  // Handling the data
-//   })
-//   .catch(error => {
-//     console.error('Error:', error);  // Handling errors
-//   });
+promiseFiveConsum()
 
+async function getAllUsers() {
+  try {
+    const response = await fetch("https://jsonplaceholder.typicode.com/users");
+    const data = await response.json();
+    console.log(data)
 
-// async function getAllUsers() {
-//   try {
-//     const response = await fetch("https://jsonplaceholder.typicode.com/users");
-//     const data = await response.json();
-//     console.log(data)
-//   } catch (error) {
-//     console.log(error)
-//   }
-// }
+  } catch (error) {
+    console.log( error)
+  }
+}
 
-// getAllUsers()
-
-// fetch("https://jsonplaceholder.typicode.com/users")
-//   .then((res) => {
-//     return res.json()
-//   })
-//   .then((data) => {
-//     console.log(data)
-//   })
-//   .catch((error) => {
-//     console.log(error)
-//   })
+getAllUsers()
 
 
-// const getAll = async () => {
-//   try {
-//     let response = await fetch("https://jsonplaceholder.typicode.com/users")
-//     let data = await response.json()
-//     console.log(data)
-//   } catch (error) {
-//     console.log(error)
-//   }
-// }
+let promiseOne = new Promise((resolve, reject) => {
+  setTimeout(() => {
+    let succ = true;
+    if (succ) {
+      resolve(["Faheem", "wasid", "shehzad", "said mehmood", "sohail", "shehzad", "shahzeb"])
+    } else {
+      reject("ERROR: promise is rejected")
+    }
+  }, 2000)
+})
 
-// getAll()
+let consumPromise = async () => {
+  try {
+    let response = await promiseOne;
+    console.log(response)
+  } catch (error) {
+    console.log(error)
+  }
+}
 
-// let promiseOne = new Promise((resolve, reject) => {
-//   let error = false
-//   if(error) {
-//     setTimeout(() => {
-//       console.log("Promise is succes")
-//       resolve()
-//     }, 3000)
-//   } else {
-//     setTimeout(() => {
-//       console.log("Error accurd")
-//     }, 3000)
-//   }
+consumPromise()
 
-// })
-
-// promiseOne
-//   .then((response) => {
-//     console.log(response)
-//   })
-//   .catch((error) => {
-//     console.log(error)
-//   })
-
-
-// fetch("https://jsonplaceholder.typicode.com/users")
-//   .then((res) => {
-//     return res.json()
-//   })
-//   .then((data) => {
-//     console.log(data)
-//   })
-//   .catch((error) => {
-//     console.log(error)
-//   })
-
-// let getAllUsers = async () => {
-//   try {
-//     let response = await fetch("https://jsonplaceholder.typicode.com/users");
-//     let data = await response.json()
-//   } catch (error) {
-//     console.log(error)
-//   }
-// }
+fetch('https://jsonplaceholder.typicode.com/users')
+  // .then(response => response.json())  // Parsing the response data into JSON
+  .then((response) => {
+    return response.json()
+  })
+  .then(data => {
+    console.log(data);  // Handling the data
+  })
+  .catch(error => {
+    console.error('Error:', error);  // Handling errors
+  });
 
 
-// let PromiseHere = new Promise((reslove, reject) => {
-//   setTimeout(() => {
-//     reject({username : "Faheem", email : "info@gmail.com"});
-//   }, 3000)
-// })
+async function getAllUsers() {
+  try {
+    const response = await fetch("https://jsonplaceholder.typicode.com/users");
+    const data = await response.json();
+    console.log(data)
+  } catch (error) {
+    console.log(error)
+  }
+}
 
-// PromiseHere.then((response) => {
-//   console.log(response);
-//   return response.username
-// }).then((user) => {
-//   console.log(user)
-// }).catch((error) => {
-//   console.log(error)
-// })
+getAllUsers()
 
-// let PromiseOne = new Promise(function (reslove, reject) {
-//   setTimeout(() => {
-//     reslove(["Faheem", "shehzad", "sohail", "wasid"])
-//   }, 3000)
-// })
-//   .then((respon) => {
-//     console.log(respon)
-//     return respon[2]
-//   })
-//   .then((user) => {
-//     console.log(user)
-//   })
-//   .catch((error) => {
-//     console.log(error)
-//   })
-
-// let getting = async () => {
-//   try {
-//     let response = await PromiseOne
-//     console.log(response)
-//   } catch (error) {
-//     console.log(error)
-//   }
-// }
+fetch("https://jsonplaceholder.typicode.com/users")
+  .then((res) => {
+    return res.json()
+  })
+  .then((data) => {
+    console.log(data)
+  })
+  .catch((error) => {
+    console.log(error)
+  })
 
 
-// let fetchingData = async () => {
-//   try {
-//     let hell = await fetch("https://jsonplaceholder.typicode.com/users");
-//     let data = await hell.json()
-//     console.log(data)
-//   } catch (error) {
-//     console.log(error)
-//   }
-// }
+const getAll = async () => {
+  try {
+    let response = await fetch("https://jsonplaceholder.typicode.com/users")
+    let data = await response.json()
+    console.log(data)
+  } catch (error) {
+    console.log(error)
+  }
+}
 
-// fetchingData()
+getAll()
+
+let promiseOne = new Promise((resolve, reject) => {
+  let error = false
+  if(error) {
+    setTimeout(() => {
+      console.log("Promise is succes")
+      resolve()
+    }, 3000)
+  } else {
+    setTimeout(() => {
+      console.log("Error accurd")
+    }, 3000)
+  }
+
+})
+
+promiseOne
+  .then((response) => {
+    console.log(response)
+  })
+  .catch((error) => {
+    console.log(error)
+  })
+
+
+fetch("https://jsonplaceholder.typicode.com/users")
+  .then((res) => {
+    return res.json()
+  })
+  .then((data) => {
+    console.log(data)
+  })
+  .catch((error) => {
+    console.log(error)
+  })
+
+let getAllUsers = async () => {
+  try {
+    let response = await fetch("https://jsonplaceholder.typicode.com/users");
+    let data = await response.json()
+  } catch (error) {
+    console.log(error)
+  }
+}
+
+
+let PromiseHere = new Promise((reslove, reject) => {
+  setTimeout(() => {
+    reject({username : "Faheem", email : "info@gmail.com"});
+  }, 3000)
+})
+
+PromiseHere.then((response) => {
+  console.log(response);
+  return response.username
+}).then((user) => {
+  console.log(user)
+}).catch((error) => {
+  console.log(error)
+})
+
+let PromiseOne = new Promise(function (reslove, reject) {
+  setTimeout(() => {
+    reslove(["Faheem", "shehzad", "sohail", "wasid"])
+  }, 3000)
+})
+  .then((respon) => {
+    console.log(respon)
+    return respon[2]
+  })
+  .then((user) => {
+    console.log(user)
+  })
+  .catch((error) => {
+    console.log(error)
+  })
+
+let getting = async () => {
+  try {
+    let response = await PromiseOne
+    console.log(response)
+  } catch (error) {
+    console.log(error)
+  }
+}
+
+
+let fetchingData = async () => {
+  try {
+    let hell = await fetch("https://jsonplaceholder.typicode.com/users");
+    let data = await hell.json()
+    console.log(data)
+  } catch (error) {
+    console.log(error)
+  }
+}
+
+fetchingData()
 
 fetch("https://jsonplaceholder.typicode.com/users")
   .then((Response) => {
@@ -1806,3 +1807,91 @@ fetch("https://jsonplaceholder.typicode.com/users")
   .catch((error) => {
     console.log(error)
   })
+
+let promiseOne = new Promise((reslove, reject) => {
+  reslove(10)
+})
+
+promiseOne.then((resultOne) => {
+  return resultOne + 1
+})
+  .then((resTwo) => {
+    return resTwo + 10
+  }).then((resThree) => {
+    return resThree + 1
+  })
+  .then((result) => {
+    console.log(result)
+  })
+  .catch((error) => {
+    console.log(error)
+  })
+
+let declaredFunc = () => {
+  return new Promise((reslove, reject) => {
+    setTimeout(() => {
+      console.log("Promises Function are calling....")
+    }, 3000)
+  })
+}
+
+let promiseCall = async () => {
+  setTimeout(() => {
+    console.log("Async function are exicuting")
+  }, 5000)
+  let result = await declaredFunc();
+  console.log(result)
+}
+
+promiseCall()
+
+
+let promiseFunction = () => {
+  return new Promise((reslove, reject) => {
+    setTimeout(() => {
+      reject("Promise function is resolve")
+    }, 3000)
+  })
+}
+
+let asyncFunction = async () => {
+  try {
+    let result = await promiseFunction()
+    console.log(result)
+    console.log("async function is calling....")
+  } catch (error) {
+    console.log(error)
+  }
+}
+
+asyncFunction()
+
+const fetchData = () => {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      resolve("Fetching data with promise")
+    }, 3000)
+  })
+}
+
+fetchData().then((response) => {
+  console.log(response)
+}).catch((error) => {
+  console.log(error)
+})
+
+const gettingData = async () => {
+  try {
+    let result = await fetchData()
+    console.log(result)
+    setTimeout(() => {
+    console.log("Aync Await function is calling....")
+
+    }, 5000)
+  } catch (error) {
+    console.log(error)
+  }
+}
+
+gettingData()
+*/
