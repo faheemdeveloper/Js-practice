@@ -2234,3 +2234,345 @@ gettingData()
 
 // arr.addingArray()
 // country.addingArray()
+
+// *********************************** Call ***********************************
+
+// function SetUsername(username) {
+//   this.username = username
+// }
+
+// function createUser(username, email, password) {
+//   SetUsername.call(this, username) //edhar call method se username ko call karha hai
+//   this.email = email;
+//   this.password = password
+// }
+
+// let chai = new createUser("Chai", "chai@gmail.com", "1234")
+
+// console.log(chai)
+
+
+// *********************************** Classes ***********************************
+
+// class user {
+//   constructor(username, email, password) {
+//     this.username = this.username;
+//     this.email = email;
+//     this.password = password;
+//   }
+
+//   encryptPassword() {
+//     return `${this.password}abc`
+//   }
+// }
+
+// const chai = new user("chail", "chai@gmail.com", "123")
+
+// console.log(chai.encryptPassword())
+
+// Yahi kaam dosre tareeke se
+
+// function User(username, email, password) {
+//   this.username = username;
+//   this.email = email;
+//   this.password = password
+
+// }
+
+// User.prototype.encryptPassword = function() {
+//   return `${this.password}abc`
+// }
+
+// User.prototype.changeUserName = function() {
+//   return `${this.username.toUpperCase()}`
+// }
+
+// const tea = new User("chai", "cahi@gmail.com", "123")
+
+// console.log(tea.encryptPassword())
+// console.log(tea.changeUserName())
+
+// *********************************** Inheritance ***********************************
+
+// class User {
+//   constructor(username) {
+//     this.username = username
+//   }
+
+//   logMe() {
+//     console.log(`usernmae is: ${this.username}`)
+//   }
+// }
+
+// class Teacher extends User {
+//   constructor(username, email, passwrod) {
+//     super(username)
+//     this.email = email;
+//     this.passwrod = this.passwrod
+//   }
+
+//   addCourse() {
+//     console.log(`A new course was added by ${this.username}`)
+//   }
+// }
+
+// const chai = new Teacher("chai", "chai@gmail.com", "123")
+// chai.addCourse()
+// const masalaChai = new User("masalaChai");
+// masalaChai.logMe()
+
+// *********************************** Bind ***********************************
+
+// class React {
+//   constructor() {
+//     this.library = "React"
+//     this.server = "https://localhost:300"
+
+//     document.querySelector("button")
+//     .addEventListener("click", this.handleClick.bind(this))
+//   }
+
+//   handleClick() {
+//     console.log("Button Clicked")
+//     console.log(this.server)
+//   }
+// }
+
+// const app = new React()
+
+// *********************************** Object Advance  ***********************************
+
+// let obj = {
+//   name: "Faheem",
+//   email: "fm@gmail.com",
+//   isAvailable: true,
+//   isLoggin: true
+// }
+
+// // let chai = Object.getOwnPropertyDescriptor(obj, "name");
+// let result = Object.defineProperties(obj, "name", {
+//   writable: false,
+//   configurable: false
+// })
+// // console.log(chai)
+// console.log(result)
+
+// *********************************** Practice ***************************
+
+// let person1 = {
+//   firstName: "M",
+//   lastName: "FAheem"
+// }
+
+// let person2 = {
+//   firstName: "Wasid",
+//   lastName: "Rehman"
+// }
+
+// function greet() {
+//   // console.log(greet + "," + this.firstName + "" + this.lastName);
+//   console.log(`${this.firstName} , ${this.lastName}`)
+// }
+
+// greet.call(`Hello ${person1}`)
+// greet.call(`Hi ${person2}`)
+
+// function SetUsername(username) {
+//   this.username = username
+// }
+
+// function createUser(username, email, password) {
+//   SetUsername.call(this, username)
+//   this.email = email;
+//   this.password = password
+// }
+
+// let newUser = new createUser("FAheem", "mf5092676@gmail.com", "Faheem78910");
+// console.log(newUser)
+
+// let person1 = {
+//   firstName: "M_",
+//   lastName: "Faheem"
+// }
+
+// let person2 = {
+//   // firstName: "Wasid",
+//   lastName: "Rehman",
+
+//   userDetail: function() {
+//     return person1.call(this, this.firstName)
+//   }
+// }
+
+// console.log(person2.userDetail())
+
+// class User {
+//   constructor(username, email, password) {
+//     this.username = username;
+//     this.email = email;
+//     this.password = password
+//   }
+
+//   encryptPassword() {
+//     return `the passwrod is ${this.password}abc`
+//   }
+
+//   changeUserName() {
+//     return `Username: ${this.username}`
+//   }
+// }
+
+// let chai = new User("Faheem", "hfhd", "1234");
+// // console.log(chai)
+// console.log(chai.encryptPassword())
+// console.log(chai.changeUserName())
+
+// function createUser(username) {
+//   this.username = username
+// }
+
+// function creatPasswrod(username, password, email) {
+//   createUser.call(this, username)
+//   this.email = email
+//   this.password = password
+// }
+
+// let result = new creatPasswrod("Wasid", "wr@gmail.com", "Rohi11")
+
+// console.log(result)
+
+// function SetUsername(username) {
+//   this.username = username
+// }
+
+// function createUsername(username, email, password) {
+//   SetUsername.call(this, username)
+//   this.password = password
+// }
+
+// function createEmail(username, email, password) {
+//   createUsername.call(this, password)
+//   this.email = email
+// }
+
+
+// let chai = new createEmail("Wasid", "wr@gmail.com", "Rohi11");
+// console.log(chai)
+
+// class User {
+//   constructor(username, emai, password) {
+//     this.username = username
+//     this.emai = emai
+//     this.password = password
+//   }
+  
+//   greeting() {
+//     console.log(`Hello ${this.username} Welcome to my Website`)
+//   }
+// }
+
+// let result = new User("Wasid", "wr@gmail.com", "1234")
+// console.log(result.greeting())
+
+// class User {
+//   constructor(username, email, password) {
+//     this.username = username
+//     this.email = email
+//     this.password = password
+//   }
+
+//   editUser() {
+//     return `Hello ${this.username.toUpperCase()} Jani Welcome to my Website`
+//   }
+  
+//   encrptPassword() {
+//     return `the userPasswrod is ${this.password.toUpperCase()}abc`
+//   }
+// }
+
+// let code = new User("Wasid", "wr@gmail.com", "Rohi11");
+// console.log(code)
+// console.log(code.encrptPassword())
+// console.log(code.editUser())
+
+// class User {
+//   constructor(username) {
+//     this.username = username
+//   }
+// }
+
+// class Teacher extends User {
+//   constructor (username, email, password) {
+//     super(username)
+//     this.email = email
+//     this.password = password
+//   }
+// }
+
+// let Code = new Teacher("Shehzad", "sh957@gmail.com", "Sh1234")
+// console.log(Code)
+
+// function User(username, email, password) {
+//   this.username = username
+//   this.email = email
+//   this.password = password
+// }
+
+// User.prototype.encryptPassword = function() {
+//   return `The user password is ${this.password.toUpperCase()}1234`
+// }
+
+// User.prototype.changeUser = function() {
+//   return `The user password is ${this.username.toUpperCase()}`
+// }
+
+// let Code = new User("Shehzad", "sh97532@gmail.com", "she")
+// console.log(Code)
+// console.log(Code.encryptPassword())
+// console.log(Code.changeUser())
+
+
+// class User {
+//   constructor(username) {
+//     this.username = username
+//   }
+
+//   greet() {
+//     console.log(`The user is ${this.username}`)
+//   }
+// }
+
+// class Teacher extends User {
+//   greeting() {
+//     console.log(`Hello ${this.username.toUpperCase()} Welcome to my Website`)
+//   }
+// }
+
+// let code = new Teacher("Shehzad")
+// console.log(code.greet())
+
+class User {
+  constructor(username) {
+    this.username = username
+  }
+
+  logMe() {
+    console.log(`username: ${this.username}`)
+  }
+
+  static createId() {
+    return `1234`
+  }
+}
+
+const code = new User("wasid")
+
+class Teacher extends User {
+  constructor(username, email) {
+    super(username)
+    this.email = email
+  }
+}
+
+const iphone = new Teacher("iphone", "apple@gmail.come")
+console.log(iphone.logMe())
