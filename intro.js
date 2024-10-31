@@ -2465,7 +2465,7 @@ gettingData()
 //     this.emai = emai
 //     this.password = password
 //   }
-  
+
 //   greeting() {
 //     console.log(`Hello ${this.username} Welcome to my Website`)
 //   }
@@ -2484,7 +2484,7 @@ gettingData()
 //   editUser() {
 //     return `Hello ${this.username.toUpperCase()} Jani Welcome to my Website`
 //   }
-  
+
 //   encrptPassword() {
 //     return `the userPasswrod is ${this.password.toUpperCase()}abc`
 //   }
@@ -2551,28 +2551,302 @@ gettingData()
 // let code = new Teacher("Shehzad")
 // console.log(code.greet())
 
+// class User {
+//   constructor(username) {
+//     this.username = username
+//   }
+
+//   logMe() {
+//     console.log(`username: ${this.username}`)
+//   }
+
+//   static createId() {
+//     return `1234`
+//   }
+// }
+
+// const code = new User("wasid")
+
+// class Teacher extends User {
+//   constructor(username, email) {
+//     super(username)
+//     this.email = email
+//   }
+// }
+
+// const iphone = new Teacher("iphone", "apple@gmail.come")
+// console.log(iphone.logMe())
+
+// **************************************** Getter or Setter ***********************************
+
+// class User {
+//   constructor(email, password) {
+//     this.email = email
+//     this.password = password
+//   }
+
+//   get email() {
+//     return this.email.toUpperCase()
+//   }
+
+//   set email(value) {
+//     this._email = value
+//   }
+
+//   get password() {
+//     // return this._password.toUpperCase()
+//     return `${this._password.toUpperCase()}faheem`
+//   }
+
+//   set password(value) {
+//     this._password = value
+//   }
+// }
+
+// const code = new User("fm@gmail.com", "abcd")
+// console.log(code.password)
+// console.log(code.email)
+
+
+// function User(email, password) {
+//   this._email = email
+//   this._password = password
+
+//   Object.defineProperty(this, "email", {
+//     get: function () {
+//       return this._email.toUpperCase()
+//     },
+
+//     set : function(value) {
+//       this._email = value
+//     }
+//   })
+// }
+
+// const code = new User("fm@gmail.com", "1234")
+// console.log(code.email)
+
+// const User = {
+//   _email: "fm@gmail.com",
+//   _password: "1234",
+
+//   get email() {
+//     return this._email.toUpperCase()
+//   },
+
+//   set email(value) {
+//     this._email = value
+//   }
+// }
+
+// console.log(User.email)
+
+
+// function makeFunc() {
+//   const name = "faheem";
+//   function displayName() {
+//     console.log(name)
+//   }
+
+//   return displayName;
+// }
+
+// const myFunc = makeFunc();
+// myFunc();
+
+// function handle(color) {
+//   return function () {
+//     document.body.style.backgroundColor = `${color}`
+//   }
+// }
+
+// document.getElementById("orange").onclick = handle("orange")
+// document.getElementById("green").onclick = handle("green")
+
+
+// class User {
+//   constructor(email, password) {
+//     this.email = email
+//     this.password = password
+//   }
+
+//   get email() {
+//     return this._email.toUpperCase()
+//   }
+
+//   set email(value) {
+//     this._email = value
+//   }
+
+//   get password() {
+//     return this._password.toUpperCase()
+//   }
+
+//   set password(value) {
+//     this._password = value
+//   }
+// }
+
+// let code = new User("faheem@gmail.com", "Faheem78910")
+
+// console.log(code.email)
+// console.log(code.password)
+
+// function User(email, password) {
+//   this._email = email
+//   this._password = password
+
+//   Object.defineProperty(this, "email", {
+//     get: function () {
+//       return this._email.toUpperCase()
+//     },
+
+//     set: function (name) {
+//       this._email = name
+//     }
+//   })
+
+//   Object.defineProperty(this, "password", {
+//     get: function () {
+//       return this._password.toUpperCase()
+//     },
+
+//     set: function (name) {
+//       this._password = name
+//     }
+//   })
+
+// }
+
+// const code = new User("faheem@gmail.com", "faheem78910")
+// console.log(code.email)
+// console.log(code.password)
+
+// class User {
+//   constructor(username, email, password) {
+//     this.username = username
+//     this.email = email
+//     this.password = password
+//   }
+
+//   UserName() {
+//     return `the username is: ${this.username.toUpperCase()}`
+//   }
+
+//    encrptPassword() {
+//     return `The User Password is ${this.password}`
+//   }
+// }
+
+
+// const code = new User("Wasid", "wr@gmail.com", "1234")
+// // console.log(code.UserName())
+// console.log(code.encrptPassword())
+
+// function User(username, password) {
+//   this.username = username
+//   this.password = password
+// }
+
+// function Teacher(username, email, password) {
+//   User.call(this, username)
+//   this.email = email.toUpperCase()
+//   this.password = password
+// }
+
+// const code = new Teacher("Shehzad", "sh@gmail.com", "sh1234")
+// console.log(code.email)
+
+// const User = {
+//   _username: "Wasid",
+//   _email: "wr1234",
+
+//   get username() {
+//     return this._username.toUpperCase()
+//   },
+
+//   set username(value) {
+//     this.username = value
+//   }
+// }
+
+// console.log(User.username)
+
+// **************************************** Closure or lexical Scoping ***********************************
+
+// function outer() {
+//   let username = "wasid";
+//   function innerOne() {
+//     console.log(`The innerTwo User is: ${username}`)
+//   }
+
+//   function innerTwo() {
+//     console.log(`The innerTwo User is: ${username}`)
+//     console.log(`inner userOne ${innerUserOne}`)
+//   }
+//   innerOne()
+//   innerTwo()
+
+// }
+
+// console.log(username)
+
+// outer()
+
+// function Outer() {
+//   function inner() {
+//     console.log("hello World")
+//   }
+
+//   return inner()
+// }
+
+// Outer()
+
+// function outer() {
+//   function inner() {
+//     let username = "wasid";
+//     return username
+//   }
+
+//   return inner()
+// }
+
+// console.log(outer(username))
+
+// const person1 = {
+//   firstName: "M_",
+//   lastName: "Faheem"
+// }
+
+// const person2 = {
+//   firstName: "Wasid",
+//   lastName: "Rehman"
+// }
+
+// function greet(value) {
+//   console.log(`${value}  ${this.firstName}  ${this.lastName}`)
+// }
+
+// greet.call(person1, 'Salam')
+// greet.call(person2, 'H')
+
+
 class User {
   constructor(username) {
     this.username = username
   }
-
-  logMe() {
-    console.log(`username: ${this.username}`)
-  }
-
-  static createId() {
-    return `1234`
-  }
 }
-
-const code = new User("wasid")
 
 class Teacher extends User {
-  constructor(username, email) {
+  constructor(username, email, password) {
     super(username)
     this.email = email
+    this.password = password
+    
+
   }
 }
 
-const iphone = new Teacher("iphone", "apple@gmail.come")
-console.log(iphone.logMe())
+const code = new Teacher("Wasid","wr@gmail.com", "Rohi11" )
+console.log(code.email)
