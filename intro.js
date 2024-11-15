@@ -3042,3 +3042,111 @@ String.prototype.trueLength = function() {
 
 console.log(User.trueLength())
 */
+
+
+// let arr = [1, [2, [3, [4, 5], 6], 7], [8, 9]];
+// console.log(arr.flat(Infinity))
+
+
+
+// const book = [
+//   {price: 300, name : "bookOne", publish: 2000,},
+//   {price: 100, name : "bookTwo", publish: 1989,},
+//   {price: 700, name : "bookThree", publish: 1980,},
+//   {price: 900, name : "bookFour", publish: 2010,},
+//   {price: 1200, name : "bookFive", publish: 2008,},
+//   {price: 600, name : "bookSix", publish: 2003,},
+//   {price: 9000, name : "bookSiven", publish: 1999,},
+// ]
+
+// const total = book.filter((currVal) => {
+//   return currVal.price > 700
+// })
+
+// console.log(total)
+
+// let nums = ["faheem", "wasid", "shehzad", "luqman"];
+
+// let filling = (even) => {
+//   return even[2]
+// }
+
+// console.log(filling(nums))
+
+
+// let obj = {
+//   user: "shehzad",
+//   email: "sh@gmail.com",
+//   password: 1234,
+//   isStudent: false
+// }
+
+// let fullObj = Object.assign({}, obj)
+// console.log(fullObj.password)
+
+// let map = new Map()
+// map.set("IN", "india")
+// map.set("pk", "pakistan")
+// map.set("us", "united state")
+// map.set("fr", "france")
+
+// for(let [key, value] of map) {
+//   console.log(`${key.toUpperCase()} :=> ${value.toUpperCase()}`)
+// }
+
+// let a = "a";
+
+// let b = "z";
+
+// console.log(a.charCodeAt())
+// console.log(b.charCodeAt())
+
+// for(let i = 97 ; i <= 122 ; i++) {
+//   console.log(String.fromCharCode(i))
+// }
+
+
+// function User(user, email, password) {
+//   this._user = user
+//   this._email = email
+//   this._password = password
+
+
+//   Object.defineProperty(this, "user", {
+//     get: function() {
+//       return this._user.toUpperCase()
+//     },
+//     set: function (val) {
+//       this.user = val
+//     }
+//   })
+// }
+
+// let userone = new User("wasid", "wr@gmail.com", 1234)
+// console.log(userone.user)
+
+// function User(user, email, score) {
+//   this.user = user
+//   this.email = email
+//   this.score = score
+
+// }
+
+// User.prototype.toUpps = function() {
+//   console.log(`The user is: ${this.user.toUpperCase()}`)
+// }
+
+// User.prototype.pass = function() {
+//   console.log(`user score ${this.score.toUpperCase()}abcd`)
+// }
+
+// User.prototype.emailing = function() {
+//   console.log(`The user email is: ${this.email.toUpperCase()}`)
+// }
+
+// let userOne = new User("wasid", "wr@gmail.com", "hello")
+// console.log(userOne.toUpps())
+// console.log(userOne.pass())
+// console.log(userOne.emailing())
+
+

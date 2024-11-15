@@ -5,53 +5,37 @@
   font-family: "poppins", sans-serif;
 }
 
+
 body {
-  border: 4px solid black;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: #212121;
-  flex-direction: column;
   color: #fff;
 }
 
-.watch {
-  width: 300px;
-  height: 100px;
-  background-color: aqua;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 3rem;
-  color: black;
-}
-
-#green {
-  padding: 10px 30px;
-  border: none;
-  border-radius: 30px;
-  color: black;
-  margin-top: 0.8rem;
-}
-
-#orange {
-  padding: 10px 30px;
-  border: none;
-  border-radius: 30px;
-  color: black;
-  margin-top: 0.8rem;
-}
-
-.new-div {
-  width: 50%;
-  height: 50%;
-  outline: auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 4rem;
+.container {
+  width: 200px;
+  height: 200px;
+  /* outline: auto; */
   margin-top: 1rem;
+  cursor: pointer;
+}
+
+.inpu-field {
+  padding: 6px 20px;
+  background-color: azure;
+  border: 1px solid black;
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+.btn {
+  padding: 10px 30px ;
+  border-radius: 30px;
+  border: none;
+  background-color: orange;
+
 }
