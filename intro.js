@@ -3149,4 +3149,459 @@ console.log(User.trueLength())
 // console.log(userOne.pass())
 // console.log(userOne.emailing())
 
+// const obj = {
+//   username: "Faheem",
+//   userAge: 22,
+//   email: "fm@gmail.com",
+//   password: 1234
+// }
 
+// Object.defineProperty(obj, "username", {
+//   writable: false,
+//   enumerable: false,
+//   configurable: false
+// })
+
+// let check = Object.getOwnPropertyDescriptor(obj, "username")
+
+// console.log(check)
+
+
+
+
+// let objOne = {
+//   user : "wasid",
+//   email : "wr@gmail.com"
+// }
+
+// objTwo = {
+//   userAge : 22,
+//   password : 12345,
+//   __proto__: objOne
+// }
+
+// let fullObj = {...objOne, ...objTwo}
+// console.log(objTwo)
+
+// const book = [
+//     {price: 300, name : "bookOne", publish: 2000,},
+//     {price: 100, name : "bookTwo", publish: 1989,},
+//     {price: 700, name : "bookThree", publish: 1980,},
+//     {price: 900, name : "bookFour", publish: 2010,},
+//     {price: 1200, name : "bookFive", publish: 2008,},
+//     {price: 600, name : "bookSix", publish: 2003,},
+//     {price: 9000, name : "bookSiven", publish: 1999,},
+//   ]
+
+//   const result = book.filter((currValue) => {
+//     return currValue.publish >= 2000
+//   })
+
+//   console.log(result)
+
+
+
+
+// let country = "Pakistan";
+// console.log(country.charAt(2))
+
+
+
+// let arr = ["Faheem", "shehzad", "wasid", "luqman", "shahzeb", "sohail"]
+
+// let result = arr.indexOf("wasid")
+// console.log(result)
+
+// let getData = async () => {
+//   try {
+//     let response = await fetch("https://openlibrary.org/search.json?q=the+lord+of+the+rings");
+//     let data = await response.json();
+//     console.log(data)
+//     const {docs} = data
+//     document.body.innerHTML = docs[3]
+//   } catch (error) { 
+//     console.log(error)
+//   }
+// }
+
+// document.body.addEventListener("load", getData())
+
+// let arr = ["Faheem", ["shehzad",["wasid"], "luqman", "shahzeb"], "sohail"];
+
+// console.log(arr.flat(Infinity))
+
+// let arrOne = ["wasid", "shehzad", "sohail", "nizam"];
+// console.log(Array.isArray(arrOne))
+
+// let objOne = { a: 10, b: 20 };
+// let objTwo = { c: 10, d: 20 };
+
+// let obj = Object.assign({}, objOne, objTwo)
+// console.log(objOne === obj)
+
+// let user = {
+//   myName: "Faheem",
+//   myAge: 22,
+//   email: "fm@gmail.com",
+//   pass: 1234
+// }
+
+// const getObj = (...obj) => {
+
+//   return obj
+// }
+
+// console.log(getObj(user))
+
+// let userLoggedIn = false;
+// let loggTwo = true;
+
+// if (userLoggedIn && loggTwo || 2 == 4) {
+//   console.log("pass")
+// } else {
+//   console.log("fail")
+// }
+
+// let a = null;
+// let b = 20;
+
+// console.log(a ?? b)
+
+// for(let i = 0 ; i <= 20 ; i++) {
+//   if(i == 10) {
+//     console.log("10 is best number")
+//     break;
+//   }
+//   console.log(i)
+// }
+
+// let user = [
+//   { languageName: "js", languageFileName: "JavaScript" },
+//   { languageName: "cpp", languageFileName: "c++" },
+//   { languageName: "phy", languageFileName: "phython" },
+//   { languageName: "css", languageFileName: "cascading style sheet" },
+// ]
+
+// let res = user.filter((item) => {
+//   return item.languageFileName == "JavaScript"
+// })
+
+// console.log(res)
+
+
+// let arr = [1, 2, 3, 4, 5];
+
+// let total = arr.reduce((occum, currValu) => {
+//   return occum + currValu
+// })
+
+// console.log(total)
+
+// const addLanguage = (language) => {
+//   let li = document.createElement("li");
+//   li.innerHTML = language;
+//   let ul = document.querySelector(".language")
+//   ul.appendChild(li)
+// }
+
+// addLanguage("Node js");
+
+// function addOptiLanguage(lang) {
+//   const li = document.createElement("li");
+//   li.appendChild(document.createTextNode(lang))
+//   document.querySelector(".language").appendChild(li)
+// }
+
+// addOptiLanguage("Node js")
+
+// function addLanuguage(lanugage) {
+//   let li = document.createElement("li");
+//   let text = document.createTextNode(lanugage);
+//   li.appendChild(text);
+//   let lang = document.querySelector(".language");
+//   lang.appendChild(li)
+// }
+
+// addLanuguage("Node js")
+
+
+// const lang = document.querySelector("li:nth-child(3)");
+// const newLanugage = document.createElement("li");
+// newLanugage.innerHTML = "Node Js";
+// lang.replaceWith(newLanugage)
+
+// const lastChild = document.querySelector("li:last-child");
+// lastChild.remove()
+
+
+// const addLanugage = (lanugage) => {
+//   let li = document.createElement("li");
+//   let text = document.createTextNode(lanugage);
+//   li.appendChild(text);
+//   let language = document.querySelector(".language");
+//   language.appendChild(li)
+// }
+
+// addLanugage("Node js")
+
+// function longestWorld() {
+//   let sentese = "The quick brown fox jumps over the lazy dog";
+//   console.log(sentese.slice(4, 9))
+
+// }
+
+// longestWorld()
+
+// let myFunction = () => {
+//   return new Promise((resolve) => {
+//     setTimeout(() => {
+//       console.log(`Promise is resolve success`)
+//     }, 3000)
+//   })
+// }
+
+// let asyncFunction = async () => {
+//   try {
+//     console.log(`Calling.....`)
+//     let data = await myFunction()
+//     console.log(data)
+//     console.log(`The res`)
+//   } catch (error) {
+//     console.log(error)
+//   }
+// }
+
+// asyncFunction()
+
+
+// let promise = new Promise((resolve, reject) => {
+//   let error = true;
+//   if (error) {
+//     setTimeout(() => {
+//       resolve(["faheem", "wasid", "shehzad", "luqman", "shahzeb"])
+//     }, 3000)
+//   } else {
+//     reject("promsie is rejected")
+//   }
+// })
+
+// promise.then((res) => {
+//   console.log(res);
+//   return res[3]
+// }).then((user) => {
+//   console.log(user)
+// }).catch((error) => {
+//   console.log(error)
+// })
+
+// let promseFive = new Promise((resolve, reject) => {
+//   setTimeout(() => {
+//     let errr = true;
+//     if (errr) {
+//       resolve({ username: "Faheem", email: "fm@gmail.com" })
+//     } else {
+//       reject("promise is reject")
+//     }
+//   })
+// })
+
+// let consumePromiseFive = async (e) => {
+//   try {
+//     let data = await promseFive;
+//     console.log(data)
+//     console.log(e.username)
+//   } catch (error) {
+//     console.log(error)
+//   }
+// }
+
+// consumePromiseFive()
+
+
+// let promise = new Promise((resolve, reject) => {
+//   setTimeout(() => {
+//     let error = true;
+//     if (error) {
+//       resolve("promise is resolve")
+//     } else {
+//       reject("promise is rejected")
+//     }
+//   }, 4000)
+// })
+
+// let asyncFunction = async () => {
+//   try {
+//     console.log("calling...")
+//     let data = await promise;
+//     console.log(`promsie is resolve after async function call`)
+//     console.log(data)
+
+//   } catch (error) {
+//     console.log(error)
+//   }
+// }
+
+// asyncFunction()
+
+// class User {
+//   constructor(username, email, pass) {
+//     this.username = username
+//     this.email = email
+//     this.pass = pass
+//   }
+// }
+
+// User.prototype.faheem = function () {
+//   console.log(`The user name is ${this.username.toUpperCase()}`)
+// }
+
+// let userOne = new User("faheem", "fm@gmail.com", 12345)
+
+
+// console.log(userOne.faheem())
+
+// let numof5 = (num) => {
+//   return num * 5
+// }
+
+// numof5.power = 3
+// console.log(numof5(2).power)
+
+// function User(username) {
+//   this.username = username
+// }
+
+// function Teacher(username, email, pass) {
+//   User.call(this, username)
+//   this.email = email
+//   this.pass = pass
+// }
+
+// const Tech = new Teacher("wasid", "ws@gmail.com", 1234)
+// console.log(Tech.email)
+
+// let str = "Faheem";
+
+
+// let tech = Object.getOwnPropertyDescriptor(String, "str")
+// console.log(tech)
+
+// class User {
+//   constructor(username, email, password) {
+//     this.username = username
+//     this.email = email
+//     this.password = password
+//   }
+
+//   get username() {
+//     return this._username.toUpperCase()
+//   }
+
+//   set username(value) {
+//     this._username = value
+//   }
+// }
+
+// let chai = new User("wasid", "wr@gmail.com", "1234")
+// console.log(chai.username)
+
+// function User(username, email, password) {
+//   this._username = username
+//   this._email = email
+//   this._password = password
+
+//   Object.defineProperty(this, "username", {
+//     get: function () {
+//       return this._username.toUpperCase()
+//     },
+
+//     set: function (value) {
+//       this._username = value
+//     }
+//   })
+// }
+
+// let chai = new User("wasid", "wr@gmail.com", "1234");
+
+// console.log(chai.username)
+
+// let user = {
+//   _username: "wasid",
+//   _email: "wr@gmail.com",
+//   _password: "1234",
+
+//   get username() {
+//     return this._username.toUpperCase()
+//   },
+
+//   set username(value) {
+//     this._username = value
+//   }
+// }
+
+// console.log(user.username)
+
+
+
+// let User = {
+//   _user: "wasid",
+//   _email: "wr@gmail.com",
+//   _pass: "12345",
+
+//   get user() {
+//     return this._user.toUpperCase()
+//   },
+
+//   set user(value) {
+//     this._user = value
+//   }
+// }
+
+// console.log(User.user)
+
+// let User = {
+//   firstName: "M_",
+//   lastName: "Faheem",
+
+//   get fullName() {
+//     return `${this.firstName}${this.lastName}`
+//   },
+
+//   set fullName(value) {
+//     [this.firstName, this.lastName] = name.split("")
+//   }
+// }
+
+// console.log(User.fullName)
+
+
+
+// let userOneOuter = `user one outer`
+// function userOne() {
+//   let userOneInner = "user One inner"
+//   console.log(userOneOuter)
+//   function userTwo() {
+//     console.log(userOneInner)
+//     // let usertwoInner = "userTwo inner"
+//   }
+//   // console.log(usertwoInner)
+
+//   userTwo()
+// }
+
+// // console.log(userOne)
+// userOne()
+
+let objOne = {
+  user: "wasid",
+  email: "wr@gmail.com"
+}
+
+let objTwo = {
+  numbers: 12434343,
+  marks: 502
+}
+
+Object.setPrototypeOf(objTwo, objOne)
+
+console.log(objTwo)
