@@ -417,12 +417,12 @@ console.log(setMinut)
 console.log(currDateTime.setSeconds(30));
 let setsecond = new Date(1728812250393);
 console.log(setsecond);
- 
+
 let dateTime = Date.now();
 console.log(dateTime);
 let newDate = new Date(1728812425349);
 console.log(newDate);
- 
+
 let currDate = new Date();
 console.log(String(currDate));
 */
@@ -433,35 +433,35 @@ let arr = [1, 2, 3, 4, 5, 6, 7, 8];
 let arr2 = new Array(1, 2, 3, 4, 5, 6, 7, 8);
 console.log(arr);
 console.log(arr2);
- 
+
 const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 [a, b, c, d, e, f, g, h, i] = arr;
 console.log(h);
- 
+
 // ++++++++++++ Concate with concate method ++++++++++++
- 
+
 let student = ["Faheem", "wasid", "shehzad", "shahzaib", "adil"];
 let student2 = ["sohail", "saqib"];
- 
+
 let students = student.concat(student2);
 console.log(students);
- 
+
 ++++++++++++ Concate with spread method ++++++++++++
- 
+
 let student= ["Faheem", "wasid", "shehzad", "shahzaib", "adil"];
 let student2 = ["sohail", "saqib"];
 let students = [...student, ...student2];
 console.log(students);
- 
+
 ++++++++++++ Adding values in Array ++++++++++++
- 
+
 let student = ["Faheem", "wasid", "shehzad", "shahzaib", "adil"];
 student.push("Sohail");
 student.unshift("Rizwan");
 student.pop();
 student.shift();
 console.log(student);
- 
+
 let student = [
   "Faheem",
   "wasid",
@@ -471,43 +471,43 @@ let student = [
   "sohail",
   "rizwan",
 ];
- 
+
 let student2 = ["muzamil", "nizam", "inam"];
 console.log(student.includes("Wasid"));
 console.log(student.at(-2));
- 
+
 console.log("A", student.slice(0, 4));
 console.log("B", student.splice(0, 4));
 console.log(student);
- 
+
 console.log(student.lastIndexOf("sohail"));
 console.log(student[3]);
 let newArr = [...student];
 let newArr = student.toString();
 let newArr = student.join();
 let fullArr = student.push(student2);
- 
+
 console.log(newArr, typeof newArr);
 console.log(fullArr)
- 
+
 let arr = [1, [2, [3], 4, 5, 6, 7]];
 console.log(arr.flat(Infinity))
 let score1 = 100;
 let score2 = 200;
 let score3 = 300;
 let score4 = 400;
- 
+
 let fullArr = Array.of(score1, score2, score3, score4);
 console.log(fullArr);
- 
+
 let arr = [1, 2, 3, 4, 5, 6, 7, 3];
 const result = arr.forEach((currElem, occum) => {
   console.log(currElem);
 });
 let str = "Pakistan"
- 
+
 console.log(Array.isArray(arr));
- 
+
 let student = [
   "Faheem",
   "wasid",
@@ -517,9 +517,9 @@ let student = [
   "sohail",
   "rizwan",
 ];
- 
+
 console.log(student.toReversed());
- 
+
 let arr = [1, 2, 3, 4, 5, 6, 7, 8];
 let result = arr.reduce((currElem, index) => {
   return currElem + index;
@@ -538,20 +538,20 @@ let obj = {
   marks: 502,
   grade: "D",
 };
- 
+
 // console.log(` Hello gay ${age} is ${obj.myAge}`)
- 
+
 // console.log(`Hello gays ${obj[sym]}`)
- 
+
 obj.greeting = function () {
   console.log("Hello Gays this sobject function");
 };
- 
+
 obj.greetingTwo = function () {
   console.log(`Hello gays my name is ${this.myName}`)
 }
 console.log(obj.greetingTwo());
- 
+
 let userProfile = {
   myName: "Faheem",
   greetUsers: {
@@ -561,10 +561,10 @@ let userProfile = {
     },
   },
 };
- 
+
 console.log(userProfile.greetUsers.userProfile1.userName);
 console.log(userProfile.myName.greetUsers.userProfile1?.userName ?? "value is not present");
- 
+
 let obj = {
   myName: "Faheem",
   age: 22,
@@ -573,46 +573,46 @@ let obj = {
   marks: 502,
   grade: "D",
 };
- 
+
 console.log("object key =", Object.keys(obj), "and Object values", Object.values(obj));
 let toArray = Object.entries(obj);
 console.log(toArray);
 let toObj = Object.fromEntries(toArray);
 console.log(toObj);
- 
+
 let obj1 = { a: "a", b: "b" };
 let obj2 = { c: "c", d: "d" };
 let fullArr = Object.assign({}, obj1, obj2);
 let fullArr = { ...obj1, ...obj2 };
 console.log(fullArr);
- 
- 
+
+
 let obj = {
   myName: "Faheem",
   age: 22,
   loc: "Kohat",
   grade: "D",
 };
- 
+
 console.log(Object.entries(obj));
 obj["job"] = "Web Developer"
 obj["myName"] = "M_Faheem"
 console.log(obj)
 console.log(obj);
- 
+
 obj.greet = () => {
   console.log(`myName is ${obj.myName}`);
 };
- 
+
 console.log(obj.greet());
- 
+
 let score1 = 200;
 let score2 = 300;
 let score3 = 400;
 let score4 = 500;
 let score5 = 600;
 let score6 = 700;
- 
+
 let fullarr = Array.of(score1, score2, score3, score4, score5, score6);
 console.log(fullarr);
 */
@@ -622,9 +622,9 @@ console.log(fullarr);
 function addsum(num1, num2) {
   return `the sum of ${num1} and ${num2} is ${num1 + num2}`;
 }
- 
+
 console.log(addsum(3, 4));
- 
+
 function one() {
   const username = "Faheem";
   function Two() {
@@ -636,14 +636,14 @@ function one() {
   Two();
 }
 one();
- 
+
 let userName = "Faheem";
 function userLoggedIN() {
   return `The userName is ${userName}`;
 }
- 
+
 console.log(userLoggedIN());
- 
+
 function userJustLoggedIn(username) {
   if (username === undefined) {
     console.log("please enter the username");
@@ -651,76 +651,76 @@ function userJustLoggedIn(username) {
   }
   return `${username} is just logged in`;
 }
- 
+
 console.log(userJustLoggedIn("wasid"));
- 
+
 function theSumOfMultiNumbers(...num) {
   return num;
 }
 console.log(theSumOfMultiNumbers(40, 22, 400, 200, 500, 600));
- 
+
 let user = {
   myName: "Faheem",
   price: 200,
 };
- 
+
 function theSum(anyObject) {
   return `user name is ${anyObject.myName} and pirce is ${anyObject.price}`;
 }
- 
+
 console.log(theSum(user));
- 
+
 function objectFunction(Obj) {
   return `the user name is ${Obj.myName} and price is ${Obj.price}`;
 }
- 
+
 console.log(
   objectFunction({
     myName: "Faheem",
     price: 200,
   })
 );
- 
+
 let arr = [100, 200, 300, 400, 500, 600];
- 
+
 function arrFunction(ArrHere) {
   return ArrHere[2];
 }
 console.log(arrFunction(arr));
- 
+
 function arrFunction(arrF) {
   return arrF;
 }
 console.log(arrFunction([100, 200, 300, 400, 500, 600]));
- 
+
 function checkName(name) {
   return `Hello ${name} Welcome to my Website`;
 }
- 
+
 console.log(checkName("Faheem"));
- 
+
 let checkFunc = (name1) => {
   console.log(`Hello ${name1} Welcome to my Website`);
 };
- 
+
 checkFunc("wasid");
- 
+
 (function (a, b) {
   console.log(a + b);
 })(5, 5);
- 
+
 const theSumOfTwoNumbers = (function (a, b) {
   return a + b;
 })
- 
+
 console.log(theSumOfTwoNumbers(5, 3));
- 
+
 const TheSumOf = (a, b) => {
   return a + b;
 };
- 
+
 console.log(TheSumOf(3, 4));
- 
+
 function checkUsername(username) {
   if (!username) {
     console.log("please Enter the username");
@@ -728,7 +728,7 @@ function checkUsername(username) {
   }
   return `${username} is just logged in`;
 }
- 
+
 console.log(checkUsername("Wasid"));
 */
 // *********************************** Scops ***********************************
@@ -736,7 +736,7 @@ console.log(checkUsername("Wasid"));
 let a = 100;
 const b = 200;
 var c = 300;
- 
+
 if(true) {
   let a = 10;
   const b = 20;
@@ -748,7 +748,7 @@ if(true) {
 console.log("let outer: ", a);
 console.log("const outer: ", b);
 console.log("var outer: ", c);
- 
+
 function one() {
   let username = "Faheem";
   function Two() {
@@ -759,9 +759,9 @@ function one() {
   // console.log(website);
   Two();
 }
- 
+
 one();
- 
+
 if (true) {
   const usernmae = "faheem";
   if (usernmae === "faheem") {
@@ -771,7 +771,7 @@ if (true) {
   // console.log(website)
 }
 // console.log(usernmae)
- 
+
 const obj = {
   myName: "Faheem",
   age: 22,
@@ -779,16 +779,16 @@ const obj = {
     console.log(this);
   },
 };
- 
+
 console.log(obj.greet());
- 
+
 let val1 = 10;
 let val2 = 5;
 function addNum(num1, num2) {
   let total = num1 + num2;
   return total;
 }
- 
+
 let result1 = addNum(val1, val2);
 let result2 = addNum(10, 2);
 */
@@ -799,36 +799,36 @@ let chai = (num, num2) => {
   return `the sum of ${num} and ${num2} is ${num + num2}`;
 };
 console.log(chai(3, 4));
- 
+
 let sum = (num, num2) => num + num2;
- 
+
 console.log(sum(3, 9));
- 
+
 let arr = [1, 2];
 let sumOfArr = arr.reduce((ocum, currElem) => ocum + currElem);
 console.log(sumOfArr)
- 
+
 let sum = (...num) => {
   return num.reduce((ocum, currElem) => {
     return (ocum = ocum + currElem);
   }, 0);
 };
- 
+
 console.log(sum(3, 8, 9));
- 
+
 let thisKeyWord = () => {
   console.log(this);
 };
- 
+
 thisKeyWord()
- 
+
 let sum = (num, num2) => ({ username: "Faheem" }, num + num2);
 console.log(sum(4, 5));
- 
+
 let objectFunction = (newObject) => {
   return newObject;
 };
- 
+
 console.log(
   objectFunction({
     myName: "Faheem",
@@ -837,7 +837,7 @@ console.log(
     job: "Web Developer",
   })
 );
- 
+
 let obj = {
   myname: "Faheem",
   job: "Web developer",
@@ -846,38 +846,38 @@ let obj = {
     village: "Gandiayly",
   },
 };
- 
+
 obj.obj2["age"] = 22;
 console.log(obj.obj2);
- 
+
 let sumof = (num) => {
   return `Hello ${num} Welcome to my Website`;
 };
 console.log(sumof("wasid"));
- 
+
 let sum = ((num) => {
   console.log(`Hello ${num} Welcome to my webite`);
 })("faheem");
- 
+
 let sum = (a, b) => {
   return `the sum of ${a} and ${b} is ${a + b}`;
 };
 console.log(sum(4, 4))
- 
+
 (function one() {
   console.log (`function one is connected`);
 })();
- 
+
 (function two(num) {
   console.log( `Hello ${num} welcome to my website`)
 })("wasid");
- 
+
 let theSum = (num) => {
   let website = "You tube";
   console.log(website);
   return `Hello ${num}`;
 };
- 
+
 console.log(theSum("Faheem"));
 */
 /*
@@ -894,12 +894,12 @@ if (score >= 89 && score <= 100) {
 } else if (score >= 35 && score <= 49) {
   Grade = "E";
 }
- 
+
 console.log(Grade);
- 
+
 let age = 19;
 let drivingLicense = true;
- 
+
 if (age >= 18) {
   console.log("you are 18 above");
   if (drivingLicense) {
@@ -914,16 +914,16 @@ if (age >= 18) {
 /*
 let score = 7;
 let arr = [1, 2, 3, 4, 5, 6, 6, 7, 6, 7, 7];
- 
+
 let result = arr.filter((currElem, idx) => {
   return currElem !== score;
 });
- 
+
 console.log(result);
- 
+
 let score = 43;
 // let Grade;
- 
+
 if (score >= 89 && score <= 100) {
   Grade = "A";
 } else if (score >= 71 && score <= 88) {
@@ -936,25 +936,25 @@ if (score >= 89 && score <= 100) {
   Grade = "E";
 }
 console.log(Grade);
- 
+
 let num = 4;
- 
+
 if (num % 2 === 0) {
   console.log("Number is Even");
 } else {
   console.log("Number is Odd")
 }
- 
+
 let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
- 
+
 let result = arr.map((curr) => {
   if (curr % 2 === 0) {
     console.log( curr);
   }
 });
- 
+
 let Mode = "light";
- 
+
 if (Mode === "Light") {
   color = "white";
 } else if (Mode === "Dark") {
@@ -962,9 +962,9 @@ if (Mode === "Light") {
 } else {
   color = "no Condition Mach";
 }
- 
+
 console.log(color);
- 
+
 for (let i = 0; i <= 20; i++) {
   if (i == 5) {
     console.log("5 is Detected");
@@ -973,29 +973,29 @@ for (let i = 0; i <= 20; i++) {
   }
   console.log(i);
 }
- 
+
 let arr = [1, 2, 3, 4, 5, 6, 7, 8];
 let arr = ["Faheem", "wasid", "shehzad", "sohail", "adil", "saqib", "nizam", "rizwan"];
- 
+
 arr.forEach((currElem, idx) => {
   console.log(currElem + 10)
 })
- 
+
 for (let newArr of arr) {
   console.log(newArr);
 }
- 
+
 let obj = {
   myName: "Faheem",
   age: 22,
   marks: 502,
   Grade: "D",
 };
- 
+
 for(let i in arr) {
   console.log(`${arr[i]}`)
 }
- 
+
 const book = [
   { title: "Book One", genre: "Fiction", publish: 1980, edition: 2001 },
   { title: "Book Twp", genre: "Non-Fiction", publish: 1998, edition: 20010 },
@@ -1007,56 +1007,56 @@ const book = [
   { title: "Book Hight", genre: "Science", publish: 1996, edition: 2007 },
   { title: "Book Nine", genre: "Non-Fiction", publish: 1990, edition: 2004 },
 ];
- 
+
 let result = book.filter((ocum, curr) => {
   return ocum.genre === "History";
   return ocum.genre === "History" && ocum.publish >= 2000;
 });
- 
+
 console.log(result);
- 
+
 let arr = [1, 2, 3, 4, 5, 6, 7];
- 
+
 let result = arr.map((currElem, ocum) => {
   return currElem + 10;
 });
 console.log(result);
- 
+
 arr.forEach((currElem) => {
   console.log(currElem + 10);
 });
- 
+
 let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
- 
+
 let reuslt = arr
   .map((num) => num * 10)
   .map((num) => num + 10)
   .filter((currElem) => currElem >= 50);
- 
+
 console.log(reuslt);
- 
+
 let drivingLicense = false;
 let age = 18;
 const loginFromGoogle = true;
 const loginFromEmail = true;
- 
+
 if (drivingLicense && age >= 18) {
   console.log("yess eligble fo driving");
 } else {
   console.log("not allow for driving");
 }
- 
+
 if (loginFromEmail || loginFromEmail) {
   console.log("User Allow for Login");
 } else {
   console.log("not allow for login");
 }
- 
+
 for(let i = 0 ; i <= 10 ; i = i + 1) {
   let elem = i;
   console.log(elem)
 }
- 
+
 for (let i = 1; i <= 10; i++) {
   // console.log(`Outer loop value: ${i}`);
   for(let j = 1 ; j <= 10 ; j++) {
@@ -1066,95 +1066,95 @@ for (let i = 1; i <= 10; i++) {
     console.log(``)
   }
 }
- 
+
 const map = new Map();
 map.set("PK", "Pakistan");
 map.set("USA", "United State of America");
 map.set("FR", "France");
 map.set("SA", "South Africa");
 map.set("PK", "Pakistan");
- 
+
 console.log(map)
- 
+
 const map = new Map();
 map.set("myName", "Faheem");
 map.set("myAge", 22);
 map.set("marks", 502);
 map.set("Grade", "D");
 console.log(map)
- 
+
 for(let [key, value] of map) {
   console.log(`${key} :- ${value}`)
 }
- 
+
 const map = new Map();
 map.set("Pk", "Pakistan");
 map.set("Us", "United State");
 map.set("Fr", "France");
 map.set("SA", "South Africa");
- 
+
 for (let [key, value] of map) {
   console.log(`${key} :=> ${value}`);
 }
- 
+
 let book = [
   { languageName: "JavaScript", languageFileName: "Js" },
   { languageName: "phython", languageFileName: "phy" },
   { languageName: "java", languageFileName: "java" },
   { languageName: "Cpp", languageFileName: "c++" },
 ];
- 
+
 book.forEach((item) => {
   console.log(`${item.languageFileName} :=> ${item.languageName}`)
 })
- 
+
 let arr = [1, 2, 3];
- 
+
 let result = arr.reduce((occum, curr) => {
   console.log`occum: ${occum} currElem: ${curr}`
   return occum + curr;
 });
- 
+
 console.log(result)
- 
+
 const total = [
   { item: "javaScript course", price: 2000 },
   { item: "phython course", price: 200 },
   { item: "c++ course", price: 1999 },
   { item: "shopify course", price: 1000 },
 ];
- 
+
 let result = total.reduce((ocum, currElem) => {
   return ocum + currElem.price;
 }, 0
 );
- 
+
 console.log(result);
- 
+
 let arr = [1, 2, 3, 4, 5, 6, 7];
- 
+
 let result = arr
   .map((num) => num * 10)
   .map((num) => num + 10)
   .filter((num) => num >= 40);
- 
+
 console.log(result);
- 
+
 const key = new Map();
 key.set("pk", "Pakistan");
 key.set("us", "united state");
 key.set("usa", "united state of america");
- 
+
 // console.log(key)
 for (let [item, value] of key) {
   console.log(`${item} :=> ${value}`);
 }
- 
+
 for(let i = 0 ; i <= 100 ; i++) {
   if(i % 2 !== 0)
     console.log(i)
 }
- 
+
 for (let index = 0; index <= 20; index++) {
   if (index == 10) {
     console.log("10 is detected");
@@ -1162,31 +1162,31 @@ for (let index = 0; index <= 20; index++) {
   }
   console.log(index);
 }
- 
+
 let map = new Map();
 map.set("myName", "Faheem");
 map.set("age", 22);
 map.set("marks", 502);
 map.set("Grade", "D");
 map.set("location", "Kohat");
- 
+
 for(let [index, value] of map) {
   console.log(`${index} :=> ${value}`)
 }
- 
+
 let obj = {
   myName: "Faheem",
   age: 22,
   marks: 502,
   Grade: "D",
 };
- 
+
 for (let index in obj) {
   console.log(`${index} :=> ${obj[index]}`);
 }
- 
+
 let month = 3;
- 
+
 switch (month) {
   case 1:
     console.log("January");
@@ -1194,30 +1194,30 @@ switch (month) {
   case 2:
     console.log("Februry");
     break;
- 
+
   case 3:
     console.log("March");
     break;
- 
+
   case 4:
     console.log("April");
     break;
- 
+
   case 5:
     console.log("May");
     break;
- 
+
   case 6:
     console.log("Juon");
     break;
- 
+
   default:
     console.log("no condition match");
     break;
 }
- 
+
 let month = 4;
- 
+
 switch (month) {
   case 1:
     console.log("January");
@@ -1238,15 +1238,15 @@ switch (month) {
     console.log("Now Condition Match");
     break;
 }
- 
+
 if (0 ===  "0") {
   console.log("Yess its equal");
 } else {
   console.log("thats not Equal")
 }
- 
+
 let score = 5937595;
- 
+
 if (score % 5 === 0) {
   console.log("Number is multiple of 5");
 } else {
@@ -1264,142 +1264,142 @@ let di = document.querySelector("div");
 console.log(di)
 let contain = document.getElementsByClassName("container")
 console.log(contain)
- 
+
 const con = document.querySelector(".container");
 console.log(con);
- 
+
 let container = document.querySelector(".container");
 console.log(container)
- 
- 
+
+
 let collec = document.getElementsByClassName("list");
 // console.log(collec)
- 
+
 let convertedArray = Array.from(collec)
 // console.log(convertedArray)
- 
+
 let byId = document.getElementById("id1")
 console.log(byId)
- 
+
 let listing = document.querySelectorAll("li");
 // console.log(listing)
- 
+
 listing.forEach(function (le) {
   console.log(le)
 })
- 
- 
+
+
 let classList = document.getElementsByClassName("list")
  console.log(classList)
 const convertedList = Array.from(classList)
- 
+
 const result = convertedList.map(function (list) {
   list.style.backgroundColor = "green"
 })
- 
+
 let container = document.querySelector(".parent");
 console.log(parent)
 console.log(container.firstElementChild)
 let firElem = container.children
 console.log(firElem)
- 
+
 for (let i = 0; i < container.children.length; i++) {
   console.log(container.children[i].innerHTML)
 }
- 
+
 container.children[0].style.backgroundColor = 'orange'
 console.log(container.childNodes)
- 
+
 for (let i = 0; i < container.children.length; i++) {
   console.log(container.children[i].innerHTML)
 }
- 
+
 const firstChild = container.firstElementChild;
 const nextSibling = firstChild.nextElementSibling;
 const addingClass = firstChild.setAttribute("id", "new-id")
 console.log(container)
- 
+
 let creatingFunction = () => {
   let dive = document.createElement("div")
   let texing = document.createTextNode("Hello World")
   dive.appendChild(texing)
   document.body.appendChild(dive)
 }
- 
+
 creatingFunction()
- 
+
 let creatingButton = () => {
   let btn = document.createElement("button")
   let addingText = document.createTextNode("Click Button")
   btn.appendChild(addingText)
   document.body.appendChild(btn)
 }
- 
+
 creatingButton()
- 
+
 let optiFunc = (langName) => {
   let li = document.createElement("li");
   let text = document.createTextNode(langName)
   document.body.appendChild(text)
   document.querySelector(".language")
   document.write("<br>")
- 
+
 }
- 
- 
+
+
 optiFunc("javaScript")
 optiFunc("phython")
 optiFunc("typescript")
 optiFunc("c++")
 optiFunc("java")
- 
+
 let ulList = document.getElementById("images");
 let image = document.getElementById("tracing-image");
- 
+
 ulList.addEventListener("click", function (event) {
   console.log("Ul list was Clicked inside")
 }, false)
- 
+
 image.addEventListener("click", function (event) {
   console.log("image was clicked")
   event.stopPropagation()
 }, false)
- 
- 
+
+
 let goog = document.getElementById("google");
- 
+
 goog.addEventListener("click", function (even) {
   even.preventDefault()
   console.log("google was clicked")
 })
- 
+
 let ulList = document.getElementById("images");
 let image = document.getElementById("tracing-image");
 const google = document.getElementById("google");
- 
+
 ulList.addEventListener("click", (event) => {
   console.log("Ul List was clicked")
   console.log(event.target)
 }, false)
- 
+
 image.addEventListener("click", (even) => {
   console.log("image was clicked")
   even.stopPropagation()
   console.log(even.target.tagName)
 }, false)
- 
+
 google.addEventListener("click", (event) => {
   console.log("google was clicked")
   event.preventDefault()
   console.log(event.target.tagName)
- 
+
   event.stopPropagation()
 })
- 
- 
+
+
 let menulist = document.getElementById("menuList")
 menulist.style.maxHeight = "0px";
- 
+
 function toggleMenu() {
   if( menulist.style.maxHeight == "0px") {
     menulist.style.maxHeight = "300px";
@@ -1414,27 +1414,27 @@ function toggleMenu() {
 setTimeout(() => {
   console.log("Hello World!")
 }, 2000)
- 
+
 let sayHello = () => {
   console.log("Hello World!");
 };
 setTimeout(sayHello, 2000);
- 
+
 Changing Text After Seconds
 let changeHello = () => {
   document.querySelector("h1").innerHTML = "Hello World"
 }
- 
+
 setTimeout(changeHello, 2000)
- 
+
 let sayHelloText = () => {
   document.querySelector("h1").innerHTML = "Hello World"
 }
- 
+
 let changeTime = setTimeout(sayHelloText, 2000);
- 
+
 CLEAR TIMEOUT
- 
+
 let newHello = () => {
   let btn = document.getElementById("stop");
   btn.addEventListener("click", () => {
@@ -1442,97 +1442,97 @@ let newHello = () => {
     console.log("STOPPED")
   })
 }
- 
+
 newHello()
- 
- 
+
+
 let btn = document.getElementById("start");
 let btn2 = document.getElementById("stop");
- 
+
 let newFun = () => {
   let dive = document.querySelector(".new-div");
   dive.innerHTML = Math.floor(Math.random() * 10 + 1);
 }
- 
+
 let starbtn
- 
+
 btn.addEventListener("click", () => {
   starbtn = setInterval(newFun, 1000)
 })
- 
+
 btn2.addEventListener("click", () => {
   clearInterval(starbtn)
 })
- 
+
 let btn = document.querySelector('#animateBtn');
- 
+
 btn.addEventListener("mouseover", function() {
   btn.style.backgroundColor = "orange"
   btn.style.border = "none"
   btn.style.padding = "10px 30px"
   btn.style.borderRadius = "40px"
   btn.style.fontSize = "1rem"
- 
+
 })
- 
+
 btn.addEventListener("mouseleave", function () {
   // btn.style.padding = "0px"
   // btn.style.backgroundColor = "transprant"
   // btn.style.borderRadius = "none"
   btn.style = "none"
- 
+
 })
- 
+
 btn.addEventListener("mouseup", function () {
   console.log("key Down ")
 })
- 
+
 let images = document.getElementById("images");
 let list = document.getElementById("image-2")
- 
+
 images.addEventListener("click", function () {
   console.log("Image was cliked")
 })
- 
+
 list.addEventListener("click", function () {
   console.log("list was clicked")
 })
- 
- 
+
+
 let list = document.querySelector("h1");
 let bnt = document.querySelector("#start")
- 
+
 let changeText = () => {
   list.innerHTML = "Hello World"
 }
- 
+
 let stop = setTimeout(changeText, 2000)
- 
+
 bnt.addEventListener("click", function() {
   clearTimeout(stop)
 })
- 
+
 let container = document.querySelector(".parent");
- 
+
 let dive = document.createElement("div");
 let textNode = document.createTextNode("Setureday");
 dive.appendChild(textNode)
 container.appendChild(dive)\
- 
+
 let start = document.querySelector("#start")
 let stop = document.querySelector("#stop")
 let dive = document.querySelector(".new-div")
- 
+
 let startFunc = () => {
   dive.innerHTML = Math.floor(Math.random() * 10 + 1)
 }
- 
+
 let changing;
- 
+
 start.addEventListener("click", () => {
   changing = setInterval(startFunc, 1000)
 })
- 
+
 stop.addEventListener("click", () => {
   clearInterval(changing)
 })
@@ -1545,11 +1545,11 @@ const promiseOne = new Promise((resolve, reject) => {
     resolve()
   }, 3000)
 })
- 
+
 promiseOne.then(() => {
   console.log("Promise is consumed")
 })
- 
+
 new Promise(function (resolve, reject) {
   setTimeout(() => {
     console.log("Async task 2 is complated")
@@ -1558,17 +1558,17 @@ new Promise(function (resolve, reject) {
 }).then(function () {
   console.log("Async 2 is consumed")
 })
- 
+
 const promiseThree = new Promise(function (resolve, reject) {
   setTimeout(() => {
     resolve({ username: "Faheem", email: "faheem@gmail.com" })
   }, 3000)
 })
- 
+
 promiseThree.then((user) => {
   console.log(user)
 })
- 
+
 const promiseFour = new Promise(function(resolve, reject) {
   setTimeout(() => {
     let error = false;
@@ -1579,8 +1579,8 @@ const promiseFour = new Promise(function(resolve, reject) {
     }
   }, 2000);
 })
- 
- 
+
+
 promiseFour.then((user) => {
   console.log(user);
   return user[2]
@@ -1591,7 +1591,7 @@ promiseFour.then((user) => {
 }).finally(() => {
   console.log("finnaly all done")
 })
- 
+
 const promiseFive = new Promise((resolve, reject) => {
   setTimeout(() => {
     let error = true;
@@ -1602,7 +1602,7 @@ const promiseFive = new Promise((resolve, reject) => {
     }
   }, 1000)
 })
- 
+
 async function promiseFiveConsum() {
   try {
     const response = await promiseFive;
@@ -1611,23 +1611,23 @@ async function promiseFiveConsum() {
     console.log(error)
   }
 }
- 
+
 promiseFiveConsum()
- 
+
 async function getAllUsers() {
   try {
     const response = await fetch("https://jsonplaceholder.typicode.com/users");
     const data = await response.json();
     console.log(data)
- 
+
   } catch (error) {
     console.log( error)
   }
 }
- 
+
 getAllUsers()
- 
- 
+
+
 let promiseOne = new Promise((resolve, reject) => {
   setTimeout(() => {
     let succ = true;
@@ -1638,7 +1638,7 @@ let promiseOne = new Promise((resolve, reject) => {
     }
   }, 2000)
 })
- 
+
 let consumPromise = async () => {
   try {
     let response = await promiseOne;
@@ -1647,9 +1647,9 @@ let consumPromise = async () => {
     console.log(error)
   }
 }
- 
+
 consumPromise()
- 
+
 fetch('https://jsonplaceholder.typicode.com/users')
   // .then(response => response.json())  // Parsing the response data into JSON
   .then((response) => {
@@ -1661,8 +1661,8 @@ fetch('https://jsonplaceholder.typicode.com/users')
   .catch(error => {
     console.error('Error:', error);  // Handling errors
   });
- 
- 
+
+
 async function getAllUsers() {
   try {
     const response = await fetch("https://jsonplaceholder.typicode.com/users");
@@ -1672,9 +1672,9 @@ async function getAllUsers() {
     console.log(error)
   }
 }
- 
+
 getAllUsers()
- 
+
 fetch("https://jsonplaceholder.typicode.com/users")
   .then((res) => {
     return res.json()
@@ -1685,8 +1685,8 @@ fetch("https://jsonplaceholder.typicode.com/users")
   .catch((error) => {
     console.log(error)
   })
- 
- 
+
+
 const getAll = async () => {
   try {
     let response = await fetch("https://jsonplaceholder.typicode.com/users")
@@ -1696,9 +1696,9 @@ const getAll = async () => {
     console.log(error)
   }
 }
- 
+
 getAll()
- 
+
 let promiseOne = new Promise((resolve, reject) => {
   let error = false
   if(error) {
@@ -1711,9 +1711,9 @@ let promiseOne = new Promise((resolve, reject) => {
       console.log("Error accurd")
     }, 3000)
   }
- 
+
 })
- 
+
 promiseOne
   .then((response) => {
     console.log(response)
@@ -1721,8 +1721,8 @@ promiseOne
   .catch((error) => {
     console.log(error)
   })
- 
- 
+
+
 fetch("https://jsonplaceholder.typicode.com/users")
   .then((res) => {
     return res.json()
@@ -1733,7 +1733,7 @@ fetch("https://jsonplaceholder.typicode.com/users")
   .catch((error) => {
     console.log(error)
   })
- 
+
 let getAllUsers = async () => {
   try {
     let response = await fetch("https://jsonplaceholder.typicode.com/users");
@@ -1742,14 +1742,14 @@ let getAllUsers = async () => {
     console.log(error)
   }
 }
- 
- 
+
+
 let PromiseHere = new Promise((reslove, reject) => {
   setTimeout(() => {
     reject({username : "Faheem", email : "info@gmail.com"});
   }, 3000)
 })
- 
+
 PromiseHere.then((response) => {
   console.log(response);
   return response.username
@@ -1758,7 +1758,7 @@ PromiseHere.then((response) => {
 }).catch((error) => {
   console.log(error)
 })
- 
+
 let PromiseOne = new Promise(function (reslove, reject) {
   setTimeout(() => {
     reslove(["Faheem", "shehzad", "sohail", "wasid"])
@@ -1774,7 +1774,7 @@ let PromiseOne = new Promise(function (reslove, reject) {
   .catch((error) => {
     console.log(error)
   })
- 
+
 let getting = async () => {
   try {
     let response = await PromiseOne
@@ -1783,8 +1783,8 @@ let getting = async () => {
     console.log(error)
   }
 }
- 
- 
+
+
 let fetchingData = async () => {
   try {
     let hell = await fetch("https://jsonplaceholder.typicode.com/users");
@@ -1794,9 +1794,9 @@ let fetchingData = async () => {
     console.log(error)
   }
 }
- 
+
 fetchingData()
- 
+
 fetch("https://jsonplaceholder.typicode.com/users")
   .then((Response) => {
     return Response.json()
@@ -1807,11 +1807,11 @@ fetch("https://jsonplaceholder.typicode.com/users")
   .catch((error) => {
     console.log(error)
   })
- 
+
 let promiseOne = new Promise((reslove, reject) => {
   reslove(10)
 })
- 
+
 promiseOne.then((resultOne) => {
   return resultOne + 1
 })
@@ -1826,7 +1826,7 @@ promiseOne.then((resultOne) => {
   .catch((error) => {
     console.log(error)
   })
- 
+
 let declaredFunc = () => {
   return new Promise((reslove, reject) => {
     setTimeout(() => {
@@ -1834,7 +1834,7 @@ let declaredFunc = () => {
     }, 3000)
   })
 }
- 
+
 let promiseCall = async () => {
   setTimeout(() => {
     console.log("Async function are exicuting")
@@ -1842,10 +1842,10 @@ let promiseCall = async () => {
   let result = await declaredFunc();
   console.log(result)
 }
- 
+
 promiseCall()
- 
- 
+
+
 let promiseFunction = () => {
   return new Promise((reslove, reject) => {
     setTimeout(() => {
@@ -1853,7 +1853,7 @@ let promiseFunction = () => {
     }, 3000)
   })
 }
- 
+
 let asyncFunction = async () => {
   try {
     let result = await promiseFunction()
@@ -1863,9 +1863,9 @@ let asyncFunction = async () => {
     console.log(error)
   }
 }
- 
+
 asyncFunction()
- 
+
 const fetchData = () => {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
@@ -1873,26 +1873,26 @@ const fetchData = () => {
     }, 3000)
   })
 }
- 
+
 fetchData().then((response) => {
   console.log(response)
 }).catch((error) => {
   console.log(error)
 })
- 
+
 const gettingData = async () => {
   try {
     let result = await fetchData()
     console.log(result)
     setTimeout(() => {
     console.log("Aync Await function is calling....")
- 
+
     }, 5000)
   } catch (error) {
     console.log(error)
   }
 }
- 
+
 gettingData()
 */
 
@@ -2855,7 +2855,7 @@ function User(username) {
 
 function createUser(username, email, password) {
   User.call(this, username)
-  this.email = email 
+  this.email = email
   this.password = password
 }
 
@@ -2984,7 +2984,7 @@ const User = {
 
 console.log(User.username)
 let tea = Object.create(User)
-console.log(tea.username)  
+console.log(tea.username)
 
 const person = {
   firsName: "Rizwan",
@@ -3020,7 +3020,7 @@ function User(username, score) {
   this.username = username
   this.score = score
 
-  
+
 }
 
 User.prototype.increment = function () {
@@ -3219,7 +3219,7 @@ console.log(User.trueLength())
 //     console.log(data)
 //     const {docs} = data
 //     document.body.innerHTML = docs[3]
-//   } catch (error) { 
+//   } catch (error) {
 //     console.log(error)
 //   }
 // }
@@ -3592,16 +3592,164 @@ console.log(User.trueLength())
 // // console.log(userOne)
 // userOne()
 
-let objOne = {
-  user: "wasid",
-  email: "wr@gmail.com"
+// let objOne = {
+//   user: "wasid",
+//   email: "wr@gmail.com"
+// }
+
+// let objTwo = {
+//   numbers: 12434343,
+//   marks: 502
+// }
+
+// Object.setPrototypeOf(objTwo, objOne)
+
+// console.log(objTwo)
+
+
+// let CloseIcon = document.querySelector(".mobile-close-icon");
+// let menuIcon = document.querySelector(".nav-icon");
+
+// menuIcon.addEventListener('click', () => {
+//   menuIcon.classList.add("mobile-menu")
+// })
+
+
+// ++++++++++++++++++++++++++++++++++++++ JAVASCRIPT EXERCISES ++++++++++++++++++++++++++++++++++++++
+
+/* Exercise 1:
+-----------------
+ write a javaScript program to  check two numbers and return true if one of the number is 100 or if the sum of the numbers is 100 */
+
+// const isEqualTo100 = (a, b) => {
+//   return a === 100 || b === 100 || (a + b) === 100
+// }
+
+// console.log(isEqualTo100(0, 100))
+// console.log(isEqualTo100(100, 0))
+
+// console.log(isEqualTo100(0, 10))
+// console.log(isEqualTo100(10, 0))
+
+// console.log(isEqualTo100(20, 80))
+// console.log(isEqualTo100(50, 50))
+
+/* Exercise 2:
+-----------------
+ Write a JavaScript program to get the extension of a filename. */
+
+// const getFileExtension = (str) => {
+//   return str.slice(str.lastIndexOf("."))
+// }
+
+// console.log(getFileExtension("index.html"))
+
+/* Exercise 3:
+-----------------
+ Write a JavaScript program to replace every character in a given string with the character following it in the alphabet */
+
+// const moveCharsForward = (str) => {
+//   return str.split("").map(char => String.fromCharCode(char.charCodeAt(0) + 1)).join("")
+
+// }
+
+// console.log(moveCharsForward("z"))
+
+// const move = (str) => {
+//   return str.split("").map((char) => {
+//     return String.fromCharCode(char.charCodeAt(0) + 1)
+//   }).join("")
+// }
+
+// console.log(move("abcd"))
+
+/*  Exercise 4:
+-----------------
+Write a JavaScript program to get the current date.
+Expected Output :
+                  mm-dd-yyyy, mm/dd/yyyy or dd-mm-yyyyy, dd/mm/yyyyy */
+
+// const dateFormat = (date = new Date()) => {
+//   const day = date.getDay() + 1;
+//   const month = date.getMonth() + 1;
+//   const year = date.getFullYear();
+//   return `${month}-${day}-${year}`
+// }
+
+// console.log(dateFormat())
+
+/* Exercise 5:
+-----------------
+ Write a JavaScript program to create a new string adding "New!" in front of a given string. if the given string begins with "New!" already then return the originl string. */
+
+// const addNew = (str) => {
+//   return str.indexOf(`New!`) === 0 ? str : `New! ${sr}`
+// }
+
+// console.log(addNew(`New! offers`));
+
+/* Exercise 6:
+-----------------
+Write a JavaScript program to create a new string from a fiven string taking the first 3 characters and the last 3 characters of a string and adding them together.  The string length must be 3 or more, if not, the orginal string is returned. */
+
+// const makeNewString = (str) => {
+//   return str.length < 3 ? str : str.slice(0, 3) + str.slice(-3)
+// }
+
+// console.log(makeNewString("M Faheem"))
+
+/* Exercise 7:
+-----------------
+ Write a JavaScript program to extratct the first half of a string of even length */
+
+// const firstHalf = (str) => {
+//   return str.slice(0, str.length / 2)
+// }
+
+// console.log(firstHalf("temp"))
+// console.log(firstHalf("temple"))
+// console.log(firstHalf("temples"))
+
+/* Exercise 7:
+-----------------
+Write a Javascript program to concatenate two strings expect their first character. */
+
+// const concate = (str1, str2) => {
+//   return str1.slice(1) + str2.slice(1);
+// }
+
+// console.log(concate("AHello", "AWorld!"));
+
+/* Exercise 8:
+-----------------
+Given two values, write a JavaScript program to find out which one is nearest to 100 */
+
+// const closestTo100 = (a, b) => {
+//   return (100 - a) < (100 - b) ? a : b;
+// }
+
+// console.log(closestTo100(99, 0))
+// console.log(closestTo100(49, 51))
+// console.log(closestTo100(50, 50))
+// console.log(closestTo100(61, 39))
+
+/* Exercise 9:
+-----------------
+ write a JavaScript program to check a given string contains 2 to 4 occurrences of a specified character. */
+
+const countChars = (str, char) => {
+  return str.split("").filter((ch) => {
+    return ch === char
+  }).length;
 }
 
-let objTwo = {
-  numbers: 12434343,
-  marks: 502
+const contains2To4 = (str, char) => {
+  return countChars(str, char) >= 2 && countChars(str, char) <= 4;
 }
 
-Object.setPrototypeOf(objTwo, objOne)
+console.log(contains2To4('ooh!', 'o'))
+console.log(contains2To4('oh!', 'o'))
+console.log(contains2To4('oooh!', 'o'))
+console.log(contains2To4('ooooh!', 'o'))
+console.log(contains2To4('oooooh!', 'o'))
 
-console.log(objTwo)
