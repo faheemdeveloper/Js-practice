@@ -3615,6 +3615,63 @@ console.log(User.trueLength())
 // })
 
 
+// const findLongestWord = (str) => {
+//   if (str.trim().length === 0) {
+//     return false;
+//   }
+
+//   words = str.split(" ");
+// words = words.sort((a, b) => b.length - a.length);
+// console.log(words)  
+// return words[0]
+
+//   return words.reduce((occum, curr) => curr.length > occum.length ? curr : occum, "")
+// }
+
+// console.log(findLongestWord("Hello JavaScript, Welcome to the javascript course"))
+
+// const generateHesh = (str) => {
+//   if (str.length > 280 || str.trim().length === 0) {
+//     return false;
+//   }
+
+//   str = str.split(" ");
+//   str = str.map((currElem) => currElem.replace(currElem[0], currElem[0].toUpperCase()))
+
+//   str = `#${str.join("")}`;
+//   // console.log(str);
+//   return str;
+// }
+
+// console.log(generateHesh("my name is m faheem"))
+
+
+
+// let add = (function(a, b) {
+//   console.log(a + b)
+// })
+
+// add(4, 2)
+
+
+// let countChar = (word, char) => {
+//   word = word.toLowerCase();
+//   char = char.toLowerCase();
+
+//   totalCount = word.split("").reduce((accum, curValue) => {
+//     if (curValue === char) {
+//       accum++
+//     }
+
+//     return accum
+//   }, 0)
+
+//   return totalCount;
+// }
+
+// console.log(countChar("Faheem", "e"))
+
+
 // ++++++++++++++++++++++++++++++++++++++ JAVASCRIPT EXERCISES ++++++++++++++++++++++++++++++++++++++
 
 /* Exercise 1:
@@ -3737,19 +3794,251 @@ Given two values, write a JavaScript program to find out which one is nearest to
 -----------------
  write a JavaScript program to check a given string contains 2 to 4 occurrences of a specified character. */
 
-const countChars = (str, char) => {
-  return str.split("").filter((ch) => {
-    return ch === char
-  }).length;
-}
+// const countChars = (str, char) => {
+//   return str.split("").filter((ch) => {
+//     return ch === char
+//   }).length;
+// }
 
-const contains2To4 = (str, char) => {
-  return countChars(str, char) >= 2 && countChars(str, char) <= 4;
-}
+// const contains2To4 = (str, char) => {
+//   return countChars(str, char) >= 2 && countChars(str, char) <= 4;
+// }
 
-console.log(contains2To4('ooh!', 'o'))
-console.log(contains2To4('oh!', 'o'))
-console.log(contains2To4('oooh!', 'o'))
-console.log(contains2To4('ooooh!', 'o'))
-console.log(contains2To4('oooooh!', 'o'))
+// console.log(contains2To4('ooh!', 'o'))
+// console.log(contains2To4('oh!', 'o'))
+// console.log(contains2To4('oooh!', 'o'))
+// console.log(contains2To4('ooooh!', 'o'))
+// console.log(contains2To4('oooooh!', 'o'))
+
+/* Exercise 9:
+-----------------
+Write a JavaScript program to find the number of even digits in a aann array of integers */
+
+// const countEventNumber = (arr) => {
+//   return arr.filter((num) => {
+//     return num % 2 === 0;
+//   })
+// }
+
+// const addEven = (arr) => arr.filter(num => num % 2 === 0).length;
+
+// console.log(countEventNumber([1, 2, 3, 4, 5, 6, 7, 8]));
+// console.log(countEventNumber([2, 2, 2, 2]));
+// console.log(countEventNumber([1, 2, 3, 4, 5, 6, 7, 8]));
+// console.log(countEventNumber([3, 5, 7, 9]));
+// console.log(addEven([1, 2, 3, 4, 5, 6]))
+
+/* Exercise 10:
+-----------------
+Write a JavaScript program to find the number of even values up to a given number */
+
+// const createArrayOfNumber = (num) => {
+//   const returnArray = [];
+//   for (let i = 1; i <= num; i++) {
+//     returnArray.push(i)
+//   }
+//   return returnArray;
+// }
+
+// console.log(createArrayOfNumber(3))
+// console.log(createArrayOfNumber(4))
+// console.log(createArrayOfNumber(6))
+// console.log(createArrayOfNumber(8))
+
+/* Exercise 11:
+-----------------
+Write a JavaScript program to check whether a given array of integers is sorted in ascading order */
+
+// const isAsceding = (arr) => {
+//   for (let i = 0; i < arr.length; i++) {
+//     if (arr[i + 1] < arr[i]) return false;
+//   }
+
+//   return true;
+// }
+
+// console.log(isAsceding([1, 2, 3, 4, 5, 6, 7, 8]));
+// console.log(isAsceding([1, 2, 5, 4, 3, 7]));
+// console.log(isAsceding([1, 2, 3, 4, 5, 6, 6]));
+
+// let str = 'Hello JavaScript, welcome to JavaScript Course';
+// let math = str.matchAll("JavaScript")
+// console.log(...math)
+
+// console.log(str.charAt(4))
+// console.log(str.startsWith("Hello"))
+
+// console.log(str.replaceAll("J", "G"))
+
+
+// let obj = {
+//   name: "Faheem",
+//   myAge: "fm@gmail.com",
+//   pass: 1234,
+
+//   details() {
+//     console.log(`The student name is ${this.name}`)
+//   }
+// }
+
+// console.log(obj.details())
+
+// let str = prompt("Enter your Value: ");
+
+// let startWith = str.startsWith("F");
+// let endsWith = str.endsWith("m");
+
+// if (startWith == true && endsWith == true) {
+//   console.log(`String is Start With F and End With m`)
+// } else if (startWith == true && endsWith == false) {
+//   console.log("String is only Start with F")
+// } else if (startWith == false && endsWith == true) {
+//   console.log("String is only Ends with m")
+// }
+
+// let str = prompt("Enter you value: ");
+
+// let first = str.charAt(0);
+// let Upper = first.toUpperCase();
+// let slice = str.slice(1);
+// let res = `${Upper}${slice}`;
+// console.log(res)
+
+// let valOne = prompt("first Value: ")
+// let ValueTwo = prompt("first Value: ")
+// let devesion = prompt("Enter your devesion: ")
+
+// switch (devesion) {
+//   case "+":
+//     let plus = parseInt(valOne) + parseInt(ValueTwo);
+//     console.log(`${valOne} + ${ValueTwo} = ${plus}`);
+//     break;
+//   case "/":
+//     let devide = parseInt(valOne) / parseInt(ValueTwo);
+//     console.log(`${valOne} / ${ValueTwo} = ${devide}`);
+//     break;
+//   case "-":
+//     let minus = parseInt(valOne) - parseInt(ValueTwo);
+//     console.log(`${valOne} - ${ValueTwo} = ${minus}`);
+//     break;
+// }
+
+
+// function createCounter(n) {
+//   let counter = -1;
+
+//   function inner() {
+//     counter++
+//     return (n + counter)
+//   }
+
+//   return inner;
+// }
+
+// const counter = createCounter(10);
+// console.log(counter())
+// console.log(counter())
+// console.log(counter())
+
+
+// let createCounter = (n) => {
+//   return function () {
+//     return (n++)
+//   }
+// }
+
+// const counter = createCounter(10);
+// console.log(counter())
+// console.log(counter())
+// console.log(counter())
+
+
+// first.className = "yellow red text-dark"
+// console.log(first.classList)
+// first.classList.remove("red")
+
+
+// const bulb = document.getElementById("bulb");
+// const btn = document.getElementById("btn");
+
+// let value = 0;
+
+// btn.addEventListener("click", () => {
+//   if (value === 0) {
+//     bulb.style.backgroundColor = "orange"
+//     bulb.style.border = "2px solid blue"
+//     bulb.innerHTML = "<h5>Faheem</h5>"
+//     bulb.style.transition = "all 0.5s linear "
+//     value = 1
+//   } else {
+//     bulb.style = "none"
+//     bulb.style.border = "2px dotted black"
+//     bulb.innerHTML = ""
+//     bulb.style.transition = "all 0.5s linear "
+//     value = 0
+//   }
+// })
+
+// const cursor = document.querySelector(".cursor");
+// const main = document.querySelector("body");
+
+// main.addEventListener("mousemove", (e) => {
+//   cursor.style.left = e.x+"px"
+//   cursor.style.top = e.y+"px"
+// })
+
+// const add = document.getElementById("add");
+// const get = document.getElementById("get");
+
+// let data = ["Faheem", "wasid", "luqman", "shahzeb"]
+
+
+// add.addEventListener("click", () => {
+//   localStorage.setItem("data", JSON.stringify(data))
+// })
+
+// get.addEventListener("click", () => {
+//   console.log(JSON.parse(localStorage.getItem("data")))
+// })
+
+// let ul = document.querySelector(".ul");
+// let icon = document.querySelector("i");
+
+// icon.addEventListener("click", () => {
+//   ul.classList.toggle("nav-mobile-menu")
+//   ul.style.display = "block"
+// })
+
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+// const arr = [
+//   { img: "https://plus.unsplash.com/premium_photo-1731329153355-1015daf2cb92?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
+//   { img: "https://plus.unsplash.com/premium_photo-1675805015866-3568fe093a65?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
+//   { img: "https://images.unsplash.com/photo-1732254721629-bf8275f694e6?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
+//   { img: "https://images.unsplash.com/photo-1734000403535-49ae720a58a6?q=80&w=1372&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
+//   { img: "https://plus.unsplash.com/premium_photo-1728923434154-e40f064b89c3?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
+//   { img: "https://images.unsplash.com/photo-1732692699555-2dc0e40eea18?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
+// ]
+
+// let post = document.querySelector(".mobile-body");
+// let screen = document.querySelector(".screen");
+// let body = document.querySelector("body")
+
+// let clip = "";
+
+// arr.forEach((elem, idx) => {
+//   clip += `
+//   <div class="post">
+//       <img id="${idx}" src="${elem.img}" alt="">
+//     </div>
+//   `
+// })
+
+// post.innerHTML = clip;
+
+// post.addEventListener("click", (elem) => {
+//   body.style.backgroundImage = `url(${arr[elem.target.id].img})`
+// })
+
 
