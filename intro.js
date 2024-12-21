@@ -4041,4 +4041,201 @@ Write a JavaScript program to check whether a given array of integers is sorted 
 //   body.style.backgroundImage = `url(${arr[elem.target.id].img})`
 // })
 
+// let root = document.querySelector(".root");
+// let button = document.querySelector("button");
 
+// let createItem = (item) => {
+//   let card = document.createElement("div")
+//   card.classList.add("card");
+
+//   let photo = document.createElement("img")
+//   photo.src = item.thumbnailUrl;
+
+//   let title = document.createElement("h4")
+//   title.innerHTML = item.title
+
+
+//   card.appendChild(photo);
+//   card.appendChild(title);
+//   root.appendChild(card);
+
+// }
+
+// function displayImages(items) {
+//   items.forEach((item) => {
+//     createItem(item);
+//   })
+// }
+
+// button.addEventListener("click", () => {
+//   fetch("https://jsonplaceholder.typicode.com/albums/1/photos")
+//     .then((res) => {
+//       return res.json();
+//     }).then((data) => {
+//       displayImages(data);
+//     });
+// })
+
+// let container = document.querySelector(".container")
+
+// let createImages = (hello) => {
+//   let inner = document.createElement("div")
+//   inner.classList.add("inner");
+//   inner.innerHTML = hello.thumbnailUrl
+
+
+//   container.appendChild(inner)
+// }
+
+
+// let addImages = (elems) => {
+//   elems.forEach((item) => {
+//     createImages(item)
+//   })
+// }
+
+
+// fetch("https://jsonplaceholder.typicode.com/albums/1/photos")
+//   .then((res) => {
+//     return res.json()
+//   }).then((data) => {
+//     addImages(data);
+//   })
+
+// let btn = document.querySelector("button");
+// let parent = document.querySelector(".parent");
+
+
+// btn.addEventListener("click", () => {
+//   parent.classList.toggle("container")
+// })
+
+
+// let body = document.querySelector("body");
+// let cursor1 = document.querySelector(".cursor-1");
+// let cursor2 = document.querySelector(".cursor-2");
+// let cursor3 = document.querySelector(".cursor-3");
+// let cursor4 = document.querySelector(".cursor-4");
+
+// body.addEventListener("mousemove", (e) => {
+//   cursor1.style.left = `${e.x}px`
+//   cursor1.style.top = `${e.y}px`
+
+//   cursor2.style.left = `${e.x}px`
+//   cursor2.style.top = `${e.y}px`
+
+//   cursor3.style.left = `${e.x}px`
+//   cursor3.style.top = `${e.y}px`
+
+//   cursor4.style.left = `${e.x}px`
+//   cursor4.style.top = `${e.y}px`
+// })
+
+// let body = document.querySelector("body");
+
+// let clutter = ''
+
+// let design = () => {
+//   for (let i = 1; i <= 243; i++) {
+//   let random = Math.floor(Math.random() * 10 + 1)
+//     clutter += `
+//   <div class="box">${random}</div>
+//   `
+//   }
+
+//   body.innerHTML = clutter
+
+// }
+
+// design()
+
+// let pr1 = new Promise((res, rej) => {
+//   return res("Tayar ho jao")
+// });
+
+// let pr2 = pr1.then((data) => {
+//   console.log(data)
+//   return new Promise((res, rej) => {
+//     return res("Baig lo or sett ho jao")
+//   })
+// })
+
+// let pr3 = pr2.then((data) => {
+//   console.log(data)
+//   return new Promise((res, rej) => {
+//     return res("Bike pe betho or chock pe jao")
+//   })
+// })
+
+// let pr4 = pr3.then((data) => {
+//   console.log(data)
+//   return new Promise((res, rej) => {
+//     return res("Gadi mai betho or office jao")
+//   })
+// })
+
+// pr4.then((data) => {
+//   console.log(data)
+// })
+
+
+// let pr1 = new Promise((res, rej) => {
+//   setTimeout(() => {
+//     return res("promise one")
+//   }, 4000)
+// })
+
+// let pr2 = new Promise((res, rej) => {
+//   setTimeout(() => {
+//     return res("promise two")
+//   }, 2000)
+// })
+
+// let pr3 = new Promise((res, rej) => {
+//   setTimeout(() => {
+//     return res("promise three")
+//   }, 5000)
+// })
+
+// Promise.allSettled([pr1, pr2, pr3]).then((data) => {
+//   console.log(data)
+// })
+
+// class User {
+//   constructor(user, email, pass) {
+//     this.user = user
+//     this.email = email
+//     this.pass = pass
+//   }
+
+//   get user() {
+//     return this._user.toUpperCase()
+//   }
+
+//   set user(val) {
+//     this._user = val
+//   }
+
+// }
+
+// let UserOne = new User("Wasid", "wr@gmail.com", "1234")
+// console.log(UserOne.user)
+
+// function User(user, email, pass) {
+//   this._user = user
+//   this._email = email
+//   this._pass = pass
+
+//   Object.getOwnPropertyDescriptor(this, "user", {
+//     get: function(){
+//       return this._user.toUpperCase()
+//     },
+
+//     set: function(val){
+//       this._user = val
+//     }
+//   })
+// }
+
+// let usertwo = new User("Wasid", "wr@gmail.com", "1234")
+// console.log(usertwo.user)
